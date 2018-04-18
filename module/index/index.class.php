@@ -14,6 +14,14 @@ class index extends commomIndex {
         $this->smarty->display('product.html');
     }
 
+    function active(){
+        $this->smarty->display('list.html');
+    }
+
+    function danye(){
+        $this->smarty->display('danye.html');
+    }
+
 
 
 }

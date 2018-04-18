@@ -1,24 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>文章列表</title>
-    <link rel="stylesheet" href="../../assets/css/list.css">
-    <link rel="stylesheet" href="../../assets/css/base.css">
-</head>
-<body>
-<div class="big_box">
+{include file='header.html'}
+<link rel="stylesheet" href="{CSS_PATH}list.css">
+
 <!--面包屑开始-->
-<section class="bread">
-    <p>HOME</p>
-    <p>首页</p>
-    <p><i class="iconfont icon1">&#xe8f0;</i></p>
-    <p>ACTIVITY</p>
-    <p>活动</p>
-    <p><i class="iconfont icon1">&#xe8f0;</i></p>
-    <p>蔡美月绽放纽约国际时装周</p>
-</section>
+<div class="crumbs">
+    <div class="home">
+        <p>HOME</p>
+        <p>首页</p>
+        <div class="underline"></div>
+    </div>
+    <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
+    <div class="erji">
+        <p>BRAND</p>
+        <p>品牌</p>
+        <div class="underline"></div></div>
+
+</div>
 <!--面包屑结束-->
+
+
+<div class="big_box">
+
 <!--热门活动开始-->
 <section class="activity">
     <div class="act_top">
@@ -182,5 +183,6 @@
     </div>
 </section>
 </div>
+{include file='footer.html'}
 </body>
 </html>
