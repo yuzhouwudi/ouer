@@ -1,0 +1,223 @@
+@import url("base.css");
+@font-face {
+    font-family: 'iconfont';  /* project id 630324 */
+    src: url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.eot');
+    src: url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.svg#iconfont') format('svg');
+}
+.iconfont
+{
+    font-family:'iconfont';
+}
+i
+{
+    font-style: normal;
+}
+/*面包屑开始*/
+.bread{
+    width: 1200px;
+    height: 107px;
+    background: pink;
+    margin: 0 auto;
+}
+.bread p{
+    font-size: 20px;
+    color: black;
+    line-height: 107px;
+    margin-left: 10px;
+    float: left;
+}
+.bread p:first-child{
+    margin-left: 88px;
+}
+.icon1{
+    font-size: 20px;
+    color: black;
+    line-height: 107px;
+    margin-left: 10px;
+}
+/*面包屑结束*/
+/*中间大图开始*/
+.pic{
+    width: 1200px;
+    height: 557px;
+    /*background: skyblue;*/
+    margin: 0 auto;
+}
+/*中间大图结束*/
+/*品牌故事开始*/
+.box{
+    width: 1200px;
+    height: auto;
+    background: #ffffff;
+    margin: 0 auto 64px;
+}
+.story{
+    width: 1200px;
+    height: 51px;
+    margin: 0 auto;
+    /*background: pink;*/
+}
+.s_left{
+    width: 117px;
+    height: 51px;
+    /*background: yellow;*/
+    margin-left: 184px;
+    float: left;
+}
+.s_left h1{
+    font-size: 18px;
+    color: black;
+}
+.s_left p{
+    font-size: 20px;
+    color: black;
+}
+.s_right{
+    width: 250px;
+    height: 51px;
+    /*background: greenyellow;*/
+    float: left;
+}
+.s_right p{
+    font-size: 51px;
+    color: black;
+    margin-top: -10px;
+    float: left;
+}
+.s_right h2{
+    font-size: 32px;
+    color: black;
+    line-height: 51px;
+    margin-left: 5px;
+}
+.word{
+    width: 1200px;
+    height: 209px;
+    /*background: skyblue;*/
+    margin-top: 46px;
+}
+.word h5{
+    font-size: 20px;
+    color: #000;
+    margin-left: 225px;
+}
+.zi{
+    font-size: 17px;
+    color: #b9b7b7;
+    margin-left: 225px;
+}
+.content{
+    font-size: 13px;
+    color: #6b6a6a;
+    margin-left: 225px;
+    margin-top: 3px;
+}
+.content1{
+    font-size: 13px;
+    color: #6b6a6a;
+    margin-left: 225px;
+    margin-top: 31px;
+}
+/*结束*/
+/*英文介绍*/
+.english{
+    width: 1200px;
+    height: 176px;
+    /*background: pink;*/
+    margin: 0 auto;
+}
+.english p{
+    font-size: 13px;
+    color: #868484;
+    margin: 0 185px;
+}
+.english p:nth-child(2){
+    margin-top: 32px;
+}
+.english p:nth-child(3){
+    margin-top: 32px;
+}
+/*英文介绍结束*/
+/*图片开始*/
+.picture{
+    width: 1200px;
+    height: 637px;
+    /*background: skyblue;*/
+    margin: 120px auto 105px;
+}
+.tu1{
+    width: auto;
+    height: auto;
+    margin-left: 181px;
+    float: left;
+}
+.tu2{
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin-left: 45px;
+}
+.tu2 img{
+    width: 100%;
+}
+.tu3{
+    width: 295px;
+    margin-left: 81px;
+    margin-top: 39px;
+    float: left;
+}
+.tu3 img{
+    width: 100%;
+}
+/*图片结束*/
+/*高级定制服务开始*/
+.content2{
+    font-size: 13px;
+    color: #6b6a6a;
+    margin-left: 225px;
+    margin-top: 31px;
+    margin-right: 185px;
+}
+.port{
+    width: 835px;
+    height: 140px;
+    /*background: skyblue;*/
+    margin: 0 auto;
+}
+.tupian{
+    width: 132px;
+    height: 132px;
+    margin-left: 40px;
+    float: left;
+}
+.jieshao{
+    float: left;
+    margin-left: 220px;
+    margin-right: 41px;
+    margin-top: -100px;
+}
+.jieshao p{
+    font-size: 14px;
+    color: #111;
+}
+.jieshao1{
+    float: left;
+    margin-left: 40px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+.jieshao1 p{
+    font-size: 14px;
+    color: #111;
+}
+.tupian1{
+    width: 132px;
+    height: 132px;
+    margin-right: 40px;
+    float: right;
+    margin-top: -100px;
+}
+/*高级定制服务结束*/
