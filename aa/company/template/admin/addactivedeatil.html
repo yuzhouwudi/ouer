@@ -1,0 +1,134 @@
+
+
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>content</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="{CSS_PATH}amazeui.min.css" />
+    <link rel="stylesheet" href="{CSS_PATH}admin.css">
+    <link rel="stylesheet" href="{CSS_PATH}app.css">
+    <link rel="stylesheet" href="{KIND_PATH}themes/default/default.css" />
+    <link rel="stylesheet" href="{KIND_PATH}plugins/code/prettify.css" />
+    <script charset="utf-8" src="{KIND_PATH}kindeditor-all.js"></script>
+    <script charset="utf-8" src="{KIND_PATH}lang/zh-CN.js"></script>
+    <script charset="utf-8" src="{KIND_PATH}plugins/code/prettify.js"></script>
+</head>
+
+<body>
+<div class="tpl-content-scope">
+    <div class="note note-info">
+        <h3>内容添加
+            <span class="close" data-close="note"></span>
+        </h3>
+    </div>
+</div>
+
+<div class="tpl-content-scope">
+
+    <div class="tpl-portlet-components">
+
+        <div class="tpl-block " style="padding-top: 30px">
+
+            <div class="tpl-block">
+
+                <div class="am-g">
+                    <div class="tpl-form-body tpl-form-line">
+                        <form class="am-form tpl-form-line-form" method="post" action="index.php?m=admin&f=menu&a=insertactivedeatil"  enctype="multipart/form-data">
+
+
+                            <div class="am-form-group">
+                                <label  class="am-u-sm-3 am-form-label">活动 <span class="tpl-form-line-small-title">lanmu</span></label>
+                                <div class="am-u-sm-9">
+                                    <select data-am-selected="{ searchBox: 1 }" name="pid">
+                                        <option value='0'>请选择所属活动</option>
+                                        {foreach $arr as $item}
+                                        <option value="{$item['id']}">{$item['title']}</option>
+                                        {/foreach}
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">标题 <span class="tpl-form-line-small-title">Title</span></label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" name='title' class="tpl-form-input" id="user-name" placeholder="请输入标题文字">
+                                    <small>请填写标题文字10-20字左右。</small>
+                                </div>
+                            </div>
+
+
+                            <div class="am-form-group">
+                                <label class="am-u-sm-3 am-form-label">英文标题 <span class="tpl-form-line-small-title">desc</span></label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" name='etitle' placeholder="输入英文标题 ">
+                                </div>
+                            </div>
+
+
+                            <div class="am-form-group">
+                                <label for="user-intro" class="am-u-sm-3 am-form-label">文章内容</label>
+                                <div class="am-u-sm-9">
+                                    <textarea class="" name='con' style="width:700px;height:200px;" id="user-intro" placeholder="请输入文章内容"></textarea>
+                                </div>
+                            </div>
+
+
+
+                            <div class="am-form-group">
+                                <div class="am-u-sm-9 am-u-sm-push-3">
+                                    <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">提交</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
+
+<script>
+    KindEditor.ready(function(K) {
+        var editor1 = K.create('textarea[name="con"]', {
+            cssPath : '{KIND_PATH}plugins/code/prettify.css',
+            uploadJson : '{KIND_PATH}php/upload_json.php',
+            fileManagerJson : '{KIND_PATH}php/file_manager_json.php',
+            allowFileManager : true,
+            afterCreate : function() {
+                var self = this;
+                K.ctrl(document, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+                K.ctrl(self.edit.doc, 13, function() {
+                    self.sync();
+                    K('form[name=example]')[0].submit();
+                });
+            }
+        });
+        prettyPrint();
+    });
+
+
+</script>
+
+
+
+
