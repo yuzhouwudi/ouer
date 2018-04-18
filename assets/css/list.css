@@ -14,12 +14,18 @@ i
 {
     font-style: normal;
 }
+.big_box{
+    width: 1000px;
+    height: auto;
+    background: #fdfbfb;
+    margin: 0 auto;
+    padding: 0 88px;
+    box-shadow:1px 0 100px 10px #ecebeb;
+}
 /*面包屑开始*/
 .bread{
-    width: 1200px;
+    width: 100%;
     height: 107px;
-
-    margin: 0 auto;
 }
 .bread p{
     font-size: 20px;
@@ -27,9 +33,6 @@ i
     line-height: 107px;
     margin-left: 10px;
     float: left;
-}
-.bread p:first-child{
-    margin-left: 88px;
 }
 .icon1{
     font-size: 20px;
@@ -40,12 +43,12 @@ i
 /*面包屑结束*/
 /*热门活动开始*/
 .activity{
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: 0 auto 80px;
 }
 .act_top{
-    width: 1025px;
+    width: 100%;
     height: 283px;
     margin: 0 auto;
     overflow: hidden;
@@ -58,7 +61,7 @@ i
     color: #b2b1b1;
 }
 .story{
-    width: 1200px;
+    width: 100%;
     height: 51px;
     margin: 20px auto 0;
 }
@@ -86,166 +89,112 @@ i
     color: black;
     margin-top: -10px;
     float: left;
-    margin-left: -10px;
+    margin-left: -6px;
+    font-weight: 300;
 }
-.s_right h2{
+.h2{
     font-size: 32px;
     color: black;
     line-height: 51px;
     margin-left: 5px;
+    font-weight: 700;
+    font-family: "楷体";
 }
+/*热门活动开始*/
 .remen{
     width:100%;
     height:200px;
 }
-
+.aa{
+    margin-left: -60px;
+}
 .biaoshi{
-    width:140px;
-    height:110px;
+    width:123px;
+    height:97px;
     margin-top: 45px;
-    margin-left: 60px;
     float: left;
+}
+.biaoshi img{
+    width: 100%;
 }
 .remen-img{
-    width:319px;
-    height:200px;
+    width:276px;
+    height:166px;
     float: left;
 }
+.remen-img img{
+    width: 100%;
+    box-shadow:1px 0 10px 5px #ecebeb;
+}
 .remen-content{
-    width:660px;
-    height:150px;
-    margin-top: 25px;
+    width:478px;
+    height:103px;
+    margin-top: -135px;
     border-bottom: 2px #ccc solid;
     border-top: 2px #ccc solid;
     float: left;
+    margin-left: 395px;
 }
-.remen-content h1{
+.bb{
+    margin-left: 400px;
+    width:535px;
+    height:103px;
+}
+.h1{
     display: block;
     width:260px;
     height:30px;
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 16px;
     margin-left: 50px;
     color: #3e3e3e;
     float: left;
+    font-weight: 600;
 }
 .remen-content h2{
     display: block;
-    width:300px;
-    height:30px;
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 16px;
     color: #c4c1c1;
     float: left;
 }
 .remen-content p{
     width:700px;
     height:30px;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 50px;
-    margin-top: 10px;
-    color: #c4c1c1;
+    color: #4B4949;
     float: left;
 }
 .remen-content span:nth-child(4){
     display: block;
     width:70px;
     height:30px;
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: 12px;
     margin-left: 50px;
-    color: #c4c1c1;
+    color: #4B4949;
     float: left;
 }
 .remen-content span:nth-child(5){
     display: block;
     width:70px;
     height:30px;
-    font-size: 13px;
-    margin-top: 10px;
+    font-size: 12px;
+    /*margin-top: 10px;*/
     margin-left: 50px;
-    color: #c4c1c1;
+    color: #4B4949;
     float: left;
 }
-.remen1{
-    width:100%;
-    height:200px;
-    margin-top: 40px;
-}
-.biaoshi1{
-    width:140px;
-    height:110px;
-    margin-top: 45px;
-    float: left;
-}
-.remen-content1{
-    width:720px;
-    height:150px;
-    margin-top: 25px;
-    border-bottom: 2px #ccc solid;
-    border-top: 2px #ccc solid;
-    float: left;
-}
-.remen-content1 h1{
-    display: block;
-    width:260px;
-    height:30px;
-    font-size: 22px;
-    margin-top: 30px;
-    margin-left: 50px;
-    color: #3e3e3e;
-    float: left;
-}
-.remen-content1 h2{
-    display: block;
-    width:300px;
-    height:30px;
-    font-size: 22px;
-    margin-top: 30px;
-    color: #c4c1c1;
-    float: left;
-}
-.remen-content1 p{
-    width:700px;
-    height:30px;
-    font-size: 16px;
-    margin-left: 50px;
-    margin-top: 10px;
-    color: #c4c1c1;
-    float: left;
-}
-.remen-content1 span:nth-child(4){
-    display: block;
-    width:70px;
-    height:30px;
-    font-size: 13px;
-    margin-top: 10px;
-    margin-left: 50px;
-    color: #c4c1c1;
-    float: left;
-}
-.remen-content1 span:nth-child(5){
-    display: block;
-    width:70px;
-    height:30px;
-    font-size: 13px;
-    margin-top: 10px;
-    margin-left: 50px;
-    color: #c4c1c1;
-    float: left;
-}
-.Three{
-    margin-top: 40px;
-}
+/*分页*/
 .paging{
     width:400px;
     height:40px;
+    margin: 0 auto;
 }
 .paging ul{
     width:100%;
     height:100%;
     margin-top: 40px;
-    margin-left: 400px;
 }
 .paging ul .active{
     background: #a9a9a9;
@@ -261,11 +210,22 @@ i
     text-align: center;
     margin-left: 20px;
 }
+/*中间图*/
 .middle{
-    width:100%;
+    width:1000px;
     height:206px;
     margin-top: 50px;
+    margin-left: -88px;
 }
+.middle img{
+    width: 100%;
+}
+
+.renwu{
+    width: 100%;
+    height: 500px;
+}
+
 .whole{
     width:45%;
     height:145px;
@@ -274,85 +234,62 @@ i
     margin-top: 30px;
 }
 .whole-img{
-    height: 100%;
+    width: 168px;
+    height: 122px;
     margin-left: 30px;
     float: left;
+}
+.whole-img img{
+    width: 100%;
 }
 .whole-ziti{
     width:290px;
     height:100%;
     float: left;
-    margin-left: 18px;
+    margin-left: 220px;
+    margin-top: -150px;
 }
 .whole-ziti span:nth-child(1){
     display: block;
     width:100%;
     height:25px;
     font-size: 14px;
-    color: #d7d4d4;
+    color: #CAC7C7;
     margin-top: 30px;
+}
+.whole-ziti p{
+    display: block;
+    font-size: 18px;
+    color: #474749;
 }
 .whole-ziti h1{
     display: block;
-    width:100%;
-    height:25px;
-    font-size: 22px;
+    font-size: 18px;
     color: #474749;
 }
-.whole-ziti h2{
-    display: block;
-    width:100%;
-    height:25px;
-    font-size: 18px;
+
+.whole-ziti p{
+    font-size: 16px;
     color: #888686;
     margin-top: 5px;
 }
 .whole-ziti span:nth-child(4){
     display: block;
-    width:25%;
-    height:25px;
-    font-size: 14px;
-    color: #d7d4d4;
+    font-size: 12px;
+    color: #747373;
     float: left;
     margin-top: 10px;
 }
 .whole-ziti span:nth-child(5){
     display: block;
-    width:25%;
-    height:25px;
-    font-size: 14px;
-    color: #d7d4d4;
+    font-size: 12px;
+    color: #747373;
     float: left;
     margin-top: 10px;
 }
-.paging1{
-    width:400px;
-    height:40px;
-    float: left;
+.gao{
+    height: 220px;
 }
-.paging1 ul{
-    width:100%;
-    height:100%;
-    margin-top: 40px;
-    margin-left: 400px;
-}
-.paging1 ul .active{
-    background: #a9a9a9;
-}
-.paging1 ul li{
-    width:30px;
-    height:30px;
-    border-radius: 50%;
-    float: left;
-    background: #292420;
-    color: #fff;
-    line-height: 30px;
-    text-align: center;
-    margin-left: 20px;
-}
-
-
-
 
 
 
