@@ -1,21 +1,23 @@
 
 .top{
     width:100%;
-    height:550px;
+    height:500px;
     background: #000;
     overflow: hidden;
 }
 .neikuan{
     width:1000px;
-    height:450px;
-    padding-top: 40px;
+    /*height:450px;*/
+    height: 500px;
+    /*padding-top: 40px;*/
+    padding-top: 30px;
     margin: 0 auto;
 }
 .banner{
     width:750px;
     height:100%;
-    background: red;
     float: left;
+    overflow: hidden;
 }
 .lanmo{
     width: 200px;
@@ -27,7 +29,9 @@
     height: 60px;
     margin-bottom: 10px;
 }
-
+.lanmo li:first-child{
+    margin-top: 15px;
+}
 .lanmo li span{
     display: block;
     width:100px;
@@ -69,14 +73,14 @@
 .changping-top{
     width:100%;
     height:70px;
-    margin-top: 150px;
+    margin: 90px 0 0;
 }
 .changping-top p{
-
     height:40px;
-    font-size: 22px;
+    font-size: 32px;
     text-align: center;
     color: #f85669;
+    margin-bottom: 10px;
 }
 .changping-top p:nth-child(2){
 
@@ -135,6 +139,20 @@ div.h1{
     height:100%;
     float: left;
 }
+.jiayi-right>ul>li{
+    overflow: hidden;
+}
+.jiayi-right1>ul>li{
+    overflow: hidden;
+}
+.jiayi-right>ul>li>img{
+    width: auto;
+    height: 100%;
+}
+.jiayi-right1>ul>li>img{
+    width: auto;
+    height: 100%;
+}
 .jiayi-right ul{
     width:100%;
     height:100%;
@@ -152,7 +170,6 @@ div.h1{
     line-height: 40px;
     text-align: center;
     margin-top: 10px;
-    margin-left: 10px;
 }
 .jiayi2{
     width:100%;
@@ -233,35 +250,20 @@ div.h1{
     width:100%;
     height:auto;
 }
-.pingpai-top{
-    width:100%;
-    height:70px;
-   text-align: center;
-    margin-top: 80px;
-}
-.pingpai-top p{
-    height:40px;
-    font-size: 22px;
-    text-align: center;
-    color: #f85669;
-}
-.pingpai-top p:nth-child(2){
-    height:20px;
-    font-size: 16px;
-    color: #8d8d8d;
-}
+
 .pingpai-content{
     width:100%;
-    height:700px;
+    height:670px;
+    overflow: hidden;
     margin-top: 60px;
 }
 .pingpai-img{
-    width:35%;
+    width:36%;
     height:470px;
     float: left;
 }
 .pingpai-wenzi{
-    width:40%;
+    width:34%;
     height:510px;
     float: left;
 }
@@ -269,13 +271,13 @@ div.h1{
     width:100%;
     height:400px;
     margin: 50px auto;
-    padding: 0 30px;
+    padding: 0 50px;
 }
 .pingpai-wenzi h1{
     margin-left: 10px;
 }
 .pingpai-wenzi p{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 50px;
 }
 .pingpai-wenzi span{
@@ -289,25 +291,29 @@ div.h1{
     color: #716f6f;
 }
 .pingpai-right{
-    width:25%;
+    width:30%;
     height:100%;
     float: right;
 }
 .pingpai-botoom-img{
-    width:746px;
+    width:70%;
     height:200px;
     float: left;
-    margin-top: 22px;
+
 
 }
 .pingpai-botoom-img ul{
     width:100%;
     height:200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .pingpai-botoom-img ul li{
-    width:185px;
-    height:170px;
+    width:25%;
+    height:160px;
     float:left;
+    overflow: hidden;
     padding-right: 20px;
 }
 .pingpai-botoom-img ul li:nth-last-child{
@@ -319,10 +325,10 @@ div.h1{
     border: 2px #ccc solid;
     margin: 30px auto;
     font-size: 20px;
-
     line-height: 50px;
     text-align: center;
 }
+
 /*品牌故事结束*/
 /*官方活动开始*/
 .guanfang{
@@ -330,24 +336,7 @@ div.h1{
     height:auto;
     overflow: hidden;
 }
-.guanfang-top{
-    width:300px;
-    height:70px;
-   margin: 50px auto 20px;
-}
-.guanfang-top p{
-    width:300px;
-    height:40px;
-    font-size: 22px;
-    text-align: center;
-    color: #f85669;
-}
-.guanfang-top p:nth-child(2){
-    width:300px;
-    height:20px;
-    font-size: 16px;
-    color: #8d8d8d;
-}
+
 .guanfang-content{
     width:100%;
     height:100%;
@@ -358,7 +347,7 @@ div.h1{
 }
 .guanfang-nei{
     width:30%;
-    height:580px;
+    height:530px;
 
 }
 .nei{
@@ -399,48 +388,31 @@ div.h1{
     height:auto;
     overflow: hidden;
 }
-.xinwen-top{
-    width:300px;
-    height:70px;
-    margin-top: 150px;
-    margin-left: 440px;
-}
-.xinwen-top p{
-    width:300px;
-    height:40px;
-    font-size: 22px;
-    text-align: center;
-    color: #f85669;
-}
-.xinwen-top p:nth-child(2){
-    width:300px;
-    height:20px;
-    font-size: 16px;
-    color: #8d8d8d;
-}
+
 .xinwen-content{
     width:100%;
-    height: 690px;
+    height: 560px;
     margin-top: 60px;
 }
 .xinwen-img{
-    width: 540px;
-    height:610px;
+    width: 45%;
+    height:500px;
     float: left;
 }
+
 .xinwen-ziti{
-    width:600px;
-    height:403px;
+    width:55%;
+    height:327px;
     border-top:1px #ccc solid ;
     border-bottom:1px #ccc solid ;
     float: left;
-    margin-top: 83px;
+    padding: 50px 0;
+    margin-top: 67px;
 }
 .xinwen-ziti span{
     display: block;
     width:500px;
     height:40px;
-    margin-top: 80px;
     margin-left: 50px;
     font-size: 24px;
     color: #494849;
@@ -456,8 +428,8 @@ div.h1{
 .xinwen-ziti p{
     display: block;
     width:500px;
-    height:40px;
-    margin-top: 20px;
+   margin-bottom: 20px;
+    margin-top: 10px;
     margin-left: 50px;
     font-size: 16px;
     color: #7a7a7a;
@@ -468,37 +440,35 @@ div.h1{
 }
 .qiye{
     width:100%;
-    height:110px;
+    height:100px;
     border-bottom: 1px #ccc solid;
     border-top: 1px #ccc solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.qiye span:nth-child(1){
-    display: block;
-    width:100px;
+.qiye_title{
+    width:120px;
     height:40px;
     background: #50504f;
     color: #878685;
     line-height: 40px;
     text-align: center;
     font-size: 16px;
-    margin-top: 34px;
-    float: left;
 }
-.qiye span:nth-child(2){
+.qiye_descr{
     display: block;
     width:900px;
-    float: left;
     height:40px;
-    margin-top: 43px;
     font-size: 20px;
     color: #040404;
-    text-align: center;
+    margin-left: 100px;
+    margin-top: 8px;
 }
 .item{
     width:200px;
     float: right;
     height:40px;
-    margin-top: 43px;
     font-size: 16px;
     color: #c7c5c5;
     line-height: 40px;
@@ -507,13 +477,11 @@ div.h1{
     width:130px;
     height:50px;
     border: 2px #ccc solid;
-    margin-top: 140px;
-    margin-left: 532px;
+   margin: 40px auto 60px;
     font-size: 20px;
-    float: left;
     line-height: 50px;
     text-align: center;
-    margin-bottom: 50px;
+
 }
 /*新闻资讯结束*/
 /*底部开始*/
@@ -523,28 +491,26 @@ div.h1{
     position: relative;
 }
 .bottom-neikuan{
-    width:100%;
+    width:1000px;
     height:100%;
     margin: 0 auto;
     position: relative;
 }
 .wedd{
     width:1050px;
-    height:275px;
+    height:255px;
     z-index: 999;
     float: left;
-    margin-left: 50px;
 }
 img{
     width:100%;
-    height:100%;
 }
 .bottom-zhong{
-    width:1000px;
+    width:80%;
     height:222px;
     position: absolute;
-    top: 275px;
-    left: 100px;
+    top: 255px;
+    left: 10%;
     z-index: 999;
 }
 .bottom-wenzi{
@@ -552,13 +518,12 @@ img{
     bottom: -50px;
     left: 0;
     width:100%;
-    height:480px;
     background: #000;
     float: left;
     overflow: hidden;
 }
 .kuan{
-    width:100%;
+    width:1000px;
     height:100%;
     margin :0 auto;
     overflow: hidden;
@@ -566,16 +531,39 @@ img{
 .bottom-wenzi ul{
     width:100%;
     height:200px;
-    margin-top: 160px;
+    margin-top: 100px;
     border-bottom: 1px #ccc solid;
 }
 .bottom-wenzi ul li{
-    width:160px;
+    width:15%;
     height:200px;
     float: left;
     margin-left: 20px;
 }
+.bottom-wenzi ul .diyi{
+    margin-left: 0;
+}
+.bottom-wenzi ul .zhongxin1{
+    width:20%;
+    height:200px;
+    text-align: center  ;
+}
+.img{
+    width:500px;
+    height:100px;
+    float: left;
+    margin-top: 30px;
+}
 
+.img-img{
+    width:70px;
+    height:70px;
+    float: left;
+    margin-left: 25px;
+}
+.img1{
+    margin-left: 0;
+}
 .zhongxin{
     width:100%;
     height:60px;
@@ -605,29 +593,11 @@ img{
     font-size: 14px;
     color: #c5e3e0;
 }
-.zhongxin1{
-    width:480px;
-    height:200px;
-    float: right;
-    text-align: center  ;
-}
-.img{
-    width:500px;
-    height:100px;
-    float: left;
-    margin-top: 30px;
-    margin-left: 42px;
-}
 
-.img-img{
-    width:100px;
-    height:100px;
-    float: left;
-    margin-left: 25px;
-}
 .yingye{
     width:100%;
     height: 90px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 .yingye-nei{
