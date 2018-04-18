@@ -15,12 +15,19 @@ i
 {
     font-style: normal;
 }
+.main{
+    width: 1000px;
+    height: auto;
+    background: #fdfbfb;
+    margin: 0 auto;
+    padding: 0 88px;
+    box-shadow:1px 0 100px 10px #ecebeb;
+}
 /*面包屑开始*/
 .bread{
-    width: 1200px;
+    width: 100%;
     height: 107px;
-    background: pink;
-    margin: 0 auto;
+
 }
 .bread p{
     font-size: 20px;
@@ -29,9 +36,7 @@ i
     margin-left: 10px;
     float: left;
 }
-.bread p:first-child{
-    margin-left: 88px;
-}
+
 .icon1{
     font-size: 20px;
     color: black;
@@ -41,16 +46,22 @@ i
 /*面包屑结束*/
 /*热门活动开始*/
 .activity{
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: 0 auto 80px;
 }
+.line{
+    width: 1000px;
+    height: 5px;
+    background: #e7e0e0;
+    margin-left: -88px;
+}
 .act_top{
-    width: 1025px;
+    width: 100%;
     height: 283px;
     margin: 0 auto;
     overflow: hidden;
-    border-bottom: 5px solid #e7e0e0;
+
 }
 .logo{
     margin-top: 66px;
@@ -60,7 +71,7 @@ i
     color: #b2b1b1;
 }
 .story{
-    width: 1200px;
+    width: 100%;
     height: 51px;
     margin: 20px auto 0;
 }
@@ -97,10 +108,14 @@ i
     margin-left: 5px;
 }
 .wenzi{
-    width: 1200px;
-    height: 366px;
+    width: 100%;
+
     overflow: hidden;
 }
+.wenzi_title{
+    text-align: center;
+}
+
 .wenzi h1{
     font-size: 35px;
     color: black;
@@ -124,85 +139,57 @@ i
 .wenzi p{
     font-size: 28px;
     color: #504e4e;
-    margin-top: 60px;
-    margin-left: 530px;
+    text-align: center;
+    margin: 30px 0;
 }
+
+
 .introduce{
-    width:1200px;
-    height: 162px;
-    margin: 0 auto;
+    width:100%;
+    height: 122px;
+    padding: 0 30px;
     /*background: skyblue;*/
     overflow: hidden;
 }
-.introduce h1{
+.intro_title{
+    text-align: center;
+}
+.introduce .h1{
     font-size: 21px;
     color: black;
     font-family: "宋体";
-    margin-left: 320px;
-    float: left;
+
 }
-.introduce h2{
+.introduce .h2{
     font-size: 21px;
     color: #9e9999;
-    margin-left: 15px;
-    margin-top: -2px;
+
+
 }
 .zi1{
     font-size: 12px;
     color: #9e9999;
     text-align: center;
-    margin-top: 36px;
+    margin-top: 20px;
 }
 .introduce p{
     font-size: 12px;
     color: #9e9999;
     text-align: center;
 }
-.introduce1{
-    width:1200px;
-    height: 162px;
-    margin: 0 auto;
-    /*background: skyblue;*/
-    overflow: hidden;
-}
-.introduce1 h1{
-    font-size: 21px;
-    color: black;
-    font-family: "宋体";
-    margin-left: 355px;
-    float: left;
-}
-.introduce1 h2{
-    font-size: 21px;
-    color: #9e9999;
-    margin-left: 15px;
-    margin-top: -2px;
-}
-.zi1{
-    font-size: 12px;
-    color: #9e9999;
-    text-align: center;
-    margin-top: 36px;
-}
-.introduce1 p{
-    font-size: 12px;
-    color: #9e9999;
-    text-align: center;
-}
+
 .red{
-    width: 1200px;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 .red img{
     width: 100%;
 }
-.in_zi{
-    margin-top: 56px;
-}
+
 .yinwen{
-    width: 1200px;
-    height: 184px;
+    width: 100%;
+    height: 120px;
 }
 .yinwen p{
     font-size: 12px;
@@ -214,7 +201,7 @@ i
 }
 /*一键分享*/
 .share{
-    width: 1200px;
+    width: 100%;
     height: 92px;
 }
 .share p{
@@ -232,16 +219,17 @@ i
     margin-right: 10px;
 }
 .page{
-    width: 1025px;
+    width: 100%;
     height: 70px;
     background: #773a3a;
     margin: 15px auto 0;
+    display: flex;
+    justify-content: space-between;
 }
 .pa_left{
     width: 268px;
     height: 70px;
-    float: left;
-    margin-left: 96px;
+    margin-left: 50px;
 }
 .pa_left h1{
     font-size: 20px;
@@ -257,14 +245,15 @@ i
 .pa_right{
     width: 268px;
     height: 70px;
-    float: right;
-    margin-right: 96px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
 .pa_right h1{
     font-size: 20px;
     color: #fff;
     line-height: 70px;
-    float: left;
+
 }
 .pa_right p{
     font-size: 16px;
@@ -274,41 +263,42 @@ i
 /*热门活动结束*/
 /*评论开始*/
 .comment{
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
 .aa{
-    width: 1025px;
+    width: 100%;
     height: 85px;
     border-bottom: 5px solid #e7e0e0;
 }
 .com_box{
-    width: 1025px;
+    width: 100%;
     height: 156px;
     /*background: skyblue;*/
     margin: 25px auto 0;
 }
 .com_tu{
-    width: 96px;
-    height: 96px;
+    width: 85px;
+    height: 85px;
 }
 .com_tu img{
     width: 100%;
 }
 .com_word{
-    width: 985px;
-    height: 110px;
+    width: 800px;
+    height: 100px;
     background: #f5f1f1;
-    margin-left: 40px;
+    margin-left: 30px;
     margin-top: -65px;
     overflow: hidden;
 }
+
 .icon3{
     font-size: 26px;
     color: #a29f9f;
-    margin-left: 78px;
-    margin-right: 15px;
+    margin-left: 65px;
+    margin-right: 5px;
     line-height: 50px;
     float: left;
 }
@@ -329,10 +319,11 @@ i
 .com_word p{
     font-size: 12px;
     color: #6d6a6a;
-    margin-left: 122px;
+    margin-left: 95px;
+    padding-right: 30px;
 }
 .fenye{
-    width: 1025px;
+    width: 100%;
     height: 80px;
     margin: 0 auto;
     background: pink;
@@ -347,7 +338,7 @@ i
 }
 /*留言开始*/
 .message{
-    width: 1025px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -388,19 +379,25 @@ i
     margin-left: 10px;
 }
 .liuyan{
-    width: 890px;
+    width: 100%;
     height: 100px;
     background: #f3f3f3;
     border: 2px solid #848383;
-    margin-left: 20px;
     margin-top: 50px;
 }
 .anniu{
     width: 117px;
     height: 40px;
     background: #464444;
-    margin-left: 900px;
     margin-top: 30px;
     color: #fff;
+    position: absolute;
+    right: 0;
+}
+.liuyanbox{
+    width: 100%;
+    height: 400px;
+    position: relative;
+
 }
 
