@@ -18,37 +18,59 @@ i
 /*body{*/
     /*background: #f5f5f5;*/
 /*}*/
-.big_box{
-    width: 1000px;
-    height: auto;
-    background: #fdfbfb;
-    margin: 0 auto;
-    box-shadow:1px 0 100px 10px #ecebeb;
-}
+
 /*面包屑开始*/
-.bread{
-    width: 100%;
-    height: 107px;
-    background: pink;
-    margin: 0 auto;
+.crumbs{
+    width: 1000px;
+    height: 80px;
+    padding: 0 88px;
+    line-height: 80px;
+    background: #fdfbfb;
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 100;
+    display: flex;
 }
-.bread p{
-    font-size: 20px;
+.crumbs p{
+    font-size: 18px;
     color: black;
-    line-height: 107px;
-    margin-left: 10px;
-    float: left;
+    font-weight: 600;
+    line-height: 80px;
+    margin-right: 10px;
+    position: relative;
 }
-.bread p:first-child{
-    margin-left: 88px;
+.crumbs>.ico_x{
+    margin-right:10px ;
+    text-align: center;
 }
 .icon1{
     font-size: 20px;
     color: black;
-    line-height: 107px;
-    margin-left: 10px;
+    line-height: 80px;
+}
+.home,.erji{
+    position: relative;
+    display: flex;
+}
+
+.underline{
+    width: 40px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
 }
 /*面包屑结束*/
+.big_box{
+    width: 1000px;
+    height: auto;
+    background: #fdfbfb;
+    box-shadow:0 20px 50px 10px #ecebeb;
+    margin: 0 auto 0;
+}
 /*中间大图开始*/
 .pic{
     width: 100%;
@@ -63,8 +85,8 @@ i
 .box{
     width: 100%;
     height: auto;
-    background: #ffffff;
-    margin: 0 auto 64px;
+    background: #fdfbfb;
+    margin: 0 auto 0;
 }
 .story{
     width: 100%;
@@ -106,17 +128,11 @@ i
     font-weight: 700;
     font-family: "楷体";
 }
-/*.s_right h2{*/
-    /*font-size: 32px;*/
-    /*color: black;*/
-    /*line-height: 51px;*/
-    /*margin-left: 5px;*/
-    /*font-weight: 600;*/
-/*}*/
 .word{
     width: 1000px;
     height: 209px;
     margin-top: 46px;
+    margin-bottom: 30px;
 }
 .h5{
     font-size: 20px;
@@ -124,11 +140,6 @@ i
     margin-left: 200px;
     font-weight: 500;
 }
-/*.word h5{*/
-    /*font-size: 20px;*/
-    /*color: #000;*/
-    /*margin-left: 200px;*/
-/*}*/
 .zi{
     font-size: 17px;
     color: #b9b7b7;
@@ -176,15 +187,36 @@ i
     height: 533px;
     margin-left: 151px;
     float: left;
+    position: relative;
 }
 .tu1 img {
     width: 100%;
+}
+.zhezhao{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.tu1:hover .zhezhao{
+    background: rgba(0, 0, 0, 0.5);
+}
+.tu2:hover .zhezhao{
+    background: rgba(0, 0, 0, 0.5);
+}
+.tu3:hover .zhezhao{
+    background: rgba(0, 0, 0, 0.5);
 }
 .tu2{
     width: 130px;
     height: 130px;
     float: left;
     margin-left: 45px;
+    position: relative;
 }
 .tu2 img{
     width: 100%;
@@ -195,6 +227,7 @@ i
     margin-left: 81px;
     margin-top: 46px;
     float: left;
+    position: relative;
 }
 .tu3 img{
     width: 100%;

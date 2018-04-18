@@ -1,27 +1,39 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>单页</title>
-    <link rel="stylesheet" href="../../assets/css/danye.css">
-</head>
-<body>
-<div class="big_box">
-<!--面包屑开始-->
-<section class="bread">
+{include file='header.html'}
+<link rel="stylesheet" href="{CSS_PATH}danye.css">
+
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<meta name="viewport"-->
+          <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <!--<title>单页</title>-->
+    <!--<link rel="stylesheet" href="../../assets/css/danye.css">-->
+<!--</head>-->
+<!--<body>-->
+<div class="crumbs">
+    <div class="home">
         <p>HOME</p>
         <p>首页</p>
-    <p><i class="iconfont icon1">&#xe8f0;</i></p>
+        <div class="underline"></div>
+    </div>
+    <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
+    <div class="erji">
         <p>BRAND</p>
         <p>品牌</p>
-</section>
+        <div class="underline"></div></div>
+</div>
+
+
+
+<div class="big_box">
+<!--面包屑开始-->
+
 <!--面包屑结束-->
 <!--中间大图-->
 <section class="pic">
-    <img src="../../assets/img/middle.png" alt="">
+    <img src="{IMG_PATH}middle.png" alt="">
 </section>
 <!--中间大图结束-->
 <!--品牌故事开始-->
@@ -34,7 +46,6 @@
         <div class="s_right">
             <p>/</p>
             <div class="h2">&nbsp;品牌故事</div>
-            <!--<h2>&nbsp;品牌故事</h2>-->
         </div>
     </div>
     <div class="word">
@@ -65,7 +76,6 @@
     </div>
     <div class="word">
         <div class="h5">品牌创始人兼首席设计师</div>
-        <!--<h5>品牌创始人兼首席设计师</h5>-->
         <p class="zi">Brand founder and chief designer</p>
         <p class="content1">她是中国婚纱品牌第一人</p>
         <p class="content">第一位创造属于中国人的婚纱品牌</p>
@@ -89,13 +99,16 @@
 <!--图片开始-->
 <section class="picture">
     <div class="tu1">
-        <img src="../../assets/img/tu1.png" alt="">
+        <img src="{IMG_PATH}tu1.png" alt="">
+        <div class="zhezhao"></div>
     </div>
     <div class="tu2">
-        <img src="../../assets/img/ren.png" alt="">
+        <img src="{IMG_PATH}ren.png" alt="">
+        <div class="zhezhao"></div>
     </div>
     <div class="tu3">
-        <img src="../../assets/img/tu3.png" alt="">
+        <img src="{IMG_PATH}tu3.png" alt="">
+        <div class="zhezhao"></div>
     </div>
 </section>
 <!--图片结束-->
@@ -122,7 +135,7 @@
     </div>
     <div class="port">
         <div class="tupian">
-            <img src="../../assets/img/gaoji1.png" alt="">
+            <img src="{IMG_PATH}gaoji1.png" alt="">
         </div>
         <div class="jieshao">
             <p>面料是口碑，来自世界各地面料商的高级面料。而什么面料能够最大程度上让某一个设计看起来更完美，包括在照片中会呈现出什么样的效果这种细节，
@@ -134,12 +147,12 @@
             <p>虽然是“穿得起”的定制，但我们也是带着高级定制精神来制作完成的。需要手工完成的部分同样会有技艺精湛的工匠师来手工制作。</p>
         </div>
         <div class="tupian1">
-            <img src="../../assets/img/gaoji2.png" alt="">
+            <img src="{IMG_PATH}gaoji2.png" alt="">
         </div>
     </div>
     <div class="port">
         <div class="tupian">
-            <img src="../../assets/img/gaoji3.png" alt="">
+            <img src="{IMG_PATH}gaoji3.png" alt="">
         </div>
         <div class="jieshao">
             <p>高质量的面料本身就是舒适度的保证，用真丝面料做内衬，用不同的纱代替裙撑，连裙子的重量都替你操心好了。</p>
@@ -148,5 +161,8 @@
 </section>
 <!--高级定制服务结束-->
 </div>
+
+{include file='footer.html'}
+
 </body>
 </html>
