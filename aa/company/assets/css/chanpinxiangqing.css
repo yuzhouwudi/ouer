@@ -1,0 +1,300 @@
+.max{
+    width: 1200px;
+    margin: 0 auto;
+    /*position: relative;*/
+    background: #fdfbfb;
+    overflow: hidden;
+    padding-left:  92px;
+
+    box-sizing: border-box;
+}
+.topleft{
+    height: auto;
+    width:auto;
+    /*position: absolute;*/
+    margin-top:86px;
+
+}
+.line{
+    height:2px;
+    width:97px;
+    background: #7f2d00;
+}
+.font{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+.fontleft{
+    font-size: 28px;
+    color: #a97254;
+    letter-spacing: 2px;
+}
+.fontright{
+    margin-left: 20px;
+    font-size: 19px;
+    color: #804423;
+}
+.productoppr{
+    color: #212121;
+    font-size: 23px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+.opprbottom{
+    letter-spacing: 8px;
+    font-size: 19px;
+    color:#d2d1d1;
+    margin-top: 8px;
+}
+.wedding{
+    margin-top: 90px;
+}
+.wedtop{
+    color:  #804423;
+    font-size: 17px;
+}
+.wedmid>span{
+    font-size: 25px;
+}
+.wedmid{
+    font-size: 19px;
+}
+.wedbot{
+    color: #929090;
+    font-size: 20px;
+    margin-top: 13px;
+    letter-spacing: 1.5px;
+}
+.wedbottom{
+    width:1024px;
+    height:514px;
+    display: flex;
+    margin-top: 38px;
+}
+.wedleft{
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+    background: red;
+}
+.wedright{
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+    background: red;
+}
+.design{
+    width:277px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+.box{
+    width: 13px;
+    height:13px;
+    background: #000;
+}
+.lange{
+ color: #000;
+    font-size: 30px;
+}
+.elange{
+    font-size: 15px;
+    color:#804423 ;
+}
+.des{
+    width:800px;
+   margin:0 auto;
+    margin-top: 90px;
+    display: flex;
+}
+.desboder{
+    width:250px;
+    height:250px;
+    border: 1px solid #7d0022;
+}
+.desimg{
+    width:190px;
+    height:190px;
+    overflow: hidden;
+    background: red;
+    margin: 30px auto;
+}
+.desspack{
+    width:500px;
+    height: 250px;
+    margin-left: 40px;
+}
+.jiedu{
+    margin-top: 10px;
+}
+.spack{
+    margin-top: 20px;
+    background: red;
+    height: 180px;
+}
+.zuopin{
+    width:965px;
+    height:515px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.zuopinimg{
+    width:255px;
+    height:100%;
+    overflow: hidden;
+    background: red;
+}
+.zuopinmid{
+    width:333px;
+    height: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.midtop{
+    width:100%;
+    height:270px;
+}
+.midbot{
+    width:100%;
+    height: 230px;
+}
+.zuopinright{
+    width:300px;
+    height:434px;
+    margin-top: 80px;
+    background: red;
+    overflow: hidden;
+}
+.light{
+    margin-top: 65px;
+    width: 100%;
+    height:1150px;
+}
+.lightone{
+    width:510px;
+    height:460px;
+   float: left;
+ position: relative;
+}
+.onetop{
+    font-size: 30px;
+    color: #7d0022;
+    margin-top: 0;
+    position: relative;
+}
+.onetop>span{
+    position: absolute;
+    left: 80px;
+    top:5px;
+    display: block;
+    font-size: 27px;
+    color:#383737 ;
+    margin-top: 10px;
+}
+.leftimg{
+    width:293px;
+    height:293px;
+    padding:4px;
+    position: absolute;
+    left: 0;
+    top:90px;
+     overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.leftimg>img{
+    display: block;
+    width:100%;
+    height:100%;
+    background: red;
+    border-radius: 50%;
+}
+.rightimg{
+    width:240px;
+    height:240px;
+    padding:4px;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+
+}
+.rightimg>img{
+    display: block;
+    width:100%;
+    height:100%;
+    background: red;
+    border-radius: 50%;
+}
+.wenzi{
+    width:190px;
+    height:64px;
+    position: absolute;
+    right: 0;top:138px;
+    background: yellow;
+}
+.two{
+    margin-top: 388px;
+}
+.three{
+    margin-top: -165px;
+}
+.gongyi{
+    width:461px;
+    height:403px;
+    margin-right: 92px;
+    float: left;
+    margin-top: 60px;
+}
+.gongyiimg{
+    width:100%;
+    height:306px;
+    overflow: hidden;
+    background:red;
+}
+.gongyiimg>img{
+    width:100%;
+    height:100%;
+}
+.zhuti{
+    width:100%;
+    height:50px;
+    background: yellow;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.zhuwen{
+    display: block;
+    margin:0 auto;
+    width:278px;
+    text-align: center;
+    line-height: 27px;
+    font-size: 13px;
+}
+.IMG{
+    width:833px;
+    height: 845px;
+    background: red;
+    margin: 97px 80px 0 100px  ;
+    margin-bottom: -40px;
+}
+.kongbai{
+    height:40px;
+    width: 100%;
+}
+
+
+
+
+
+
