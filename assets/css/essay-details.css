@@ -99,13 +99,16 @@ i
     color: black;
     margin-top: -10px;
     float: left;
-    margin-left: -10px;
+    margin-left: -6px;
+    font-weight: 300;
 }
-.s_right h2{
+.h2{
     font-size: 32px;
     color: black;
     line-height: 51px;
-    margin-left: 5px;
+    /*margin-left: 3px;*/
+    font-weight: 700;
+    font-family: "楷体";
 }
 .wenzi{
     width: 100%;

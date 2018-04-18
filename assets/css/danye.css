@@ -15,9 +15,19 @@ i
 {
     font-style: normal;
 }
+/*body{*/
+    /*background: #f5f5f5;*/
+/*}*/
+.big_box{
+    width: 1000px;
+    height: auto;
+    background: #fdfbfb;
+    margin: 0 auto;
+    box-shadow:1px 0 100px 10px #ecebeb;
+}
 /*面包屑开始*/
 .bread{
-    width: 1200px;
+    width: 100%;
     height: 107px;
     background: pink;
     margin: 0 auto;
@@ -41,30 +51,30 @@ i
 /*面包屑结束*/
 /*中间大图开始*/
 .pic{
-    width: 1200px;
+    width: 100%;
     height: 557px;
-    /*background: skyblue;*/
     margin: 0 auto;
+}
+.pic img{
+    width: 100%;
 }
 /*中间大图结束*/
 /*品牌故事开始*/
 .box{
-    width: 1200px;
+    width: 100%;
     height: auto;
     background: #ffffff;
     margin: 0 auto 64px;
 }
 .story{
-    width: 1200px;
+    width: 100%;
     height: 51px;
     margin: 0 auto;
-    /*background: pink;*/
 }
 .s_left{
     width: 117px;
     height: 51px;
-    /*background: yellow;*/
-    margin-left: 184px;
+    margin-left: 150px;
     float: left;
 }
 .s_left h1{
@@ -78,7 +88,6 @@ i
 .s_right{
     width: 250px;
     height: 51px;
-    /*background: greenyellow;*/
     float: left;
 }
 .s_right p{
@@ -86,53 +95,68 @@ i
     color: black;
     margin-top: -10px;
     float: left;
+    margin-left: -6px;
+    font-weight: 300;
 }
-.s_right h2{
+.h2{
     font-size: 32px;
     color: black;
     line-height: 51px;
     margin-left: 5px;
+    font-weight: 700;
+    font-family: "楷体";
 }
+/*.s_right h2{*/
+    /*font-size: 32px;*/
+    /*color: black;*/
+    /*line-height: 51px;*/
+    /*margin-left: 5px;*/
+    /*font-weight: 600;*/
+/*}*/
 .word{
-    width: 1200px;
+    width: 1000px;
     height: 209px;
-    /*background: skyblue;*/
     margin-top: 46px;
 }
-.word h5{
+.h5{
     font-size: 20px;
     color: #000;
-    margin-left: 225px;
+    margin-left: 200px;
+    font-weight: 500;
 }
+/*.word h5{*/
+    /*font-size: 20px;*/
+    /*color: #000;*/
+    /*margin-left: 200px;*/
+/*}*/
 .zi{
     font-size: 17px;
     color: #b9b7b7;
-    margin-left: 225px;
+    margin-left: 200px;
 }
 .content{
     font-size: 13px;
     color: #6b6a6a;
-    margin-left: 225px;
+    margin-left: 200px;
     margin-top: 3px;
 }
 .content1{
     font-size: 13px;
     color: #6b6a6a;
-    margin-left: 225px;
+    margin-left: 200px;
     margin-top: 31px;
 }
 /*结束*/
 /*英文介绍*/
 .english{
-    width: 1200px;
+    width: 100%;
     height: 176px;
-    /*background: pink;*/
     margin: 0 auto;
 }
 .english p{
     font-size: 13px;
     color: #868484;
-    margin: 0 185px;
+    margin: 0 150px;
 }
 .english p:nth-child(2){
     margin-top: 32px;
@@ -143,20 +167,22 @@ i
 /*英文介绍结束*/
 /*图片开始*/
 .picture{
-    width: 1200px;
+    width: 100%;
     height: 637px;
-    /*background: skyblue;*/
-    margin: 120px auto 105px;
+    margin: 120px auto 0;
 }
 .tu1{
-    width: auto;
-    height: auto;
-    margin-left: 181px;
+    width: 385px;
+    height: 533px;
+    margin-left: 151px;
     float: left;
 }
+.tu1 img {
+    width: 100%;
+}
 .tu2{
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     float: left;
     margin-left: 45px;
 }
@@ -164,9 +190,10 @@ i
     width: 100%;
 }
 .tu3{
-    width: 295px;
+    width: 240px;
+    height: 355px;
     margin-left: 81px;
-    margin-top: 39px;
+    margin-top: 46px;
     float: left;
 }
 .tu3 img{
@@ -177,15 +204,14 @@ i
 .content2{
     font-size: 13px;
     color: #6b6a6a;
-    margin-left: 225px;
+    margin-left: 200px;
     margin-top: 31px;
     margin-right: 185px;
 }
 .port{
-    width: 835px;
+    width: 770px;
     height: 140px;
-    /*background: skyblue;*/
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 .tupian{
     width: 132px;
@@ -218,6 +244,6 @@ i
     height: 132px;
     margin-right: 40px;
     float: right;
-    margin-top: -100px;
+    margin-top: -80px;
 }
 /*高级定制服务结束*/
