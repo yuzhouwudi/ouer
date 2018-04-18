@@ -1,21 +1,48 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.32-dev-45, created on 2018-04-18 10:52:18
+  from 'D:\wamp\www\aa\company\template\index\index.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-45',
+  'unifunc' => 'content_5ad707423d8e61_57079021',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '1988152ae5edc57cacd8df7dc30d6626bbea9352' => 
+    array (
+      0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\index.html',
+      1 => 1524041537,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad707423d8e61_57079021 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{CSS_PATH}index.css">
-    <link rel="stylesheet" href="{CSS_PATH}base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+base.css">
 </head>
 <body>
 <!--头部开始-->
     <div class="top">
         <div class="neikuan">
             <div class="banner">
-                <img src="{IMG_PATH}banner.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+banner.png" alt="">
             </div>
             <ul class="lanmo">
                 <li><a href="">
-                    <span><img src="{IMG_PATH}lanmo.png" alt=""></span>
+                    <span><img src="<?php echo IMG_PATH;?>
+lanmo.png" alt=""></span>
                 </a>
                 </li>
                <li> <a href=""><p>首页</p><p>HOME</p></a></li>
@@ -67,13 +94,16 @@
             <div class="jiayi-right">
                 <ul>
                     <li>
-                        <img src="{IMG_PATH}jiayi.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+jiayi.png" alt="">
                     </li>
                     <li>
-                        <img src="{IMG_PATH}jiayi1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+jiayi1.png" alt="">
                     </li>
                     <li>
-                        <img src="{IMG_PATH}jiayi2.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+jiayi2.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -82,13 +112,16 @@
             <div class="jiayi-right1">
             <ul>
                 <li>
-                    <img src="{IMG_PATH}huncha1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+huncha1.png" alt="">
                 </li>
                 <li>
-                    <img src="{IMG_PATH}hunsha2.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+hunsha2.png" alt="">
                 </li>
                 <li>
-                    <img src="{IMG_PATH}hunsha3.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+hunsha3.png" alt="">
                 </li>
             </ul>
         </div>
@@ -143,13 +176,16 @@
             <div class="jiayi-right">
                 <ul>
                     <li>
-                        <img src="{IMG_PATH}lifu1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+lifu1.png" alt="">
                     </li>
                     <li>
-                        <img src="{IMG_PATH}lifu1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+lifu1.png" alt="">
                     </li>
                     <li>
-                        <img src="{IMG_PATH}lifu1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+lifu1.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -158,13 +194,16 @@
             <div class="jiayi-right1">
                 <ul>
                     <li>
-                        <img src="{IMG_PATH}jiayi.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+jiayi.png" alt="">
                     </li>
                     <li>
-                        <img src="{IMG_PATH}jiayi1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+jiayi1.png" alt="">
                     </li>
                     <li>
-                        <img src="{IMG_PATH}jiayi2.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+jiayi2.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -201,7 +240,8 @@
         </div>
         <div class="pingpai-content">
             <div class="pingpai-img">
-                <img src="{IMG_PATH}pingpai1.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+pingpai1.png" alt="">
             </div>
             <div class="pingpai-wenzi">
                 <div class="pingpai-nei">
@@ -215,14 +255,19 @@ Let every woman have her own wedding dress</span>
                 </div>
             </div>
             <div class="pingpai-right">
-                <img src="{IMG_PATH}pingai2.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+pingai2.png" alt="">
             </div>
             <div class="pingpai-botoom-img">
                 <ul>
-                    <li><img src="{IMG_PATH}pingbai3.png" alt=""></li>
-                    <li><img src="{IMG_PATH}pingbai4.png" alt=""></li>
-                    <li><img src="{IMG_PATH}pingpai5.png" alt=""></li>
-                    <li><img src="{IMG_PATH}pingpai6.png" alt=""></li>
+                    <li><img src="<?php echo IMG_PATH;?>
+pingbai3.png" alt=""></li>
+                    <li><img src="<?php echo IMG_PATH;?>
+pingbai4.png" alt=""></li>
+                    <li><img src="<?php echo IMG_PATH;?>
+pingpai5.png" alt=""></li>
+                    <li><img src="<?php echo IMG_PATH;?>
+pingpai6.png" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -238,7 +283,8 @@ Let every woman have her own wedding dress</span>
         <div class="guanfang-content">
             <div class="guanfang-nei">
                 <div class="guanfang-img">
-                    <img src="{IMG_PATH}guanfang1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+guanfang1.png" alt="">
                     <span>2018厦门国际时装周</span>
                     <div class="guanfang-shijian">2018.03.09</div>
                     <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
@@ -246,7 +292,8 @@ Let every woman have her own wedding dress</span>
             </div>
             <div class="guanfang-nei">
                 <div class="guanfang-img">
-                    <img src="{IMG_PATH}guanfang1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+guanfang1.png" alt="">
                     <span>2018厦门国际时装周</span>
                     <div class="guanfang-shijian">2018.03.09</div>
                     <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
@@ -254,7 +301,8 @@ Let every woman have her own wedding dress</span>
             </div>
             <div class="guanfang-nei nei">
                 <div class="guanfang-img">
-                    <img src="{IMG_PATH}guanfang1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+guanfang1.png" alt="">
                     <span>2018厦门国际时装周</span>
                     <div class="guanfang-shijian">2018.03.09</div>
                     <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
@@ -262,7 +310,8 @@ Let every woman have her own wedding dress</span>
             </div>
             <div class="guanfang-nei">
                 <div class="guanfang-img">
-                    <img src="{IMG_PATH}guanfang1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+guanfang1.png" alt="">
                     <span>2018厦门国际时装周</span>
                     <div class="guanfang-shijian">2018.03.09</div>
                     <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
@@ -270,7 +319,8 @@ Let every woman have her own wedding dress</span>
             </div>
             <div class="guanfang-nei">
                 <div class="guanfang-img">
-                    <img src="{IMG_PATH}guanfang1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+guanfang1.png" alt="">
                     <span>2018厦门国际时装周</span>
                     <div class="guanfang-shijian">2018.03.09</div>
                     <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
@@ -278,7 +328,8 @@ Let every woman have her own wedding dress</span>
             </div>
             <div class="guanfang-nei nei">
                 <div class="guanfang-img">
-                    <img src="{IMG_PATH}guanfang1.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+guanfang1.png" alt="">
                     <span>2018厦门国际时装周</span>
                     <div class="guanfang-shijian">2018.03.09</div>
                     <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
@@ -296,7 +347,8 @@ Let every woman have her own wedding dress</span>
         </div>
         <div class="xinwen-content">
             <div class="xinwen-img">
-                <img src="{IMG_PATH}xinwen.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+xinwen.png" alt="">
             </div>
             <div class="xinwen-ziti">
                 <span>蔡美月国际婚纱——婚纱传承宣传片</span>
@@ -326,10 +378,12 @@ Let every woman have her own wedding dress</span>
 <div class="bottom">
     <div class="bottom-neikuan">
         <div class="wedd">
-            <img src="{IMG_PATH}indebot_03.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+indebot_03.png" alt="">
         </div>
         <div class="bottom-zhong">
-            <img src="{IMG_PATH}bottom2.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+bottom2.png" alt="">
         </div>
     </div>
     <div class="bottom-wenzi">
@@ -376,13 +430,16 @@ Let every woman have her own wedding dress</span>
                     <h2>PAY ATTENTION TO US IN THE FOLLOWIHG WAYS</h2>
                     <div class="img">
                         <div class="img-img img1">
-                            <img src="{IMG_PATH}re.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+re.png" alt="">
                         </div>
                         <div class="img-img">
-                            <img src="{IMG_PATH}re.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+re.png" alt="">
                         </div>
                         <div class="img-img">
-                            <img src="{IMG_PATH}re.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+re.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -400,4 +457,5 @@ Let every woman have her own wedding dress</span>
 <!--底部结束-->
 
 </body>
-</html>
+</html><?php }
+}

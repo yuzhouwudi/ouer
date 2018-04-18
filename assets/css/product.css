@@ -1,32 +1,76 @@
 @import url("base.css");
 
+@font-face {
+    font-family: 'iconfont';  /* project id 630324 */
+    src: url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.eot');
+    src: url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_630324_qkmd5i4t4890y66r.svg#iconfont') format('svg');
+}
+.iconfont
+{
+    font-family:'iconfont';
+}
+i
+{
+    font-style: normal;
+}
+
+
 .body{
     background: #f5f5f5;
 }
 .main{
-    width: 1200px;
+    width: 1000px;
     height: auto;
     background: #fdfbfb;
-    margin: 0 auto;
-    box-shadow:1px 0 100px 10px #ecebeb;
+    box-shadow:0 20px 50px 10px #ecebeb;
+   margin: 0 auto 0;
+
+
 }
 .crumbs{
-    width: 100%;
-    height: 105px;
+    width: 1000px;
+    height: 80px;
     padding: 0 88px;
-    line-height: 105px;
+    line-height: 80px;
+    background: #fdfbfb;
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 100;
+    display: flex;
 }
-.home,.pro{
-    color: #000;
-    position: relative;
+.crumbs p{
+    font-size: 18px;
+    color: black;
     font-weight: 600;
+    line-height: 80px;
+    margin-right: 10px;
+    position: relative;
 }
+.crumbs>.ico_x{
+    margin-right:10px ;
+    text-align: center;
+}
+.icon1{
+    font-size: 20px;
+    color: black;
+    line-height: 80px;
+}
+.home,.erji{
+    position: relative;
+    display: flex;
+}
+
 .underline{
     width: 40px;
     height: 2px;
     background: #000;
     position: absolute;
-    bottom: -3px;
+    bottom: 20px;
     left: 0;
 }
 
@@ -37,9 +81,9 @@
 }
 .appr_header{
     width: 100%;
-    height: 360px;
+    height: 280px;
     text-align: center;
-    padding: 60px;
+    padding: 60px 0 0;
 }
 .appr_header>.line{
     width: 115px;
@@ -72,7 +116,7 @@
 .appr_bot>.pic{
     width: 50%;
     height: 360px;
-    background: #000;
+    /*background: #000;*/
 }
 .appr_bot>.pic>img{
     width: 100%;
@@ -111,14 +155,14 @@
     height: 265px;
 }
 .appr_bot2>.explain.mask{
-    width: 645px;
+    width: 550px;
     /*background: ;*/
     color: #fff;
     margin: 0;
     text-align: right;
     background: rgba(125,36,44,0.5);
     position: absolute;
-    left:-130px;
+    left:-135px;
 }
 .appr_bot2>.explain.mask>.etitle,.appr_bot2>.explain.mask>.title
 ,.appr_bot2>.explain.mask>.des{
@@ -137,7 +181,7 @@
 .appr_bot3{
     margin-top: 265px;
 }
-.appr_bot3>img{
+.appr_bot3>.pic{
     height: 265px;
 }
 .appr_bot3>.explain{
@@ -167,7 +211,7 @@
 }
 .hot_line{
     display: flex;
-    margin: 10px 300px;
+    margin: 10px 200px;
     justify-content: space-around;
     align-items: center;
 }
@@ -178,8 +222,8 @@
     margin: 0 auto;
 }
 .hot_line>.circle{
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: #7f2d00;
     border-radius: 50%;
     margin: 0 5px;
@@ -193,13 +237,16 @@
     flex-wrap: wrap;
 }
 .hot_list{
-    width: 353px;
+    width: 30%;
     margin-bottom: 40px;
 }
 .hot_list>.hot_pic{
     width: 100%;
     height: 410px;
-    background: #000;
+    /*background: #000;*/
+}
+.hot_list>.hot_pic>img{
+    height: 100%;
 }
 .hot_list>.hot_text{
     width: 100%;

@@ -1,12 +1,37 @@
-<!--底部开始-->
+<?php
+/* Smarty version 3.1.32-dev-45, created on 2018-04-18 11:46:23
+  from 'D:\wamp\www\aa\company\template\index\footer.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-45',
+  'unifunc' => 'content_5ad713efa87b52_58221199',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'fbafdde464857a72dc202b41931936f600a70aa7' => 
+    array (
+      0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\footer.html',
+      1 => 1524044782,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5ad713efa87b52_58221199 (Smarty_Internal_Template $_smarty_tpl) {
+?><!--底部开始-->
 <div class="bottom">
     <div class="bottom-neikuan">
         <div class="bot_zhe"></div>
             <div class="wedd">
-                <img src="{IMG_PATH}/bottom1.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/bottom1.png" alt="">
             </div>
             <div class="bottom-zhong">
-                <img src="{IMG_PATH}/bottom2.png" alt="">
+                <img src="<?php echo IMG_PATH;?>
+/bottom2.png" alt="">
             </div>
         </div>
     <div class="bottom-wenzi">
@@ -53,13 +78,16 @@
                     <h2>PAY ATTENTION TO US IN THE FOLLOWIHG WAYS</h2>
                     <div class="img">
                         <div class="img-img img1">
-                            <img src="{IMG_PATH}/re.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/re.png" alt="">
                         </div>
                         <div class="img-img">
-                            <img src="{IMG_PATH}/re.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/re.png" alt="">
                         </div>
                         <div class="img-img">
-                            <img src="{IMG_PATH}/re.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+/re.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -77,27 +105,11 @@
 <!--底部结束-->
 
 <style>
-    /**{*/
-        /*margin: 0;*/
-        /*padding: 0;*/
-        /*list-style: none;*/
-        /*font-size: 16px;*/
-        /*font-family: "微软雅黑","宋体",sans-serif;*/
-        /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
-        /*box-sizing: border-box;*/
-    /*}*/
-    /*a{*/
-        /*text-decoration: none;*/
-    /*}*/
-    /*body{*/
-        /*background: #fff;*/
-    /*}*/
-    /*img{*/
-        /*border: none;*/
-    /*}*/
-    /*i{*/
-        /*font-style: normal;*/
-    /*}*/
+    /***/
+    /*a*/
+    /*body*/
+    /*img*/
+    /*i*/
 
     /*底部开始*/
 
@@ -242,4 +254,5 @@
         text-align: center;
     }
 
-</style>
+</style><?php }
+}
