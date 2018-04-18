@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="{CSS_PATH}amazeui.min.css"/>
+    <link rel="stylesheet" href="{CSS_PATH}admin.css">
+    <link rel="stylesheet" href="{CSS_PATH}app.css">
+</head>
+
+<body>
+<div class="tpl-content-scope">
+    <div class="note note-info">
+        <h3>产品鉴赏
+            <span class="close" data-close="note"></span>
+        </h3>
+    </div>
+</div>
+
+<div class="tpl-content-scope">
+
+    <div class="tpl-portlet-components">
+
+        <div class="tpl-block " style="padding-top: 30px">
+
+            <div class="tpl-block">
+                <div class="am-g">
+                    <div class="am-u-sm-12 am-u-md-6">
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+
+                                <button type="button" class="am-btn am-btn-default am-btn-success">
+                                    <a href="index.php?m=admin&f=menu&a=addoppr">
+                                        <span class="am-icon-plus"></span> 新增
+                                    </a>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="am-g">
+                    <div class="am-u-sm-12">
+
+                            <table class="am-table am-table-striped am-table-hover table-main">
+                                <thead>
+                                <tr>
+                                    <th class="table-id">ID</th>
+                                    <th class="table-title">名字</th>
+                                    <th class="table-title">英文名字</th>
+                                    <th class="table-set">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {foreach $arr as $item}
+                                <tr>
+                                    <td>{$item['id']}</td>
+                                    <td><a href="#">{$item['name']}</a></td>
+                                    <td><a href="#">{$item['ename']}</a></td>
+
+
+                                    <td>
+                                        <div class="am-btn-toolbar">
+                                            <div class="am-btn-group am-btn-group-xs">
+
+                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary">
+                                            <a href="index.php?m=admin&f=menu&a=editoppr&id={$item['id']}">
+                                                <span class="am-icon-pencil-square-o"></span> 编辑
+                                            </a>
+                                            </button>
+
+                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only">
+                                            <a href="index.php?m=admin&f=menu&a=deloppr&id={$item['id']}">
+                                                <span class="am-icon-trash-o"></span> 删除
+                                            </a>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                 </td>
+                                 </tr>
+                                {/foreach}
+                                </tbody>
+                            </table>
+
+                            <hr>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

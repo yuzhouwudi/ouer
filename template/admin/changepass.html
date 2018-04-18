@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <link rel="icon" type="image/png" href="{WEB_PATH}assets/i/favicon.png">
+    <link rel="stylesheet" href="{CSS_PATH}amazeui.min.css"/>
+    <link rel="stylesheet" href="{CSS_PATH}admin.css">
+    <link rel="stylesheet" href="{CSS_PATH}app.css">
+</head>
+
+<body>
+<div class="tpl-content-scope">
+    <div class="note note-info">
+        <h3>密码修改
+            <span class="close" data-close="note"></span>
+        </h3>
+    </div>
+</div>
+
+<div class="tpl-content-scope">
+
+    <div class="tpl-portlet-components">
+
+        <div class="tpl-block " style="padding-top: 30px">
+
+            <div class="am-g tpl-amazeui-form">
+
+                <div class="am-u-sm-12 am-u-md-9">
+                    <form class="am-form am-form-horizontal" method="post" action="index.php?m=admin&f=menu&a=putpass">
+                        <div class="am-form-group">
+                            <label for="user-name" class="am-u-sm-3 am-form-label">姓名 / Name</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" id="user-name" name="zhanghao" placeholder="账号 / Name" value="{$zhanghao}" readonly>
+                                <small> </small>
+                            </div>
+                        </div>
+
+                        <div class="am-form-group">
+                            <label for="user-email"  class="am-u-sm-3 am-form-label">旧密码 / Oldpass</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" name="oldpass" id="user-email" placeholder="旧密码 / Oldpass">
+                                <small>输入旧密码</small>
+                            </div>
+                        </div>
+
+                        <div class="am-form-group">
+                            <label for="user-phone" class="am-u-sm-3 am-form-label">新密码 / Newpass</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" name="newpass" id="user-phone" placeholder="新密码 / Newpass">
+                                <small>输入新密码</small>
+                            </div>
+                        </div>
+
+
+                        <div class="am-form-group">
+                            <div class="am-u-sm-9 am-u-sm-push-3">
+                                <button type="submit" class="am-btn am-btn-primary">保存修改</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>

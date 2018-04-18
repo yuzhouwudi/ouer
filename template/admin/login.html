@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{CSS_PATH}amazeui.min.css">
+    <link rel="stylesheet" href="{CSS_PATH}admin.css">
+    <link rel="stylesheet" href="{CSS_PATH}app.css">
+</head>
+<style>
+    #doc-ipt-pwd-1{
+        border-radius: 0;
+    }
+    .am-form-group{
+        position: relative;
+    }
+    #code{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        border-radius: 6px;
+    }
+    .welcome{
+        font-size: 18px;
+        font-weight: 600;
+    }
+</style>
+<body data-type="login">
+
+<div class="am-g myapp-login">
+    <div class="myapp-login-logo-block  tpl-login-max">
+        <div class="myapp-login-logo-text">
+            <div class="myapp-login-logo-text">
+                Pizza <span>House</span> <i class="am-icon-skyatlas"></i>
+
+            </div>
+        </div>
+
+        <div class="login-font">
+            <i class="welcome">welcome to our restaurant</i>
+        </div>
+        <div class="am-u-sm-10 login-am-center">
+            <form class="am-form" action="index.php?m=admin&a=checkpass" method="post">
+                <fieldset>
+                    <div class="am-form-group">
+                        <input type="text" class="" name="zhanghao" id="doc-ipt-email-1" placeholder="输入账号吧">
+                    </div>
+                    <div class="am-form-group">
+                        <input type="password" class="" name="pass" id="doc-ipt-pwd-1" placeholder="输入密码吧">
+                    </div>
+                    <div class="am-form-group">
+                        <input type="text" class="" name="code" id="check" placeholder="请输入验证码">
+                        <img src="index.php?m=admin&a=code" id="code" alt="" onclick="this.src='index.php?m=admin&a=code&'+Math.random()">
+                    </div>
+                    <p>
+                        <button type="submit" class="am-btn am-btn-default">登录</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
