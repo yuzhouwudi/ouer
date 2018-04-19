@@ -1,4 +1,20 @@
 
+@font-face {
+    font-family: 'iconfont';  /* project id 630324 */
+    src: url('//at.alicdn.com/t/font_630324_ztt8vrk4vfkfn7b9.eot');
+    src: url('//at.alicdn.com/t/font_630324_ztt8vrk4vfkfn7b9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_630324_ztt8vrk4vfkfn7b9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_630324_ztt8vrk4vfkfn7b9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_630324_ztt8vrk4vfkfn7b9.svg#iconfont') format('svg');
+}
+.iconfont
+{
+    font-family:'iconfont';
+}
+i
+{
+    font-style: normal;
+}
 .top{
     width:100%;
     height:500px;
@@ -48,11 +64,14 @@
     height:5px;
     background: #000;
 }
+.circle>li:hover{
+    cursor: pointer;
+}
 .circle>li.active{
-    background: lightgoldenrodyellow;
+    background: #f85669;
 }
 .circle>li:hover{
-    background: lightgoldenrodyellow;
+    background: #f85669;
 }
 .lanmo{
     width: 200px;
@@ -63,6 +82,11 @@
     width:100%;
     height: 60px;
     margin-bottom: 10px;
+}
+.lanmo li a{
+    display: block;
+    width:100%;
+    height: 100%;
 }
 .lanmo li:first-child{
     margin-top: 15px;
@@ -84,6 +108,15 @@
 .lanmo li p:nth-child(2){
     font-size: 12px;
     line-height: 25px;
+}
+.lanmo>li>a:hover{
+    cursor: pointer;
+}
+.lanmo>li.active{
+    background: #f85669;
+}
+.lanmo>li>a:hover{
+    background: #f85669;
 }
 
 /*头部结束*/
@@ -200,11 +233,17 @@ div.h1{
 .more{
     width:100px;
     height:40px;
-    font-size: 23px;
+    font-size: 20px;
     border: 2px #ccc solid;
     line-height: 40px;
     text-align: center;
     margin-top: 120px;
+}
+.more:hover{
+    background: #f8586b;
+    color: #fff;
+    border: 2px #f8586b solid;
+    cursor: pointer;
 }
 .jiayi2{
     width:100%;
@@ -271,7 +310,7 @@ div.h1{
 .more1{
     width:100px;
     height:40px;
-    font-size: 23px;
+    font-size: 20px;
     border: 2px #ccc solid;
     line-height: 40px;
     text-align: center;
@@ -279,6 +318,13 @@ div.h1{
     margin-left: 10px;
     float: right;
 }
+.more1:hover{
+    background: #f8586b;
+    color: #fff;
+    border: 2px #f8586b solid;
+    cursor: pointer;
+}
+
 /*产品结束*/
 /*品牌故事开始*/
 .pingpai{
@@ -299,13 +345,13 @@ div.h1{
 }
 .pingpai-wenzi{
     width:34%;
-    height:510px;
+    height:470px;
     float: left;
 }
 .pingpai-nei{
     width:100%;
     height:400px;
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 0 50px;
 }
 .pingpai-wenzi h1{
@@ -346,7 +392,7 @@ div.h1{
 }
 .pingpai-botoom-img ul li{
     width:25%;
-    height:160px;
+    height:150px;
     float:left;
     overflow: hidden;
     padding-right: 20px;
@@ -362,6 +408,12 @@ div.h1{
     font-size: 20px;
     line-height: 50px;
     text-align: center;
+}
+.pingpai-bottom:hover{
+    background: #f8586b;
+    color: #fff;
+    border: 2px #f8586b solid;
+    cursor: pointer;
 }
 
 /*品牌故事结束*/
@@ -392,16 +444,21 @@ div.h1{
     width:100%;
     height:360px;
     overflow: hidden;
+    position: relative;
 }
 .guanfang-img>img{
     width: auto;
     height: 100%;
+
+}
+.hot_zhe>a{
+    display: block;
 }
 .guanfang-content span{
     width:70%;
     height:30px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #8d8a8a;
     float: left;
 }
@@ -421,9 +478,9 @@ img{
 }
 .guanfang-content p{
     width: 100%;
-    height: 45px;
+    height: 40px;
     margin-top: 35px;
-    font-size: 16px;
+    font-size: 14px;
     color: #a4a0a0;
     /*white-space:nowrap;*/
     overflow:hidden;
@@ -531,6 +588,36 @@ img{
     line-height: 50px;
     text-align: center;
 
+}
+.qiye-bottom:hover{
+    background: #f8586b;
+    color: #fff;
+    border: 2px #f8586b solid;
+    cursor: pointer;
+}
+
+.guanfang-img>.hot_zhe{
+    opacity: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guanfang-img:hover .hot_zhe{
+    opacity: 1;
+    transition: .3s;
+}
+.hot_zhe>.iconzhe{
+    font-size: 20px;
+    color: #fff;
+}
+.hot_zhe>.iconzhe:hover{
+    color: #f8586b;
 }
 /*新闻资讯结束*/
 /*底部开始*/

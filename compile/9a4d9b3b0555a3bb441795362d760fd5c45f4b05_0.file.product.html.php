@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 12:05:29
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:52:53
   from 'D:\wamp\www\aa\company\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad869e92af6d4_30477305',
+  'unifunc' => 'content_5ad89f35340fd3_74444420',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a4d9b3b0555a3bb441795362d760fd5c45f4b05' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\product.html',
-      1 => 1524132328,
+      1 => 1524145886,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad869e92af6d4_30477305 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad89f35340fd3_74444420 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>

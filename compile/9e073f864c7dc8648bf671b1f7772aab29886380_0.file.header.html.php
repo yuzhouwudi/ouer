@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 10:15:58
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:53:52
   from 'D:\wamp\www\aa\company\template\index\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad8503e91d786_07216877',
+  'unifunc' => 'content_5ad89f708844c0_21179378',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e073f864c7dc8648bf671b1f7772aab29886380' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\header.html',
-      1 => 1524048543,
+      1 => 1524146031,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad8503e91d786_07216877 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad89f708844c0_21179378 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,18 +95,47 @@ assets/i/logo.ico">
         width:100%;
         height:50%;
         font-size: 16px;
-        line-height: 50px;
+        line-height: 40px;
         text-align: center;
         color: #c5e3e0;
     }
     .lanmo li p:nth-child(2){
         font-size: 12px;
-        line-height: 40px;
+        line-height: 20px;
     }
 
+    .lanmo li a{
+        display: block;
+        width:100%;
+        height: 100%;
+    }
+    .lanmo>li>a:hover{
+        cursor: pointer;
+    }
+    .lanmo>li>a.active{
+        background: #f85669;
+    }
+    .lanmo>li>a:hover{
+        background: #f85669;
+    }
     /*头部结束*/
 
 </style>
+<?php echo '<script'; ?>
+>
+    $(function () {
+
+//        $('.lanmo > li >a').click(function () {
+//            console.log($(this).index())
+//            let index=$(this).index()
+////            index.toggleClass('active')
+//            $(this).removeClass("active").eq(index).addClass("active");
+//        })
+       
+
+    })
+<?php echo '</script'; ?>
+>
 <!--头部开始-->
 <body>
 <div class="top">
@@ -116,10 +145,9 @@ assets/i/logo.ico">
 /banner.png" alt="">
         </div>
         <ul class="lanmo">
-            <li><a href="">
+            <li>
                 <span><img src="<?php echo IMG_PATH;?>
 /lanmo.png" alt=""></span>
-            </a>
             </li>
             <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
             <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>

@@ -36,11 +36,11 @@
                 <li></li>
             </ul>
             <ul class="lanmo">
-                <li><a href="">
+                <li>
                     <span><img src="{IMG_PATH}lanmo.png" alt=""></span>
-                </a>
+
                 </li>
-               <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
+               <li class="active"> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
                <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
                 <li><a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
                 <li><a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
@@ -168,8 +168,8 @@
     <!--品牌故事开始-->
     <div class="pingpai">
         <div class="changping-top">
-            <p> - 产品欣赏 - </p>
-            <p>Product appreciation</p>
+            <p> - 品牌故事 - </p>
+            <p>Brand  story</p>
         </div>
         <div class="pingpai-content">
             <div class="pingpai-img">
@@ -204,19 +204,26 @@ Let every woman have her own wedding dress</span>
     <!--官方活动开始-->
     <div class="guanfang">
         <div class="changping-top">
-            <p> - 产品欣赏 - </p>
-            <p>Product appreciation</p>
+            <p> - 官方活动 - </p>
+            <p>official activity</p>
         </div>
         <div class="guanfang-content">
             {foreach $row2 as $item}
+
             <div class="guanfang-nei">
+                <a href="index.php?a=actdetail&id={$item['id']}">
                 <div class="guanfang-img">
                     <img src="{$item['img']}" alt="">
+                    <div class="hot_zhe">
+                        <i class="iconfont iconzhe">&#xe606;</i>
+                    </div>
                 </div>
                 <span>{$item['title']}</span>
                 <div class="guanfang-shijian">{$item['time']}</div>
                 <p>{$item['content']}</p>
+                </a>
             </div>
+
             {/foreach}
             <div class="pingpai-bottom">MORE</div>
         </div>

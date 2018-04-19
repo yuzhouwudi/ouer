@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 12:29:46
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:26:31
   from 'D:\wamp\www\aa\company\template\index\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad86f9a3430e3_49428123',
+  'unifunc' => 'content_5ad89907681404_01483855',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1988152ae5edc57cacd8df7dc30d6626bbea9352' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\index.html',
-      1 => 1524133785,
+      1 => 1524144390,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad86f9a3430e3_49428123 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad89907681404_01483855 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,12 +69,12 @@ pic-xiangqing4.png" alt="">
                 <li></li>
             </ul>
             <ul class="lanmo">
-                <li><a href="">
+                <li>
                     <span><img src="<?php echo IMG_PATH;?>
 lanmo.png" alt=""></span>
-                </a>
+
                 </li>
-               <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
+               <li class="active"> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
                <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
                 <li><a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
                 <li><a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
@@ -226,8 +226,8 @@ lanmo.png" alt=""></span>
     <!--品牌故事开始-->
     <div class="pingpai">
         <div class="changping-top">
-            <p> - 产品欣赏 - </p>
-            <p>Product appreciation</p>
+            <p> - 品牌故事 - </p>
+            <p>Brand  story</p>
         </div>
         <div class="pingpai-content">
             <div class="pingpai-img">
@@ -268,8 +268,8 @@ Let every woman have her own wedding dress</span>
     <!--官方活动开始-->
     <div class="guanfang">
         <div class="changping-top">
-            <p> - 产品欣赏 - </p>
-            <p>Product appreciation</p>
+            <p> - 官方活动 - </p>
+            <p>official activity</p>
         </div>
         <div class="guanfang-content">
             <?php
@@ -277,10 +277,16 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
+
             <div class="guanfang-nei">
+                <a href="index.php?a=actdetail&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+">
                 <div class="guanfang-img">
                     <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['img'];?>
 " alt="">
+                    <div class="hot_zhe">
+                        <i class="iconfont iconzhe">&#xe606;</i>
+                    </div>
                 </div>
                 <span><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 </span>
@@ -288,7 +294,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 </div>
                 <p><?php echo $_smarty_tpl->tpl_vars['item']->value['content'];?>
 </p>
+                </a>
             </div>
+
             <?php
 }
 }

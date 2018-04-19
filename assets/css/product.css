@@ -265,7 +265,7 @@ i
     position: absolute;
     top:0;
     left: 0;
-   display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -276,6 +276,9 @@ i
 .hot_pic>.hot_zhe>.iconzhe{
     font-size: 20px;
     color: #fff;
+}
+.hot_pic>.hot_zhe>.iconzhe:hover{
+    color: #f8586b;
 }
 .hot_zhe_i{
     display: block;

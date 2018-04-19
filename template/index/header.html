@@ -59,18 +59,45 @@
         width:100%;
         height:50%;
         font-size: 16px;
-        line-height: 50px;
+        line-height: 40px;
         text-align: center;
         color: #c5e3e0;
     }
     .lanmo li p:nth-child(2){
         font-size: 12px;
-        line-height: 40px;
+        line-height: 20px;
     }
 
+    .lanmo li a{
+        display: block;
+        width:100%;
+        height: 100%;
+    }
+    .lanmo>li>a:hover{
+        cursor: pointer;
+    }
+    .lanmo>li>a.active{
+        background: #f85669;
+    }
+    .lanmo>li>a:hover{
+        background: #f85669;
+    }
     /*头部结束*/
 
 </style>
+<script>
+    $(function () {
+
+//        $('.lanmo > li >a').click(function () {
+//            console.log($(this).index())
+//            let index=$(this).index()
+////            index.toggleClass('active')
+//            $(this).removeClass("active").eq(index).addClass("active");
+//        })
+
+
+    })
+</script>
 <!--头部开始-->
 <body>
 <div class="top">
@@ -79,9 +106,8 @@
             <img src="{IMG_PATH}/banner.png" alt="">
         </div>
         <ul class="lanmo">
-            <li><a href="">
+            <li>
                 <span><img src="{IMG_PATH}/lanmo.png" alt=""></span>
-            </a>
             </li>
             <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
             <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
