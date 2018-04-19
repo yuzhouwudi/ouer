@@ -957,7 +957,7 @@ class menu extends adminPar
         $db->table='content';
         $arr=$db->selOne('*',"id='$id'");
 
-        $imgarr=explode('--',$arr['thumb']);
+        $imgarr=explode('--',$arr['img']);
         $imgstr='';
         if($imgarr){
             for($i=0;$i<count($imgarr);$i++){
@@ -968,12 +968,11 @@ class menu extends adminPar
             }
         }
 
-        $db->table='type';
-        $str='';
-        $this->str1($db,$str,$arr['cid']);
-        $this->smarty->assign('str',$str);
+        $db->table='product';
+        $crr=$db->selAll();
+        $this->smarty->assign('crr',$crr);
 
-        $db->table='recom';
+        $db->table='module';
         $brr=$db->selAll();
         $strp='';
         foreach ($brr as $item){
@@ -998,9 +997,10 @@ class menu extends adminPar
         $id=$_POST['id'];
         $cid=$_POST['cid'];
         $title=$_POST['title'];
-        $descr=$_POST['descr'];
+        $des=$_POST['des'];
         $con=$_POST['con'];
         $pid=$_POST['pid'];
+        $nub=$_POST['nub'];
 
         $img='';
         if(isset($_POST['img'])){
@@ -1010,9 +1010,9 @@ class menu extends adminPar
         $db=new db();
         $db->table='content';
         if($img){
-            $row=$db->upd("title='$title',descr='$descr',con='$con',cid='$cid',pid='$pid',thumb='$img'","id='$id'");
+            $row=$db->upd("title='$title',des='$des',nub='$nub',content='$con',cid='$cid',pid='$pid',img='$img'","id='$id'");
         }else{
-            $row=$db->upd("title='$title',descr='$descr',con='$con',cid='$cid',pid='$pid'","id='$id'");
+            $row=$db->upd("title='$title',des='$des',nub='$nub',content='$con',cid='$cid',pid='$pid'","id='$id'");
         }
 
 

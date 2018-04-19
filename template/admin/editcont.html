@@ -68,7 +68,14 @@
                                 <label  class="am-u-sm-3 am-form-label">栏目 <span class="tpl-form-line-small-title">lanmu</span></label>
                                 <div class="am-u-sm-9">
                                     <select data-am-selected="{ searchBox: 1 }" name="cid">
-                                        {$str}
+                                        {foreach $crr as $item}
+                                        {if $item['id'] eq $arr['cid']}
+                                        <option value="{$item['id']}" selected>{$item['name']}</option>
+                                        {else}
+                                        <option value="{$item['id']}">{$item['name']}</option>
+
+                                        {/if}
+                                        {/foreach}
                                     </select>
                                 </div>
                             </div>
@@ -96,7 +103,14 @@
                             <div class="am-form-group">
                                 <label class="am-u-sm-3 am-form-label">描述 <span class="tpl-form-line-small-title">desc</span></label>
                                 <div class="am-u-sm-9">
-                                    <input type="text" name='descr' value="{$arr['descr']}" placeholder="输入描述">
+                                    <input type="text" name='des' value="{$arr['des']}" placeholder="输入描述">
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <label class="am-u-sm-3 am-form-label">次序 <span class="tpl-form-line-small-title">desc</span></label>
+                                <div class="am-u-sm-9">
+                                    <input type="text" name='nub' value="{$arr['nub']}" placeholder="输入次序">
                                 </div>
                             </div>
 
@@ -116,7 +130,7 @@
                             <div class="am-form-group">
                                 <label for="user-intro" class="am-u-sm-3 am-form-label">文章内容</label>
                                 <div class="am-u-sm-9">
-                                    <textarea class="" name='con'  style="width:700px;height:200px;" id="user-intro" placeholder="请输入文章内容">{$arr['con']}</textarea>
+                                    <textarea class="" name='con'  style="width:700px;height:200px;" id="user-intro" placeholder="请输入文章内容">{$arr['content']}</textarea>
                                 </div>
                             </div>
 
