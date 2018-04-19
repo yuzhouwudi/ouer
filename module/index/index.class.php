@@ -9,19 +9,21 @@ class index extends commomIndex {
     function init(){
         $this->smarty->display('index.html');
     }
-
     function product(){
         $this->smarty->display('product.html');
     }
-
     function active(){
         $this->smarty->display('list.html');
     }
-
     function danye(){
         $this->smarty->display('danye.html');
     }
+    function productdetail(){
+        $this->smarty->display('chanpinxiangqing.html');
+    }
+    function listdetail(){
 
+    }
 
 
 }

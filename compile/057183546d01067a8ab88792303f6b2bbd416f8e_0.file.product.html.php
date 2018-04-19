@@ -1,5 +1,32 @@
-{include file='header.html'}
-<link rel="stylesheet" href="{CSS_PATH}product.css">
+<?php
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 03:21:51
+  from 'C:\wamp\www\aa\company\template\index\product.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-45',
+  'unifunc' => 'content_5ad7ef2fa0d1b7_55886858',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '057183546d01067a8ab88792303f6b2bbd416f8e' => 
+    array (
+      0 => 'C:\\wamp\\www\\aa\\company\\template\\index\\product.html',
+      1 => 1524100910,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:header.html' => 1,
+    'file:footer.html' => 1,
+  ),
+),false)) {
+function content_5ad7ef2fa0d1b7_55886858 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+<link rel="stylesheet" href="<?php echo CSS_PATH;?>
+product.css">
 
 
     <div class="crumbs">
@@ -207,7 +234,9 @@
     </section>
 
 </div>
-{include file='footer.html'}
+<?php $_smarty_tpl->_subTemplateRender('file:footer.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
 </body>
-</html>
+</html><?php }
+}
