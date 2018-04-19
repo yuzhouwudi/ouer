@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-17 15:14:02
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 10:43:51
   from 'D:\wamp\www\aa\company\template\admin\main.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad5f31a86a431_65411473',
+  'unifunc' => 'content_5ad856c752b421_79076666',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '74b9746c5dd7ada3e09df7e403987ca42e62ee05' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\admin\\main.html',
-      1 => 1523970841,
+      1 => 1524113624,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad5f31a86a431_65411473 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad856c752b421_79076666 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html>
 
@@ -119,7 +119,7 @@ logo.png" alt="">
                 </li>
 
                 <li class="tpl-left-nav-item">
-                    <a href="index.php?m=admin&f=menu&a=editindimg" target="myframe" class="nav-link tpl-left-nav-link-list">
+                    <a href="index.php?m=admin&f=menu&a=zhuyeimg" target="myframe" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-bar-chart"></i>
                         <span>主页图片</span>
                     </a>

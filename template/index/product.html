@@ -10,11 +10,11 @@
         </div>
         <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
         <div class="erji">
-            <p>BRAND</p>
-            <p>品牌</p>
+            <p>Product</p>
+            <p>产品</p>
             <div class="underline"></div></div>
-
     </div>
+
 <div class="main">
     <section class="appr">
         <div class="appr_header">
@@ -27,48 +27,50 @@
             <div class="ee">CHANPIN</div>
         </div>
         <div class="appr_bottom">
+
             <div class="appr_bot">
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="{$arr['0']['img']}" alt="">
                 </div>
                 <div class="explain">
-                    <div class="etitle">Show Wo</div>
-                    <div class="title">秀禾系列</div>
-                    <div class="des">一针一线   为你装饰</div>
-                    <div class="edes">Stitch for you to decorate</div>
+                    <div class="etitle">{$arr['0']['ename']}</div>
+                    <div class="title">{$arr['0']['xilie']}</div>
+                    <div class="des">{$arr['0']['des']}</div>
+                    <div class="edes">{$arr['0']['edes']}</div>
                 </div>
             </div>
+
             <div class="appr_bot appr_bot2">
                 <div class="explain mask">
-                    <div class="etitle">Wedding dress</div>
-                    <div class="title">婚纱系列</div>
-                    <div class="des">匠心挚爱   定制美好</div>
-                    <div class="edes">My heart beloved custom beautiful</div>
+                    <div class="etitle">{$arr['1']['ename']}</div>
+                    <div class="title">{$arr['1']['xilie']}</div>
+                    <div class="des">{$arr['1']['des']}</div>
+                    <div class="edes">{$arr['1']['edes']}</div>
                 </div>
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="{$arr['1']['img']}" alt="">
                 </div>
             </div>
             <div class="appr_bot appr_bot3">
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="{$arr['2']['img']}" alt="">
                 </div>
                 <div class="explain">
-                    <div class="etitle">DRESS</div>
-                    <div class="title">礼服系列</div>
-                    <div class="des">做女神不做灰姑娘</div>
-                    <div class="edes">Goddess do not do Cinderella</div>
+                    <div class="etitle">{$arr['2']['ename']}</div>
+                    <div class="title">{$arr['2']['xilie']}</div>
+                    <div class="des">{$arr['2']['des']}</div>
+                    <div class="edes">{$arr['2']['edes']}</div>
                 </div>
             </div>
             <div class="appr_bot appr_bot4">
                 <div class="explain">
-                    <div class="etitle">Bridesmaid</div>
-                    <div class="title">伴娘服系列</div>
-                    <div class="des">且以深情共白头</div>
-                    <div class="edes">And a total of affectionate Baishou</div>
+                    <div class="etitle">{$arr['3']['ename']}</div>
+                    <div class="title">{$arr['3']['xilie']}</div>
+                    <div class="des">{$arr['3']['des']}</div>
+                    <div class="edes">{$arr['3']['edes']}</div>
                 </div>
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="{$arr['3']['img']}" alt="">
                 </div>
             </div>
         </div>
@@ -91,118 +93,22 @@
         </div>
 
         <ul class="hot_bottom">
+            {foreach $brr as $item}
             <li class="hot_list">
-                <a href="index.php?a=productdetail"  style="display: block">
+                <a href="index.php?a=productdetail&id={$item['id']}"  style="display: block">
                 <div class="hot_pic">
-                    <img src="" alt="">
+                    <img src="{$item['thumb']}" alt="">
+                    <div class="hot_zhe">
+                        <i class="iconfont iconzhe">&#xe606;</i>
+                    </div>
                 </div>
                 <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
+                    <div class="title">{$item['name']}</div>
+                    <p class="des">{$item['cont']}</p>
                 </div>
                 </a>
             </li>
-            <li class="hot_list">
-                <a href="index.php?a=productdetail"  style="display: block">
-                    <div class="hot_pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="hot_text">
-                        <div class="title">蓬蓬公主裙小礼服</div>
-                        <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                    </div>
-                </a>
-            </li>
-            <li class="hot_list">
-                <a href="index.php?a=productdetail"  style="display: block">
-                    <div class="hot_pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="hot_text">
-                        <div class="title">蓬蓬公主裙小礼服</div>
-                        <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                    </div>
-                </a>
-            </li>
-            <li class="hot_list">
-                <a href="index.php?a=productdetail"  style="display: block">
-                    <div class="hot_pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="hot_text">
-                        <div class="title">蓬蓬公主裙小礼服</div>
-                        <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                    </div>
-                </a>
-            </li>
-            <li class="hot_list">
-                <a href="index.php?a=productdetail"  style="display: block">
-                    <div class="hot_pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="hot_text">
-                        <div class="title">蓬蓬公主裙小礼服</div>
-                        <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                    </div>
-                </a>
-            </li>
-            <li class="hot_list">
-                <a href="index.php?a=productdetail"  style="display: block">
-                    <div class="hot_pic">
-                        <img src="" alt="">
-                    </div>
-                    <div class="hot_text">
-                        <div class="title">蓬蓬公主裙小礼服</div>
-                        <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                    </div>
-                </a>
-            </li>s
-            <!--<li class="hot_list">-->
-                <!--<div class="hot_pic">-->
-                    <!--<img src="" alt="">-->
-                <!--</div>-->
-                <!--<div class="hot_text">-->
-                    <!--<div class="title">蓬蓬公主裙小礼服</div>-->
-                    <!--<p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--<li class="hot_list">-->
-                <!--<div class="hot_pic">-->
-                    <!--<img src="" alt="">-->
-                <!--</div>-->
-                <!--<div class="hot_text">-->
-                    <!--<div class="title">蓬蓬公主裙小礼服</div>-->
-                    <!--<p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--<li class="hot_list">-->
-                <!--<div class="hot_pic">-->
-                    <!--<img src="" alt="">-->
-                <!--</div>-->
-                <!--<div class="hot_text">-->
-                    <!--<div class="title">蓬蓬公主裙小礼服</div>-->
-                    <!--<p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>-->
-                <!--</div>-->
-            <!--</li>-->
-
-            <!--<li class="hot_list">-->
-                <!--<div class="hot_pic">-->
-                    <!--<img src="" alt="">-->
-                <!--</div>-->
-                <!--<div class="hot_text">-->
-                    <!--<div class="title">蓬蓬公主裙小礼服</div>-->
-                    <!--<p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>-->
-                <!--</div>-->
-            <!--</li>-->
-            <!--<li class="hot_list">-->
-                <!--<div class="hot_pic">-->
-                    <!--<img src="" alt="">-->
-                <!--</div>-->
-                <!--<div class="hot_text">-->
-                    <!--<div class="title">蓬蓬公主裙小礼服</div>-->
-                    <!--<p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>-->
-                <!--</div>-->
-            <!--</li>-->
+            {/foreach}
         </ul>
     </section>
 

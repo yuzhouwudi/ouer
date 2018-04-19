@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-18 11:52:27
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 12:05:29
   from 'D:\wamp\www\aa\company\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad7155b8550c3_63298371',
+  'unifunc' => 'content_5ad869e92af6d4_30477305',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a4d9b3b0555a3bb441795362d760fd5c45f4b05' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\product.html',
-      1 => 1524045147,
+      1 => 1524132328,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad7155b8550c3_63298371 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad869e92af6d4_30477305 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
@@ -37,11 +37,11 @@ product.css">
         </div>
         <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
         <div class="erji">
-            <p>BRAND</p>
-            <p>品牌</p>
+            <p>Product</p>
+            <p>产品</p>
             <div class="underline"></div></div>
-
     </div>
+
 <div class="main">
     <section class="appr">
         <div class="appr_header">
@@ -54,48 +54,70 @@ product.css">
             <div class="ee">CHANPIN</div>
         </div>
         <div class="appr_bottom">
+
             <div class="appr_bot">
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value['0']['img'];?>
+" alt="">
                 </div>
                 <div class="explain">
-                    <div class="etitle">Show Wo</div>
-                    <div class="title">秀禾系列</div>
-                    <div class="des">一针一线   为你装饰</div>
-                    <div class="edes">Stitch for you to decorate</div>
+                    <div class="etitle"><?php echo $_smarty_tpl->tpl_vars['arr']->value['0']['ename'];?>
+</div>
+                    <div class="title"><?php echo $_smarty_tpl->tpl_vars['arr']->value['0']['xilie'];?>
+</div>
+                    <div class="des"><?php echo $_smarty_tpl->tpl_vars['arr']->value['0']['des'];?>
+</div>
+                    <div class="edes"><?php echo $_smarty_tpl->tpl_vars['arr']->value['0']['edes'];?>
+</div>
                 </div>
             </div>
+
             <div class="appr_bot appr_bot2">
                 <div class="explain mask">
-                    <div class="etitle">Wedding dress</div>
-                    <div class="title">婚纱系列</div>
-                    <div class="des">匠心挚爱   定制美好</div>
-                    <div class="edes">My heart beloved custom beautiful</div>
+                    <div class="etitle"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['ename'];?>
+</div>
+                    <div class="title"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['xilie'];?>
+</div>
+                    <div class="des"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['des'];?>
+</div>
+                    <div class="edes"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['edes'];?>
+</div>
                 </div>
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['img'];?>
+" alt="">
                 </div>
             </div>
             <div class="appr_bot appr_bot3">
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value['2']['img'];?>
+" alt="">
                 </div>
                 <div class="explain">
-                    <div class="etitle">DRESS</div>
-                    <div class="title">礼服系列</div>
-                    <div class="des">做女神不做灰姑娘</div>
-                    <div class="edes">Goddess do not do Cinderella</div>
+                    <div class="etitle"><?php echo $_smarty_tpl->tpl_vars['arr']->value['2']['ename'];?>
+</div>
+                    <div class="title"><?php echo $_smarty_tpl->tpl_vars['arr']->value['2']['xilie'];?>
+</div>
+                    <div class="des"><?php echo $_smarty_tpl->tpl_vars['arr']->value['2']['des'];?>
+</div>
+                    <div class="edes"><?php echo $_smarty_tpl->tpl_vars['arr']->value['2']['edes'];?>
+</div>
                 </div>
             </div>
             <div class="appr_bot appr_bot4">
                 <div class="explain">
-                    <div class="etitle">Bridesmaid</div>
-                    <div class="title">伴娘服系列</div>
-                    <div class="des">且以深情共白头</div>
-                    <div class="edes">And a total of affectionate Baishou</div>
+                    <div class="etitle"><?php echo $_smarty_tpl->tpl_vars['arr']->value['3']['ename'];?>
+</div>
+                    <div class="title"><?php echo $_smarty_tpl->tpl_vars['arr']->value['3']['xilie'];?>
+</div>
+                    <div class="des"><?php echo $_smarty_tpl->tpl_vars['arr']->value['3']['des'];?>
+</div>
+                    <div class="edes"><?php echo $_smarty_tpl->tpl_vars['arr']->value['3']['edes'];?>
+</div>
                 </div>
                 <div class="pic">
-                    <img src="" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value['3']['img'];?>
+" alt="">
                 </div>
             </div>
         </div>
@@ -118,61 +140,33 @@ product.css">
         </div>
 
         <ul class="hot_bottom">
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['brr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
             <li class="hot_list">
+                <a href="index.php?a=productdetail&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+"  style="display: block">
                 <div class="hot_pic">
-                    <img src="" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['thumb'];?>
+" alt="">
+                    <div class="hot_zhe">
+                        <i class="iconfont iconzhe">&#xe606;</i>
+                    </div>
                 </div>
                 <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
+                    <div class="title"><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+</div>
+                    <p class="des"><?php echo $_smarty_tpl->tpl_vars['item']->value['cont'];?>
+</p>
                 </div>
+                </a>
             </li>
-            <li class="hot_list">
-                <div class="hot_pic">
-                    <img src="" alt="">
-                </div>
-                <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                </div>
-            </li>
-            <li class="hot_list">
-                <div class="hot_pic">
-                    <img src="" alt="">
-                </div>
-                <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                </div>
-            </li>
-            <li class="hot_list">
-                <div class="hot_pic">
-                    <img src="" alt="">
-                </div>
-                <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                </div>
-            </li>
-
-            <li class="hot_list">
-                <div class="hot_pic">
-                    <img src="" alt="">
-                </div>
-                <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                </div>
-            </li>
-            <li class="hot_list">
-                <div class="hot_pic">
-                    <img src="" alt="">
-                </div>
-                <div class="hot_text">
-                    <div class="title">蓬蓬公主裙小礼服</div>
-                    <p class="des">嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节。</p>
-                </div>
-            </li>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </ul>
     </section>
 

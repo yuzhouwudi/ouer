@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-18 11:04:35
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 10:15:58
   from 'D:\wamp\www\aa\company\template\index\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad70a234e7761_30056324',
+  'unifunc' => 'content_5ad8503e91d786_07216877',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e073f864c7dc8648bf671b1f7772aab29886380' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\header.html',
-      1 => 1524042274,
+      1 => 1524048543,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad70a234e7761_30056324 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad8503e91d786_07216877 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,10 +121,10 @@ assets/i/logo.ico">
 /lanmo.png" alt=""></span>
             </a>
             </li>
-            <li> <a href=""><p>首页</p><p>HOME</p></a></li>
-            <li> <a href=""><p>产品</p><p>DRODUCT</p></a></li>
-            <li><a href=""><p>品牌</p><p>BRAND</p></a></li>
-            <li><a href=""><p>活动</p><p>ACTIVITY</p></a></li>
+            <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
+            <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
+            <li><a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
+            <li><a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
             <li><a href=""><p>资讯</p><p>INFORMATION</p></a></li>
 
         </ul>

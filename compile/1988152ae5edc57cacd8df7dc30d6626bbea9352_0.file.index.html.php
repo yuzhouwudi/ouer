@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-18 10:52:18
+/* Smarty version 3.1.32-dev-45, created on 2018-04-19 12:29:46
   from 'D:\wamp\www\aa\company\template\index\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad707423d8e61_57079021',
+  'unifunc' => 'content_5ad86f9a3430e3_49428123',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1988152ae5edc57cacd8df7dc30d6626bbea9352' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\index.html',
-      1 => 1524041537,
+      1 => 1524133785,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad707423d8e61_57079021 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad86f9a3430e3_49428123 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,27 +30,55 @@ function content_5ad707423d8e61_57079021 (Smarty_Internal_Template $_smarty_tpl)
 index.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 base.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery-3.3.1.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <!--头部开始-->
     <div class="top">
         <div class="neikuan">
             <div class="banner">
-                <img src="<?php echo IMG_PATH;?>
+                <a href="index.php" class="active">
+                    <img src="<?php echo IMG_PATH;?>
 banner.png" alt="">
+                </a>
+                <a href="index.php?a=product">
+                    <img src="<?php echo IMG_PATH;?>
+timg (1).jpg" alt="">
+                </a>
+                <a href="index.php?a=active">
+                    <img src="<?php echo IMG_PATH;?>
+timg (2).jpg" alt="">
+                </a>
+                <a href="index.php?a=danye">
+                    <img src="<?php echo IMG_PATH;?>
+timg (3).jpg" alt="">
+                </a>
+                <a href="index.php?a=productdetail">
+                    <img src="<?php echo IMG_PATH;?>
+pic-xiangqing4.png" alt="">
+                </a>
             </div>
+            <ul class="circle" style="">
+              <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <ul class="lanmo">
                 <li><a href="">
                     <span><img src="<?php echo IMG_PATH;?>
 lanmo.png" alt=""></span>
                 </a>
                 </li>
-               <li> <a href=""><p>首页</p><p>HOME</p></a></li>
+               <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
                <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
-                <li><a href=""><p>品牌</p><p>BRAND</p></a></li>
-                <li><a href=""><p>活动</p><p>ACTIVITY</p></a></li>
+                <li><a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
+                <li><a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
                 <li><a href=""><p>资讯</p><p>INFORMATION</p></a></li>
-
             </ul>
         </div>
     </div>
@@ -69,23 +97,12 @@ lanmo.png" alt=""></span>
             <div class="jiayi-life">
                 <div class="gang"></div>
                 <div class="jiayiwenzi">
-                    <div class="h1" >嫁衣</div>
-                    <span>WEDDING DRESS</span>
-                    <p>
-                        修禾服的"褂"是指上身的对襟衣
-                    </p>
-                    <p>
-                        而"裙"则是下身长裙
-                    </p>
-                    <p>
-                        裙褂上的图案以龙凤为主，以"福"字、"喜"字
-                    </p>
-                    <p>
-                        牡丹花、鸳鸯、蝠鼠、石榴等
-                    </p>
-                    <p>
-                        寓意吉祥、百年好合的图案点缀。
-                    </p>
+                    <div class="h1" ><?php echo $_smarty_tpl->tpl_vars['row']->value['0']['name'];?>
+</div>
+                    <span><?php echo $_smarty_tpl->tpl_vars['row']->value['0']['ename'];?>
+</span>
+                        <p><?php echo $_smarty_tpl->tpl_vars['row']->value['0']['content'];?>
+</p>
                     <div class="more">
                         MORE
                     </div>
@@ -94,16 +111,16 @@ lanmo.png" alt=""></span>
             <div class="jiayi-right">
                 <ul>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-jiayi.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['imgarr']->value[0];?>
+" alt="">
                     </li>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-jiayi1.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['imgarr']->value[1];?>
+" alt="">
                     </li>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-jiayi2.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['imgarr']->value[2];?>
+" alt="">
                     </li>
                 </ul>
             </div>
@@ -112,35 +129,28 @@ jiayi2.png" alt="">
             <div class="jiayi-right1">
             <ul>
                 <li>
-                    <img src="<?php echo IMG_PATH;?>
-huncha1.png" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgar']->value[0];?>
+" alt="">
                 </li>
                 <li>
-                    <img src="<?php echo IMG_PATH;?>
-hunsha2.png" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgar']->value[1];?>
+" alt="">
                 </li>
                 <li>
-                    <img src="<?php echo IMG_PATH;?>
-hunsha3.png" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgar']->value[2];?>
+" alt="">
                 </li>
             </ul>
         </div>
             <div class="jiayi-life1">
                 <div class="gang"></div>
                 <div class="jiayiwenzi1">
-                    <div class="h1" >婚纱</div>
-                    <span>Wedding dress</span>
-                    <p>婚纱是结婚仪式及婚宴时新娘穿着的西式服饰</p>
-                    <p>
-                        婚纱分类的根据通过女性人体曲线
-                    </p>
-                    <p>
-                        薄、透、露、柔美、流畅、轻盈
-                    </p>
-                    <p>
-                        端庄、含蓄、朦胧等特点尽显人体美
-                    </p>
-                    <p>
+                    <div class="h1" ><?php echo $_smarty_tpl->tpl_vars['row']->value['1']['name'];?>
+</div>
+                    <span><?php echo $_smarty_tpl->tpl_vars['row']->value['1']['ename'];?>
+</span>
+                    <p><?php echo $_smarty_tpl->tpl_vars['row']->value['1']['content'];?>
+</p>
                     <div class="more1">
                         MORE
                     </div>
@@ -151,23 +161,12 @@ hunsha3.png" alt="">
             <div class="jiayi-life">
                 <div class="gang"></div>
                 <div class="jiayiwenzi">
-                    <div class="h1" >礼服</div>
-                    <span>Dress</span>
-                    <p>
-                        立领设计配上镶钻立体贴花
-                    </p>
-                    <p>
-                        使得礼服立体感十足，蕾丝打底，性感妩媚
-                    </p>
-                    <p>
-                        舒适的面料垂顺其地，更显高贵优雅
-                    </p>
-                    <p>
-                        细肩带加上抹胸的款式，分外性感。
-                    </p>
-                    <p>
-                        裙摆是拖尾的款式，梦幻薄纱叠加
-                    </p>
+                    <div class="h1" ><?php echo $_smarty_tpl->tpl_vars['row']->value['2']['name'];?>
+</div>
+                    <span><?php echo $_smarty_tpl->tpl_vars['row']->value['2']['ename'];?>
+</span>
+                    <p><?php echo $_smarty_tpl->tpl_vars['row']->value['2']['content'];?>
+</p>
                     <div class="more">
                         MORE
                     </div>
@@ -176,16 +175,16 @@ hunsha3.png" alt="">
             <div class="jiayi-right">
                 <ul>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-lifu1.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['imga']->value[0];?>
+" alt="">
                     </li>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-lifu1.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['imga']->value[1];?>
+" alt="">
                     </li>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-lifu1.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['imga']->value[2];?>
+" alt="">
                     </li>
                 </ul>
             </div>
@@ -194,36 +193,28 @@ lifu1.png" alt="">
             <div class="jiayi-right1">
                 <ul>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-jiayi.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['img1']->value[0];?>
+" alt="">
                     </li>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-jiayi1.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['img1']->value[1];?>
+" alt="">
                     </li>
                     <li>
-                        <img src="<?php echo IMG_PATH;?>
-jiayi2.png" alt="">
+                        <img src="<?php echo $_smarty_tpl->tpl_vars['img1']->value[2];?>
+" alt="">
                     </li>
                 </ul>
             </div>
             <div class="jiayi-life1">
                 <div class="gang1"></div>
                 <div class="jiayiwenzi1">
-                    <div class="h1" >伴娘服</div>
-                    <span>Mom service</span>
-                    <p>伴娘即为陪伴新娘完成婚礼的女孩</p>
-                    <p>
-                        一般由与新娘关系亲密的未婚女性担当
-                    </p>
-                    <p>
-                        其衣服搭配应与新娘服饰相得益彰
-                    </p>
-                    <p>通常伴娘服以优雅得体、简约自然大方为主
-                    </p>
-                    <p>
-                        不能太艳，以素雅为宜
-                    </p>
+                    <div class="h1" ><?php echo $_smarty_tpl->tpl_vars['row']->value['3']['name'];?>
+</div>
+                    <span><?php echo $_smarty_tpl->tpl_vars['row']->value['3']['ename'];?>
+</span>
+                    <p><?php echo $_smarty_tpl->tpl_vars['row']->value['3']['content'];?>
+</p>
                     <div class="more1">
                         MORE
                     </div>
@@ -255,19 +246,19 @@ Let every woman have her own wedding dress</span>
                 </div>
             </div>
             <div class="pingpai-right">
-                <img src="<?php echo IMG_PATH;?>
-pingai2.png" alt="">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['imgq']->value[4];?>
+" alt="">
             </div>
             <div class="pingpai-botoom-img">
                 <ul>
-                    <li><img src="<?php echo IMG_PATH;?>
-pingbai3.png" alt=""></li>
-                    <li><img src="<?php echo IMG_PATH;?>
-pingbai4.png" alt=""></li>
-                    <li><img src="<?php echo IMG_PATH;?>
-pingpai5.png" alt=""></li>
-                    <li><img src="<?php echo IMG_PATH;?>
-pingpai6.png" alt=""></li>
+                    <li><img src="<?php echo $_smarty_tpl->tpl_vars['imgq']->value[0];?>
+" alt=""></li>
+                    <li><img src="<?php echo $_smarty_tpl->tpl_vars['imgq']->value[1];?>
+" alt=""></li>
+                    <li><img src="<?php echo $_smarty_tpl->tpl_vars['imgq']->value[2];?>
+" alt=""></li>
+                    <li><img src="<?php echo $_smarty_tpl->tpl_vars['imgq']->value[3];?>
+" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -281,60 +272,27 @@ pingpai6.png" alt=""></li>
             <p>Product appreciation</p>
         </div>
         <div class="guanfang-content">
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['row2']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
             <div class="guanfang-nei">
                 <div class="guanfang-img">
-                    <img src="<?php echo IMG_PATH;?>
-guanfang1.png" alt="">
-                    <span>2018厦门国际时装周</span>
-                    <div class="guanfang-shijian">2018.03.09</div>
-                    <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['img'];?>
+" alt="">
                 </div>
+                <span><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</span>
+                <div class="guanfang-shijian"><?php echo $_smarty_tpl->tpl_vars['item']->value['time'];?>
+</div>
+                <p><?php echo $_smarty_tpl->tpl_vars['item']->value['content'];?>
+</p>
             </div>
-            <div class="guanfang-nei">
-                <div class="guanfang-img">
-                    <img src="<?php echo IMG_PATH;?>
-guanfang1.png" alt="">
-                    <span>2018厦门国际时装周</span>
-                    <div class="guanfang-shijian">2018.03.09</div>
-                    <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
-                </div>
-            </div>
-            <div class="guanfang-nei nei">
-                <div class="guanfang-img">
-                    <img src="<?php echo IMG_PATH;?>
-guanfang1.png" alt="">
-                    <span>2018厦门国际时装周</span>
-                    <div class="guanfang-shijian">2018.03.09</div>
-                    <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
-                </div>
-            </div>
-            <div class="guanfang-nei">
-                <div class="guanfang-img">
-                    <img src="<?php echo IMG_PATH;?>
-guanfang1.png" alt="">
-                    <span>2018厦门国际时装周</span>
-                    <div class="guanfang-shijian">2018.03.09</div>
-                    <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
-                </div>
-            </div>
-            <div class="guanfang-nei">
-                <div class="guanfang-img">
-                    <img src="<?php echo IMG_PATH;?>
-guanfang1.png" alt="">
-                    <span>2018厦门国际时装周</span>
-                    <div class="guanfang-shijian">2018.03.09</div>
-                    <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
-                </div>
-            </div>
-            <div class="guanfang-nei nei">
-                <div class="guanfang-img">
-                    <img src="<?php echo IMG_PATH;?>
-guanfang1.png" alt="">
-                    <span>2018厦门国际时装周</span>
-                    <div class="guanfang-shijian">2018.03.09</div>
-                    <p>在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门...</p>
-                </div>
-            </div>
+            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="pingpai-bottom">MORE</div>
         </div>
     </div>
@@ -457,5 +415,38 @@ re.png" alt="">
 <!--底部结束-->
 
 </body>
-</html><?php }
+</html>
+<?php echo '<script'; ?>
+>
+    let a=$('.banner>a')
+    let cir=$('.circle>li')
+    let n=0;
+    function aa() {
+
+         if(n>=a.length){
+             n=0;
+         }
+         a.removeClass('active').eq(n).addClass('active');
+         cir.removeClass('active').eq(n).addClass('active');
+        n++;
+}
+        let t=setInterval(aa,3000);
+        a.mouseenter(function () {
+            clearInterval(t)
+        })
+        a.mouseleave(function () {
+            t=setInterval(aa,3000)
+        })
+      cir.click(function () {
+            let b=$(this).index();
+            console.log(b)
+            cir.removeClass('active').eq(b).addClass('active')
+            a.removeClass('active').eq(b).addClass('active')
+            n=b;
+      })
+
+
+
+<?php echo '</script'; ?>
+><?php }
 }
