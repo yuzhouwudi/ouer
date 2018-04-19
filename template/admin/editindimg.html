@@ -52,12 +52,12 @@
             <div class="am-g tpl-amazeui-form">
 
                 <div class="am-u-sm-12 am-u-md-9">
-                    <form class="am-form am-form-horizontal" method="post" action="index.php?m=admin&f=menu&a=inertindimg">
+                    <form class="am-form am-form-horizontal" method="post" action="index.php?m=admin&f=menu&a=updindimg">
 
                         <div class="am-form-group">
                             <label class="am-u-sm-3 am-form-label">banner <span class="tpl-form-line-small-title">pid</span></label>
                             <div class="am-u-sm-9">
-                                <input type="text" name='pid' class="tpl-form-input" id="user-name" placeholder="请输入pid">
+                                <input type="text" name='pid' value="{$arr['pid']}" class="tpl-form-input" id="user-name" placeholder="请输入pid">
                                 <small>banner图请选1</small>
                             </div>
                         </div>
@@ -70,13 +70,13 @@
                                     <input type="file" multiple style="width: 80px;height: 80px;font-size: 0;
     display: block;position: relative;outline: none">
                                     <ul class="imgul"  style="height: auto;overflow: hidden;margin-top: 20px">
-
+                                        {$imgstr}
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-
+                        <input type="hidden" name="id" value="{$arr['id']}">
 
                         <div class="am-form-group">
                             <div class="am-u-sm-9 am-u-sm-push-3">

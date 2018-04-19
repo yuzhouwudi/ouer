@@ -148,12 +148,50 @@ class menu extends adminPar
     }
 
 //主页图片
-    function editindimg(){
+    function zhuyeimg(){
         $db=new db();
         $db->table='zhuyeimg';
-        $maxid=$db->selOne("max(id)",'1');
-        $max=(int)$maxid;
-        $arr=$db->selOne('*',"id='$max'");
+        $arr=$db->selAll();
+        $this->smarty->assign('arr',$arr);
+        $this->smarty->display('admin/zhuyeimg.html');
+        $db->close();
+    }
+
+
+    function indimg(){
+        $this->smarty->display('admin/indeximg.html');
+    }
+
+    function inertindimg(){
+        $img="";
+        if(isset($_POST['img'])){
+            $img=implode('--',$_POST['img']);     //       implode 将字符串以-连接
+        }
+        $db=new db();
+        $db->table='zhuyeimg';
+        $pid=$_POST['pid'];
+        if($img){
+            $row=$db->ins("img,pid","'$img','$pid'");
+        }else{
+            $row=$db->ins("pid","'$pid'");
+        }
+
+
+        if($row==1){
+            $this->jump('添加成功', 'index.php?m=admin&f=menu&a=zhuyeimg');
+        }else{
+            $this->jump('添加失败', 'index.php?m=admin&f=menu&a=zhuyeimg');
+        }
+        $db->close();
+    }
+
+    function editindimg(){
+        $id=$_GET['id'];
+        $db=new db();
+        $db->table='zhuyeimg';
+        $arr=$db->selOne('*',"id='$id'");
+        $this->smarty->assign('arr',$arr);
+
         $imgarr=explode('--',$arr['img']);
         $imgstr='';
         if($imgarr){
@@ -165,27 +203,30 @@ class menu extends adminPar
             }
         }
         $this->smarty->assign('imgstr',$imgstr);
-        $this->smarty->display('admin/indeximg.html');
+        $this->smarty->display('admin/editindimg.html');
     }
 
+
     function updindimg(){
+        $id=$_POST['id'];
         $img="";
         if(isset($_POST['img'])){
             $img=implode('--',$_POST['img']);     //       implode 将字符串以-连接
         }
         $db=new db();
         $db->table='zhuyeimg';
+        $pid=$_POST['pid'];
         if($img){
-            $row=$db->ins("img","'$img'");
+            $row=$db->upd("img='$img',pid='$pid'","id=$id");
         }else{
-            return;
+            $row=$db->upd("pid='$pid'","id=$id");
         }
 
 
         if($row==1){
-            $this->jump('添加成功', 'index.php?m=admin&f=menu&a=editindimg');
+            $this->jump('修改成功', 'index.php?m=admin&f=menu&a=zhuyeimg');
         }else{
-            $this->jump('添加失败', 'index.php?m=admin&f=menu&a=editindimg');
+            $this->jump('修改失败', 'index.php?m=admin&f=menu&a=zhuyeimg');
         }
         $db->close();
     }
