@@ -12,12 +12,47 @@
     /*padding-top: 40px;*/
     padding-top: 30px;
     margin: 0 auto;
+    position: relative;
 }
 .banner{
     width:750px;
     height:100%;
     float: left;
     overflow: hidden;
+}
+.banner>a.active{
+    display: block;
+}
+.banner>a{
+    display: none;
+    height:100%;
+    width:100%;
+}
+.banner>a>img{
+    height:100%;
+    width:100%;
+}
+.circle{
+    width: 390px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 185px;
+    bottom: 15px;
+    /*background: red;*/
+}
+.circle>li{
+    width:60px;
+    height:5px;
+    background: #000;
+}
+.circle>li.active{
+    background: lightgoldenrodyellow;
+}
+.circle>li:hover{
+    background: lightgoldenrodyellow;
 }
 .lanmo{
     width: 200px;

@@ -5,14 +5,36 @@
     <title>Title</title>
     <link rel="stylesheet" href="{CSS_PATH}index.css">
     <link rel="stylesheet" href="{CSS_PATH}base.css">
+    <script src="{JS_PATH}jquery-3.3.1.js"></script>
 </head>
 <body>
 <!--头部开始-->
     <div class="top">
         <div class="neikuan">
             <div class="banner">
+                <a href="index.php" class="active">
                 <img src="{IMG_PATH}banner.png" alt="">
+                </a>
+                <a href="index.php?a=product">
+                    <img src="{IMG_PATH}timg (1).jpg" alt="">
+                </a>
+                <a href="index.php?a=active">
+                    <img src="{IMG_PATH}timg (2).jpg" alt="">
+                </a>
+                <a href="index.php?a=danye">
+                    <img src="{IMG_PATH}timg (3).jpg" alt="">
+                </a>
+                <a href="index.php?a=productdetail">
+                    <img src="{IMG_PATH}pic-xiangqing4.png" alt="">
+                </a>
             </div>
+            <ul class="circle" style="">
+              <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
             <ul class="lanmo">
                 <li><a href="">
                     <span><img src="{IMG_PATH}lanmo.png" alt=""></span>
@@ -401,3 +423,36 @@ Let every woman have her own wedding dress</span>
 
 </body>
 </html>
+<script>
+    let a=$('.banner>a')
+    let cir=$('.circle>li')
+//    console.log(a)
+//    console.log(cir);
+    let n=0;
+    function aa() {
+
+         if(n>=a.length){
+             n=0;
+         }
+         a.removeClass('active').eq(n).addClass('active');
+         cir.removeClass('active').eq(n).addClass('active');
+        n++;
+}
+        let t=setInterval(aa,1000);
+        a.mouseenter(function () {
+            clearInterval(t)
+        })
+        a.mouseleave(function () {
+            t=setInterval(aa,2000)
+        })
+      cir.click(function () {
+            let b=$(this).index();
+            console.log(b)
+            cir.removeClass('active').eq(b).addClass('active')
+            a.removeClass('active').eq(b).addClass('active')
+            n=b;
+      })
+
+
+
+</script>
