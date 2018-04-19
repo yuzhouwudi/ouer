@@ -18,9 +18,7 @@ i
 }
 
 
-.body{
-    background: #f5f5f5;
-}
+
 .main{
     width: 1000px;
     height: auto;
@@ -259,6 +257,7 @@ i
 }
 .hot_text>.title{
     font-size: 20px;
+    color: #000;
     margin-bottom: 5px;
 }
 .hot_text>.des{
