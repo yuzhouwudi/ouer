@@ -134,7 +134,7 @@ class menu extends adminPar
         $db=new db();
         $db->table='oppr';
         if($img){
-            $row=$db->upd("name='$name',ename='$ename',thumb='$img',content='$con'","id='$id'");
+            $row=$db->upd("name='$name',ename='$ename',img='$img',content='$con'","id='$id'");
         }else{
             $row=$db->upd("name='$name',ename='$ename',content='$con'","id='$id'");
         }
@@ -151,7 +151,9 @@ class menu extends adminPar
     function editindimg(){
         $db=new db();
         $db->table='zhuyeimg';
-        $arr=$db->selOne('*',"id=1");
+        $maxid=$db->selOne("max(id)",'1');
+        $max=(int)$maxid;
+        $arr=$db->selOne('*',"id='$max'");
         $imgarr=explode('--',$arr['img']);
         $imgstr='';
         if($imgarr){
@@ -167,17 +169,18 @@ class menu extends adminPar
     }
 
     function updindimg(){
-        $img='';
+        $img="";
         if(isset($_POST['img'])){
             $img=implode('--',$_POST['img']);     //       implode 将字符串以-连接
         }
         $db=new db();
         $db->table='zhuyeimg';
         if($img){
-            $row=$db->upd("img='$img'","id=1");
+            $row=$db->ins("img","'$img'");
         }else{
             return;
         }
+
 
         if($row==1){
             $this->jump('添加成功', 'index.php?m=admin&f=menu&a=editindimg');
