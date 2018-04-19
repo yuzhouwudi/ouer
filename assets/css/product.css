@@ -161,10 +161,26 @@ i
     color: #fff;
     margin: 0;
     text-align: right;
-    background: rgba(125,36,44,0.5);
+    background: rgba(125,36,44,0.9);
     position: absolute;
     left:-135px;
+    z-index: 400;
 }
+
+.pic_img{
+    width: 550px;
+    height: 265px;
+    position: absolute;
+    top:0;
+    left:-135px;
+    overflow: hidden;
+    z-index:10;
+}
+
+
+
+
+
 .appr_bot2>.explain.mask>.etitle,.appr_bot2>.explain.mask>.title
 ,.appr_bot2>.explain.mask>.des{
     color: #fff;
@@ -192,6 +208,7 @@ i
     margin: 0;
     text-align: right;
 }
+
 .appr_bot4>.pic{
     height: 300px;
 }
