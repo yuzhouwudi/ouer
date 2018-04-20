@@ -3,11 +3,11 @@
 
 
     <div class="crumbs">
-        <div class="home">
+        <a class="home"  style="display: block" href="index.php?">
             <p>HOME</p>
             <p>首页</p>
             <div class="underline"></div>
-        </div>
+        </a>
         <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
         <div class="erji">
             <p>Product</p>
@@ -100,7 +100,7 @@
         <ul class="hot_bottom">
             {foreach $brr as $item}
             <li class="hot_list">
-                <a href="index.php?a=productdetail&id={$item['id']}"  style="display: block">
+                <a href="index.php?a=picdatail&id={$item['id']}"  style="display: block">
                 <div class="hot_pic">
                     <img src="{$item['thumb']}" alt="">
                     <div class="hot_zhe">

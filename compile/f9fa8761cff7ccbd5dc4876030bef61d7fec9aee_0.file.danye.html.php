@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 13:15:09
+/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:05:33
   from 'D:\wamp\www\aa\company\template\index\danye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad87a3d8bf367_15263619',
+  'unifunc' => 'content_5ad9ad5d691921_21435461',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f9fa8761cff7ccbd5dc4876030bef61d7fec9aee' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\danye.html',
-      1 => 1524048588,
+      1 => 1524215033,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad87a3d8bf367_15263619 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad9ad5d691921_21435461 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
@@ -40,11 +40,11 @@ danye.css">
 <!--</head>-->
 <!--<body>-->
 <div class="crumbs">
-    <div class="home">
+    <a class="home" style="display: block" href="index.php?">
         <p>HOME</p>
         <p>首页</p>
         <div class="underline"></div>
-    </div>
+    </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
         <p>BRAND</p>

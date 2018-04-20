@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:40:37
+/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:06:10
   from 'D:\wamp\www\aa\company\template\index\list.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad89c555aeee9_78962201',
+  'unifunc' => 'content_5ad9ad8260cf97_49832780',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e013808fa033950977ebf2ee4237a44a0c2c8420' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\list.html',
-      1 => 1524047591,
+      1 => 1524215167,
       2 => 'file',
     ),
   ),
@@ -22,25 +22,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad89c555aeee9_78962201 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad9ad8260cf97_49832780 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 list.css">
 
-<!--面包屑开始-->
+
 <div class="crumbs">
-    <div class="home">
-        <p>HOME</p>
-        <p>首页</p>
+    <a class="home"  style="display: block" href="index.php?">
+        <p>HOME</p >
+        <p>首页</p >
         <div class="underline"></div>
-    </div>
+    </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
-        <p>BRAND</p>
-        <p>品牌</p>
+        <p>Active</p >
+        <p>活动</p >
         <div class="underline"></div></div>
-
 </div>
 <!--面包屑结束-->
 
@@ -73,16 +72,21 @@ list.css">
 /remen.png" alt="">
         </div>
         <div class="remen-img">
-            <img src="<?php echo IMG_PATH;?>
-/remen1.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['img'];?>
+" alt="">
         </div>
-        <div class="remen-content">
-            <div class="h1">厦门国际时装周圆满成功</div>
+        <a class="remen-content" style="display: block" href="index.php?a=actdetail&id=<?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['id'];?>
+">
+            <div class="h1"><?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['title'];?>
+</div>
             <h2>FASHION WEEK</h2>
-            <p>结合中国民族文化特色，极具有东方色彩</p>
-            <span>999人浏览</span>
-            <span>2018.03.08</span>
-        </div>
+            <p><?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['des'];?>
+</p>
+            <span><?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['count'];?>
+人浏览</span>
+            <span><?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['time'];?>
+</span>
+        </a>
     </div>
     <div class="remen aa">
         <div class="biaoshi">
@@ -90,16 +94,21 @@ list.css">
 /remen2.png" alt="">
         </div>
         <div class="remen-img">
-            <img src="<?php echo IMG_PATH;?>
-/remen4.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value[1]['img'];?>
+" alt="">
         </div>
-        <div class="remen-content bb">
-            <div class="h1">厦门国际时装周圆满成功</div>
+        <a class="remen-content bb" style="display: block" href="index.php?a=actdetail&id=<?php echo $_smarty_tpl->tpl_vars['arr']->value[1]['id'];?>
+">
+            <div class="h1"><?php echo $_smarty_tpl->tpl_vars['arr']->value[1]['title'];?>
+</div>
             <h2>FASHION WEEK</h2>
-            <p>结合中国民族文化特色，极具有东方色彩</p>
-            <span>999人浏览</span>
-            <span>2018.03.08</span>
-        </div>
+            <p><?php echo $_smarty_tpl->tpl_vars['arr']->value[1]['des'];?>
+</p>
+            <span><?php echo $_smarty_tpl->tpl_vars['arr']->value[1]['count'];?>
+人浏览</span>
+            <span><?php echo $_smarty_tpl->tpl_vars['arr']->value[1]['time'];?>
+</span>
+        </a>
     </div>
     <div class="remen">
         <div class="biaoshi">
@@ -107,30 +116,25 @@ list.css">
 /remen3.png" alt="">
         </div>
         <div class="remen-img">
-            <img src="<?php echo IMG_PATH;?>
-/remen5.png" alt="">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value[2]['img'];?>
+" alt="">
         </div>
-        <div class="remen-content">
-            <div class="h1">厦门国际时装周圆满成功</div>
+        <a class="remen-content" style="display: block" href="index.php?a=actdetail&id=<?php echo $_smarty_tpl->tpl_vars['arr']->value[2]['id'];?>
+">
+            <div class="h1"><?php echo $_smarty_tpl->tpl_vars['arr']->value[2]['title'];?>
+</div>
             <h2>FASHION WEEK</h2>
-            <p>结合中国民族文化特色，极具有东方色彩</p>
-            <span>999人浏览</span>
-            <span>2018.03.08</span>
-        </div>
+            <p><?php echo $_smarty_tpl->tpl_vars['arr']->value[2]['des'];?>
+</p>
+            <span><?php echo $_smarty_tpl->tpl_vars['arr']->value[2]['count'];?>
+人浏览</span>
+            <span><?php echo $_smarty_tpl->tpl_vars['arr']->value[2]['time'];?>
+</span>
+        </a>
     </div>
 
     <!--分页-->
-    <div class="paging">
-        <ul>
-            <li><-</li>
-            <li class="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>-></li>
-        </ul>
-    </div>
+
     <!--中间图-->
     <div class="middle">
         <img src="<?php echo IMG_PATH;?>
@@ -156,69 +160,37 @@ list.css">
     </div>
 
     <div class="renwu">
-        <div class="whole">
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['brr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
+        <a class="whole" style="display: block" href="index.php?a=actdetail&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+">
             <div class="whole-img">
-                <img src="<?php echo IMG_PATH;?>
-/whole.png" alt="">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['img'];?>
+" alt="">
             </div>
             <div class="whole-ziti">
                 <span>Fashion WORKS</span>
-                <h1>中国杰出女民营企业家</h1>
-                <p>中国婚纱领军人物</p>
-                <span>999人浏览</span>
-                <span>2018.03.08</span>
+                <h1><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</h1>
+                <p><?php echo $_smarty_tpl->tpl_vars['item']->value['des'];?>
+</p>
+                <span><?php echo $_smarty_tpl->tpl_vars['item']->value['count'];?>
+人浏览</span>
+                <span><?php echo $_smarty_tpl->tpl_vars['item']->value['time'];?>
+</span>
             </div>
-        </div>
-        <div class="whole">
-            <div class="whole-img">
-                <img src="<?php echo IMG_PATH;?>
-/whole.png" alt="">
-            </div>
-            <div class="whole-ziti">
-                <span>Fashion WORKS</span>
-                <h1>挑战最长婚纱拖尾</h1>
-                <p>中国婚纱领军人物</p>
-                <span>999人浏览</span>
-                <span>2018.03.08</span>
-            </div>
-        </div>
-        <div class="whole">
-            <div class="whole-img">
-                <img src="<?php echo IMG_PATH;?>
-/whole.png" alt="">
-            </div>
-            <div class="whole-ziti">
-                <span>Fashion WORKS</span>
-                <h1>中国杰出女民营企业家</h1>
-                <p>中国婚纱领军人物</p>
-                <span>999人浏览</span>
-                <span>2018.03.08</span>
-            </div>
-        </div>
-        <div class="whole">
-            <div class="whole-img">
-                <img src="<?php echo IMG_PATH;?>
-/whole.png" alt="">
-            </div>
-            <div class="whole-ziti">
-                <span>Fashion WORKS</span>
-                <h1>挑战最长婚纱拖尾</h1>
-                <p>中国婚纱领军人物</p>
-                <span>999人浏览</span>
-                <span>2018.03.08</span>
-            </div>
-        </div>
+        </a>
+        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
         <div class="paging">
-            <ul>
-                <li><-</li>
-                <li class="active">1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>-></li>
-            </ul>
+            <?php echo $_smarty_tpl->tpl_vars['str']->value;?>
+
         </div>
     </div>
 </section>

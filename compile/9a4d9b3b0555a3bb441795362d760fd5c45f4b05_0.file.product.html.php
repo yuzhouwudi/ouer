@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:52:53
+/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:05:35
   from 'D:\wamp\www\aa\company\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad89f35340fd3_74444420',
+  'unifunc' => 'content_5ad9ad5fd5e0d2_21416816',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a4d9b3b0555a3bb441795362d760fd5c45f4b05' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\product.html',
-      1 => 1524145886,
+      1 => 1524215131,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad89f35340fd3_74444420 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad9ad5fd5e0d2_21416816 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
@@ -30,11 +30,11 @@ product.css">
 
 
     <div class="crumbs">
-        <div class="home">
+        <a class="home"  style="display: block" href="index.php?">
             <p>HOME</p>
             <p>首页</p>
             <div class="underline"></div>
-        </div>
+        </a>
         <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
         <div class="erji">
             <p>Product</p>
@@ -73,7 +73,12 @@ product.css">
             </div>
 
             <div class="appr_bot appr_bot2">
+                <div class="pic_img">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['img'];?>
+" alt="">
+                </div>
                 <div class="explain mask">
+
                     <div class="etitle"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['ename'];?>
 </div>
                     <div class="title"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['xilie'];?>
@@ -82,6 +87,7 @@ product.css">
 </div>
                     <div class="edes"><?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['edes'];?>
 </div>
+
                 </div>
                 <div class="pic">
                     <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value['1']['img'];?>
@@ -146,7 +152,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
             <li class="hot_list">
-                <a href="index.php?a=productdetail&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+                <a href="index.php?a=picdatail&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 "  style="display: block">
                 <div class="hot_pic">
                     <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['thumb'];?>

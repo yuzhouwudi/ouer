@@ -14,6 +14,9 @@ i
 {
     font-style: normal;
 }
+a{
+
+}
 .big_box{
     width: 1000px;
     height: auto;
@@ -158,6 +161,7 @@ i
     width:250px;
     height:130px;
     float: left;
+    overflow: hidden;
 }
 .remen-img img{
     width: 100%;
@@ -247,6 +251,10 @@ i
     text-align: center;
     margin-left: 20px;
 }
+.paging ul li a{
+    color: #fff;
+    text-decoration: none;
+}
 /*中间图*/
 .middle{
     width:1000px;
@@ -275,6 +283,7 @@ i
     height: 122px;
     margin-left: 30px;
     float: left;
+    overflow: hidden;
 }
 .whole-img img{
     width: 100%;

@@ -2,11 +2,11 @@
 {include file='header.html'}
 <link rel="stylesheet" href="{CSS_PATH}chanpinxiangqing.css">
 <div class="crumbs">
-    <div class="home">
+    <a class="home" style="display: flex"href="index.php?">
         <p>HOME</p>
         <p>首页</p>
         <div class="underline"></div>
-    </div>
+    </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
         <p>PRODUCT</p>
@@ -15,7 +15,7 @@
     </div>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
-        <p>宫廷性格拖尾</p>
+        <p>{$frr['name']}</p>
     </div>
 
 </div>
@@ -31,16 +31,16 @@
             <div class="opprbottom">C H A N P I N</div>
         </div>
         <div class="wedding">
-            <div class="wedtop">Wedding is the witness and heritage of love</div>
-            <div class="wedmid"> <span>马来福双飘</span>中式嫁衣</div>
-            <div class="wedbot">婚纱是爱情的见证和传承</div>
+            <div class="wedtop">{$frr['ename']}</div>
+            <div class="wedmid"> {$frr['name']}</div>
+            <div class="wedbot">{$frr['des']}</div>
 
         </div>
         <div class="wedbottom">
             <div class="wedleft">
-                <img src="" alt="图片" >  </div>
+                <img src="{$imgfor[0]}" alt="图片" >  </div>
             <div class="wedright">
-                <img src="" alt="图片" >
+                <img src="{$imgfor[1]}" alt="图片" >
             </div>
         </div>
         <div class="design">
@@ -50,12 +50,16 @@
         </div>
         <div class="des">
             <div class="desboder">
-            <div class="desimg"></div>
+            <div class="desimg" >
+                <img src="{$arr[0]['img']}" alt="">
+            </div>
             </div>
 
             <div class="desspack">
-                <p class="jiedu"> 设计师解读</p>
-                <div class="spack"></div>
+                <p class="jiedu"> {$arr[0]['title']}</p>
+                <div class="spack">
+                    {$arr[0]['content']}
+                </div>
             </div>
         </div>
         <div class="design">
@@ -65,16 +69,19 @@
         </div>
   <div class="zuopin">
       <div class="zuopinimg">
-          <img src="" alt="">
+          <img src="{$img[0]}" alt="">
       </div>
       <div class="zuopinmid">
-          <div class="midtop"></div>
+          <div class="midtop" style="padding-top: 15px">
+              {$brr[0]['content']}
+
+          </div>
           <div class="midbot">
               <img src="{IMG_PATH}aaa.png" alt="">
           </div>
       </div>
       <div class="zuopinright">
-          <img src="" alt="">
+          <img src="{$img[1]}" alt="" style="display: block;margin-top: 19px;">
       </div>
     </div>
         <div class="design">
@@ -84,40 +91,45 @@
         </div>
         <div class="light">
             <div class="lightone">
-                 <div class="onetop"> ONE/<span> 立体剪裁袖手显瘦版型</span></div>
+                 <div class="onetop"> {$crr[0]['nub']}/<span>  {$crr[0]['des']}</span></div>
                 <div class="leftimg">
-                    <img src="" alt="" >
+                    <img src="{$imgone[0]}" alt="" >
                 </div>
                 <div class="rightimg">
-                    <img src="" alt="" >
+                    <img src="{$imgone[1]}" alt="" >
                 </div>
                 <div class="wenzi">
-
+                {$crr[0]['content']}
                 </div>
 
             </div>
             <div class="lightone two">
-                <div class="onetop "> TWO/<span> 立体剪裁袖手显瘦版型</span></div>
+                <div class="onetop "> {$crr[1]['nub']}/<span>  {$crr[1]['des']}</span></div>
                 <div class="leftimg">
-                    <img src="" alt="" >
+                    <img src="{$imgtwo[0]}" alt="" >
                 </div>
                 <div class="rightimg">
-                    <img src="" alt="" >
+                    <img src="{$imgtwo[1]}" alt="" >
                 </div>
                 <div class="wenzi">
-
+                    {$crr[1]['content']}
                 </div>
 
             </div>
+
             <div class="lightone three">
-                <div class="onetop"> ONE/<span> 立体剪裁袖手显瘦版型</span></div>
-                <div class="leftimg">
-                    <img src="" alt="" >
+                <div class="onetop">  {$crr[2]['nub']}/<span id="span">  {$crr[2]['des']}</span></div>
+
+                <div class="rightimg" id="threeleft">
+                    <img src="{$imgthree[1]}" alt="" >
+
                 </div>
-                <div class="rightimg">
-                    <img src="" alt="" >
+                               <div class="leftimg" id="threeright">
+                    <img src="{$imgthree[0]}" alt="" >
                 </div>
-                <div class="wenzi">
+
+                <div class="wenzi" id="wenzi">
+                    {$crr[2]['content']}
                 </div>
             </div>
 
@@ -129,57 +141,41 @@
             <div class="lange">原版工艺</div>
             <div class="elange">DESINGER</div>
         </div>
-<div style="width: 100%; height: 900px; display: flex;flex-wrap: wrap">
+<div style="width: 100%; height: 800px; display: flex;flex-wrap: wrap">
+    {foreach $drr as $item}
      <div class="gongyi">
         <div class="gongyiimg">
-            <img src="" alt="图片呀">
+            <img src="{$item['img']}" alt="图片呀">
         </div>
-        <div class="zhuti">01 传统古典盘扣立领</div>
-        <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
+        <div class="zhuti">{$item['title']}</div>
+        <p class="zhuwen">{$item['content']}</p>
     </div>
-        <div class="gongyi">
-            <div class="gongyiimg">
-                <img src="" alt="图片呀">
-            </div>
-            <div class="zhuti">01 传统古典盘扣立领</div>
-            <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
-        </div>
-        <div class="gongyi">
-            <div class="gongyiimg">
-                <img src="" alt="图片呀">
-            </div>
-            <div class="zhuti">01 传统古典盘扣立领</div>
-            <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
-        </div>
-        <div class="gongyi">
-            <div class="gongyiimg">
-                <img src="" alt="图片呀">
-            </div>
-            <div class="zhuti">01 传统古典盘扣立领</div>
-            <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
-        </div>
+
+   {/foreach}
+
 </div>
         <div class="design">
             <div class="box"></div>
             <div class="lange">物品实拍</div>
             <div class="elange">DESINGER</div>
         </div>
-        <div class="IMG imgs"></div>
-        <div class="IMG"></div>
-   <div class="kongbai"></div>
-
-
+        <div class="IMG imgs">
+            <img src="{$imgerr[1]}" alt="">
+        </div>
+        <div class="IMG">
+            <img src="{$imgerr[0]}" alt="">
+        </div>
 
 
 <div class="page">
-    <div class="pa_left">
+    <a class="pa_left" style="display: block" href="index.php?a=picdatail&id={$grr['id']}">
         <h1>上一篇：</h1>
-        <p>蔡美月国际婚纱回顾</p>
-    </div>
-    <div class="pa_right">
+        <p>{$grr['name']}</p>
+    </a>
+    <a class="pa_right" style="display: block"href="index.php?a=picdatail&id={$hrr['id']}">
         <h1>下一篇：</h1>
-        <p>国际时装周圆满成功</p>
-    </div>
+        <p>{$hrr['name']}</p>
+    </a>
 </div>
 
         <section class="comment">
@@ -188,46 +184,21 @@
                 <div class="lange">产品评论</div>
                 <div class="elange">DESINGER</div>
             </div>
-
-
+<div id="messbox">
+{foreach $mess as $item}
             <div class="com_box">
                 <div class="com_tu">
-                    <img src="assets/img/com-1.png" alt="">
+                    <img src="{$item['img']}" alt="">
                 </div>
                 <div class="com_word">
                     <i class="iconfont icon3">&#xe628;</i>
-                    <h1>青春正年少</h1>
-                    <span>2018-04-16 00:00:00</span>
-                    <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-                    <p>我的机绣雕刻法25年也能时尚化国际化。</p>
+                    <h1>{$item['name']}</h1>
+                    <span>{$item['time']}</span>
+                    <p>{$item['content']}</p>
                 </div>
             </div>
-            <div class="com_box">
-                <div class="com_tu">
-                    <img src="assets/img/com-2.png" alt="">
-                </div>
-                <div class="com_word">
-                    <i class="iconfont icon3">&#xe628;</i>
-                    <h1>青春正年少</h1>
-                    <span>2018-04-16 00:00:00</span>
-                    <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-                    <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-                </div>
-            </div>
-            <div class="com_box">
-                <div class="com_tu">
-                    <img src="assets/img/com-3.png" alt="">
-                </div>
-                <div class="com_word">
-                    <i class="iconfont icon3">&#xe628;</i>
-                    <h1>青春正年少</h1>
-                    <span>2018-04-16 00:00:00</span>
-                    <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-                    <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-                </div>
-            </div>
-            <!--分页-->
-
+{/foreach}
+</div>
         </section>
         <!--评论结束-->
         <!--留言开始-->
@@ -238,20 +209,112 @@
                 <div class="elange">DESINGER</div>
             </div>
 
-
             <div id="upload">
-                <input type="file" name="img" multiple>
-                <ul class="imgul"></ul>
-            </div>
-            <div class="liuyanbox">
-                <textarea class="liuyan" name="" id="" cols="30" rows="10" placeholder="请输入你想说的话..."></textarea>
+            <input type="file" name="img" multiple>
+            <ul class="imgul" style="margin-left: -50%;margin-top: 10px">
+            </ul>
+        </div>
+            <!--<input type="file">-->
+            <div class="liuyanbox" >
+                <textarea class="liuyan" name="" id="{$frr['id']}" cols="30" rows="10" placeholder="请输入你想说的话..."></textarea>
                 <button class="anniu">评论</button>
             </div>
+
+
         </section>
         <!--留言结束-->
-
 
     </div>
 
 
 {include file='footer.html'}
+<script>
+    let input=document.querySelector('#upload > input[type=file]');
+    let size=1024*1024*2;
+    let type=['image/png','image/jpeg','image/gif'];
+    let imgul=document.querySelector('.imgul')
+    input.onchange=function () {
+        imgul.innerHTML=''
+        let arr=this.files;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i].size>size ){
+                alert('图片大小不正确');
+                return;
+            }else if(!type.includes(arr[i].type)){
+                alert('图片格式不正确');
+                return;
+            }
+        }
+
+        for(let i=0;i<arr.length;i++){
+            let fileread=new FileReader();
+            fileread.readAsDataURL(arr[i]);
+            fileread.onload=function (e) {
+                let li=document.createElement('li');
+                let div=document.createElement('div');
+                div.style.cssText="width:0%;height:2px;border-radius:2px;" +
+                    "background:#ccc;position:absolute;left:0;bottom:0;"
+                li.style.cssText="width:100px;height:100px;border:1px solid #ccc;" +
+                    "float:left;margin-right:5px;position:relative;" +
+                    "background-image:url("+this.result+");background-size:cover"
+                li.appendChild(div)
+                imgul.appendChild(li)
+
+                let formdata=new FormData();
+                formdata.append('file',arr[i]);
+
+                let ajax=new XMLHttpRequest();
+                ajax.upload.onprogress=function (e) {
+                    let width=e.loaded/e.total*100
+                    div.style.width=width+'%';
+                };
+                ajax.onload=function () {
+                    let inp=document.createElement('input');
+                    inp.type='hidden';
+                    inp.name='img';
+                    inp.id='input'
+                    inp.value=ajax.responseText;
+                    input.parentNode.appendChild(inp);
+                };
+                ajax.open('post',"index.php?m=admin&f=menu&a=upload");
+                ajax.send(formdata)
+            };
+        }
+    }
+
+
+    $('.anniu').click(function () {
+        $.ajax({
+            url:"index.php?a=addmess",
+            data:{
+                mess:$('.liuyanbox textarea').val(),
+                id:$('.liuyanbox textarea').attr('id'),
+                img:$('#input').val()
+            },
+            success:function (arr) {
+//                console.log(arr);
+                if(arr == 0){
+                    alert('发布失败')
+                }else{
+                    let json=JSON.parse(arr);
+                    $("<div class='com_box'>").html( `
+
+              <div class="com_tu">
+                <img src="${ json.img}" alt="">
+               </div>
+               <div class="com_word">
+                <i class="iconfont icon3">&#xe628;</i>
+                <h1>${ json.name}</h1>
+                <span>${ json.time}</span>
+                <p>${ json.content}</p>
+            </div>
+                    `
+                    ).prependTo('#messbox')
+                }
+                $('.liuyanbox textarea').val('')
+
+            }
+        })
+    })
+
+</script>

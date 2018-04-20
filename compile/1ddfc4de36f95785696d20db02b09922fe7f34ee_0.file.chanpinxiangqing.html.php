@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 11:33:41
+/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:30:01
   from 'D:\wamp\www\aa\company\template\index\chanpinxiangqing.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad862759a2733_41038504',
+  'unifunc' => 'content_5ad9b319c47641_76098627',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1ddfc4de36f95785696d20db02b09922fe7f34ee' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\chanpinxiangqing.html',
-      1 => 1524107619,
+      1 => 1524216600,
       2 => 'file',
     ),
   ),
@@ -22,17 +22,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad862759a2733_41038504 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad9b319c47641_76098627 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 chanpinxiangqing.css">
 <div class="crumbs">
-    <div class="home">
+    <a class="home" style="display: flex"href="index.php?">
         <p>HOME</p>
         <p>首页</p>
         <div class="underline"></div>
-    </div>
+    </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
         <p>PRODUCT</p>
@@ -41,7 +41,8 @@ chanpinxiangqing.css">
     </div>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
-        <p>宫廷性格拖尾</p>
+        <p><?php echo $_smarty_tpl->tpl_vars['frr']->value['name'];?>
+</p>
     </div>
 
 </div>
@@ -57,16 +58,21 @@ chanpinxiangqing.css">
             <div class="opprbottom">C H A N P I N</div>
         </div>
         <div class="wedding">
-            <div class="wedtop">Wedding is the witness and heritage of love</div>
-            <div class="wedmid"> <span>马来福双飘</span>中式嫁衣</div>
-            <div class="wedbot">婚纱是爱情的见证和传承</div>
+            <div class="wedtop"><?php echo $_smarty_tpl->tpl_vars['frr']->value['ename'];?>
+</div>
+            <div class="wedmid"> <?php echo $_smarty_tpl->tpl_vars['frr']->value['name'];?>
+</div>
+            <div class="wedbot"><?php echo $_smarty_tpl->tpl_vars['frr']->value['des'];?>
+</div>
 
         </div>
         <div class="wedbottom">
             <div class="wedleft">
-                <img src="" alt="图片" >  </div>
+                <img src="<?php echo $_smarty_tpl->tpl_vars['imgfor']->value[0];?>
+" alt="图片" >  </div>
             <div class="wedright">
-                <img src="" alt="图片" >
+                <img src="<?php echo $_smarty_tpl->tpl_vars['imgfor']->value[1];?>
+" alt="图片" >
             </div>
         </div>
         <div class="design">
@@ -76,12 +82,19 @@ chanpinxiangqing.css">
         </div>
         <div class="des">
             <div class="desboder">
-            <div class="desimg"></div>
+            <div class="desimg" >
+                <img src="<?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['img'];?>
+" alt="">
+            </div>
             </div>
 
             <div class="desspack">
-                <p class="jiedu"> 设计师解读</p>
-                <div class="spack"></div>
+                <p class="jiedu"> <?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['title'];?>
+</p>
+                <div class="spack">
+                    <?php echo $_smarty_tpl->tpl_vars['arr']->value[0]['content'];?>
+
+                </div>
             </div>
         </div>
         <div class="design">
@@ -91,17 +104,23 @@ chanpinxiangqing.css">
         </div>
   <div class="zuopin">
       <div class="zuopinimg">
-          <img src="" alt="">
+          <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value[0];?>
+" alt="">
       </div>
       <div class="zuopinmid">
-          <div class="midtop"></div>
+          <div class="midtop" style="padding-top: 15px">
+              <?php echo $_smarty_tpl->tpl_vars['brr']->value[0]['content'];?>
+
+
+          </div>
           <div class="midbot">
               <img src="<?php echo IMG_PATH;?>
 aaa.png" alt="">
           </div>
       </div>
       <div class="zuopinright">
-          <img src="" alt="">
+          <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value[1];?>
+" alt="" style="display: block;margin-top: 19px;">
       </div>
     </div>
         <div class="design">
@@ -111,40 +130,60 @@ aaa.png" alt="">
         </div>
         <div class="light">
             <div class="lightone">
-                 <div class="onetop"> ONE/<span> 立体剪裁袖手显瘦版型</span></div>
+                 <div class="onetop"> <?php echo $_smarty_tpl->tpl_vars['crr']->value[0]['nub'];?>
+/<span>  <?php echo $_smarty_tpl->tpl_vars['crr']->value[0]['des'];?>
+</span></div>
                 <div class="leftimg">
-                    <img src="" alt="" >
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgone']->value[0];?>
+" alt="" >
                 </div>
                 <div class="rightimg">
-                    <img src="" alt="" >
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgone']->value[1];?>
+" alt="" >
                 </div>
                 <div class="wenzi">
+                <?php echo $_smarty_tpl->tpl_vars['crr']->value[0]['content'];?>
 
                 </div>
 
             </div>
             <div class="lightone two">
-                <div class="onetop "> TWO/<span> 立体剪裁袖手显瘦版型</span></div>
+                <div class="onetop "> <?php echo $_smarty_tpl->tpl_vars['crr']->value[1]['nub'];?>
+/<span>  <?php echo $_smarty_tpl->tpl_vars['crr']->value[1]['des'];?>
+</span></div>
                 <div class="leftimg">
-                    <img src="" alt="" >
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgtwo']->value[0];?>
+" alt="" >
                 </div>
                 <div class="rightimg">
-                    <img src="" alt="" >
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgtwo']->value[1];?>
+" alt="" >
                 </div>
                 <div class="wenzi">
+                    <?php echo $_smarty_tpl->tpl_vars['crr']->value[1]['content'];?>
 
                 </div>
 
             </div>
+
             <div class="lightone three">
-                <div class="onetop"> ONE/<span> 立体剪裁袖手显瘦版型</span></div>
-                <div class="leftimg">
-                    <img src="" alt="" >
+                <div class="onetop">  <?php echo $_smarty_tpl->tpl_vars['crr']->value[2]['nub'];?>
+/<span id="span">  <?php echo $_smarty_tpl->tpl_vars['crr']->value[2]['des'];?>
+</span></div>
+
+                <div class="rightimg" id="threeleft">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgthree']->value[1];?>
+" alt="" >
+
                 </div>
-                <div class="rightimg">
-                    <img src="" alt="" >
+                               <div class="leftimg" id="threeright">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['imgthree']->value[0];?>
+" alt="" >
                 </div>
-                <div class="wenzi">
+
+                <div class="wenzi" id="wenzi">
+                    <?php echo $_smarty_tpl->tpl_vars['crr']->value[2]['content'];?>
+
                 </div>
             </div>
 
@@ -156,57 +195,57 @@ aaa.png" alt="">
             <div class="lange">原版工艺</div>
             <div class="elange">DESINGER</div>
         </div>
-<div style="width: 100%; height: 900px; display: flex;flex-wrap: wrap">
+<div style="width: 100%; height: 800px; display: flex;flex-wrap: wrap">
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['drr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
      <div class="gongyi">
         <div class="gongyiimg">
-            <img src="" alt="图片呀">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['img'];?>
+" alt="图片呀">
         </div>
-        <div class="zhuti">01 传统古典盘扣立领</div>
-        <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
+        <div class="zhuti"><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</div>
+        <p class="zhuwen"><?php echo $_smarty_tpl->tpl_vars['item']->value['content'];?>
+</p>
     </div>
-        <div class="gongyi">
-            <div class="gongyiimg">
-                <img src="" alt="图片呀">
-            </div>
-            <div class="zhuti">01 传统古典盘扣立领</div>
-            <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
-        </div>
-        <div class="gongyi">
-            <div class="gongyiimg">
-                <img src="" alt="图片呀">
-            </div>
-            <div class="zhuti">01 传统古典盘扣立领</div>
-            <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
-        </div>
-        <div class="gongyi">
-            <div class="gongyiimg">
-                <img src="" alt="图片呀">
-            </div>
-            <div class="zhuti">01 传统古典盘扣立领</div>
-            <p class="zhuwen">古韵十足的传统立领设计复古金色盘扣 精细设计，精致大气</p>
-        </div>
+
+   <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
 </div>
         <div class="design">
             <div class="box"></div>
             <div class="lange">物品实拍</div>
             <div class="elange">DESINGER</div>
         </div>
-        <div class="IMG imgs"></div>
-        <div class="IMG"></div>
-   <div class="kongbai"></div>
-
-
+        <div class="IMG imgs">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['imgerr']->value[1];?>
+" alt="">
+        </div>
+        <div class="IMG">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['imgerr']->value[0];?>
+" alt="">
+        </div>
 
 
 <div class="page">
-    <div class="pa_left">
+    <a class="pa_left" style="display: block" href="index.php?a=picdatail&id=<?php echo $_smarty_tpl->tpl_vars['grr']->value['id'];?>
+">
         <h1>上一篇：</h1>
-        <p>蔡美月国际婚纱回顾</p>
-    </div>
-    <div class="pa_right">
+        <p><?php echo $_smarty_tpl->tpl_vars['grr']->value['name'];?>
+</p>
+    </a>
+    <a class="pa_right" style="display: block"href="index.php?a=picdatail&id=<?php echo $_smarty_tpl->tpl_vars['hrr']->value['id'];?>
+">
         <h1>下一篇：</h1>
-        <p>国际时装周圆满成功</p>
-    </div>
+        <p><?php echo $_smarty_tpl->tpl_vars['hrr']->value['name'];?>
+</p>
+    </a>
 </div>
 
         <section class="comment">
@@ -215,46 +254,32 @@ aaa.png" alt="">
                 <div class="lange">产品评论</div>
                 <div class="elange">DESINGER</div>
             </div>
-
-
+<div id="messbox">
+<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['mess']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
             <div class="com_box">
                 <div class="com_tu">
-                    <img src="assets/img/com-1.png" alt="">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['img'];?>
+" alt="">
                 </div>
                 <div class="com_word">
                     <i class="iconfont icon3">&#xe628;</i>
-                    <h1>青春正年少</h1>
-                    <span>2018-04-16 00:00:00</span>
-                    <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-                    <p>我的机绣雕刻法25年也能时尚化国际化。</p>
+                    <h1><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+</h1>
+                    <span><?php echo $_smarty_tpl->tpl_vars['item']->value['time'];?>
+</span>
+                    <p><?php echo $_smarty_tpl->tpl_vars['item']->value['content'];?>
+</p>
                 </div>
             </div>
-            <div class="com_box">
-                <div class="com_tu">
-                    <img src="assets/img/com-2.png" alt="">
-                </div>
-                <div class="com_word">
-                    <i class="iconfont icon3">&#xe628;</i>
-                    <h1>青春正年少</h1>
-                    <span>2018-04-16 00:00:00</span>
-                    <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-                    <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-                </div>
-            </div>
-            <div class="com_box">
-                <div class="com_tu">
-                    <img src="assets/img/com-3.png" alt="">
-                </div>
-                <div class="com_word">
-                    <i class="iconfont icon3">&#xe628;</i>
-                    <h1>青春正年少</h1>
-                    <span>2018-04-16 00:00:00</span>
-                    <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-                    <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-                </div>
-            </div>
-            <!--分页-->
-
+<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+</div>
         </section>
         <!--评论结束-->
         <!--留言开始-->
@@ -265,22 +290,116 @@ aaa.png" alt="">
                 <div class="elange">DESINGER</div>
             </div>
 
-
             <div id="upload">
-                <input type="file" name="img" multiple>
-                <ul class="imgul"></ul>
-            </div>
-            <div class="liuyanbox">
-                <textarea class="liuyan" name="" id="" cols="30" rows="10" placeholder="请输入你想说的话..."></textarea>
+            <input type="file" name="img" multiple>
+            <ul class="imgul" style="margin-left: -50%;margin-top: 10px">
+            </ul>
+        </div>
+            <!--<input type="file">-->
+            <div class="liuyanbox" >
+                <textarea class="liuyan" name="" id="<?php echo $_smarty_tpl->tpl_vars['frr']->value['id'];?>
+" cols="30" rows="10" placeholder="请输入你想说的话..."></textarea>
                 <button class="anniu">评论</button>
             </div>
+
+
         </section>
         <!--留言结束-->
-
 
     </div>
 
 
 <?php $_smarty_tpl->_subTemplateRender('file:footer.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-}
+echo '<script'; ?>
+>
+    let input=document.querySelector('#upload > input[type=file]');
+    let size=1024*1024*2;
+    let type=['image/png','image/jpeg','image/gif'];
+    let imgul=document.querySelector('.imgul')
+    input.onchange=function () {
+        imgul.innerHTML=''
+        let arr=this.files;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i].size>size ){
+                alert('图片大小不正确');
+                return;
+            }else if(!type.includes(arr[i].type)){
+                alert('图片格式不正确');
+                return;
+            }
+        }
+
+        for(let i=0;i<arr.length;i++){
+            let fileread=new FileReader();
+            fileread.readAsDataURL(arr[i]);
+            fileread.onload=function (e) {
+                let li=document.createElement('li');
+                let div=document.createElement('div');
+                div.style.cssText="width:0%;height:2px;border-radius:2px;" +
+                    "background:#ccc;position:absolute;left:0;bottom:0;"
+                li.style.cssText="width:100px;height:100px;border:1px solid #ccc;" +
+                    "float:left;margin-right:5px;position:relative;" +
+                    "background-image:url("+this.result+");background-size:cover"
+                li.appendChild(div)
+                imgul.appendChild(li)
+
+                let formdata=new FormData();
+                formdata.append('file',arr[i]);
+
+                let ajax=new XMLHttpRequest();
+                ajax.upload.onprogress=function (e) {
+                    let width=e.loaded/e.total*100
+                    div.style.width=width+'%';
+                };
+                ajax.onload=function () {
+                    let inp=document.createElement('input');
+                    inp.type='hidden';
+                    inp.name='img';
+                    inp.id='input'
+                    inp.value=ajax.responseText;
+                    input.parentNode.appendChild(inp);
+                };
+                ajax.open('post',"index.php?m=admin&f=menu&a=upload");
+                ajax.send(formdata)
+            };
+        }
+    }
+
+
+    $('.anniu').click(function () {
+        $.ajax({
+            url:"index.php?a=addmess",
+            data:{
+                mess:$('.liuyanbox textarea').val(),
+                id:$('.liuyanbox textarea').attr('id'),
+                img:$('#input').val()
+            },
+            success:function (arr) {
+//                console.log(arr);
+                if(arr == 0){
+                    alert('发布失败')
+                }else{
+                    let json=JSON.parse(arr);
+                    $("<div class='com_box'>").html( `
+
+              <div class="com_tu">
+                <img src="${ json.img}" alt="">
+               </div>
+               <div class="com_word">
+                <i class="iconfont icon3">&#xe628;</i>
+                <h1>${ json.name}</h1>
+                <span>${ json.time}</span>
+                <p>${ json.content}</p>
+            </div>
+                    `
+                    ).prependTo('#messbox')
+                }
+                $('.liuyanbox textarea').val('')
+      
+            }
+        })
+    })
+
+<?php echo '</script'; ?>
+><?php }
 }

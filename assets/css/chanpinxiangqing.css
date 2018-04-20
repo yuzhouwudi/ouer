@@ -48,9 +48,7 @@ i
     position: relative;
     display: flex;
 }
-body{
-    background: #fdfbfb;
-}
+
 .underline{
     width: 40px;
     height: 2px;
@@ -62,7 +60,7 @@ body{
 .max{
      width: 1000px;
      margin: 0 auto;
- background: #fff;
+    background: #fdfbfb;
      overflow: hidden;
      padding-left:  92px;
     padding-right:  92px;
@@ -108,47 +106,48 @@ body{
     margin-top: 8px;
 }
 .wedding{
-    margin-top: 90px;
+    margin-top: 40px;
 }
 .wedtop{
     color:  #804423;
-    font-size: 17px;
+    font-size: 23px;
 }
 .wedmid>span{
     font-size: 25px;
 }
 .wedmid{
-    font-size: 19px;
+    margin-top: 7px;
+    font-size: 23px;
 }
 .wedbot{
     color: #929090;
-    font-size: 20px;
-    margin-top: 13px;
+    font-size: 17px;
+    margin-top: 7px;
     letter-spacing: 1.5px;
 }
 .wedbottom{
-    width:1024px;
-    height:514px;
+    width:100%;
+    height:400px;
     display: flex;
-    margin-top: 38px;
+    margin-top: 25px;
 }
 .wedleft{
     width:50%;
     height: 100%;
     overflow: hidden;
-    background: red;
+    /*background: red;*/
 }
 .wedright{
     width:50%;
     height: 100%;
     overflow: hidden;
-    background: red;
+
 }
 .design{
     width:277px;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 60px;
     align-items: center;
 }
 .box{
@@ -166,8 +165,8 @@ body{
 }
 .des{
     width:800px;
-   margin:0 auto;
-    margin-top: 90px;
+   margin:40px auto 0;
+
     display: flex;
 }
 .desboder{
@@ -179,7 +178,7 @@ body{
     width:190px;
     height:190px;
     overflow: hidden;
-    background: red;
+    /*background: red;*/
     margin: 30px auto;
 }
 .desspack{
@@ -192,26 +191,25 @@ body{
 }
 .spack{
     margin-top: 20px;
-    background: red;
+    /*background: red;*/
     height: 180px;
 }
 .zuopin{
-    width:965px;
-    height:515px;
+    width:100%;
+    height:490px;
     margin-top: 65px;
     display: flex;
     justify-content: space-between;
 }
 .zuopinimg{
-    width:255px;
+    width:25.7%;
     height:100%;
     overflow: hidden;
-    background: red;
 }
 .zuopinmid{
-    width:333px;
+    width:34.5%;
     height: 100%;
-    padding-top: 30px;
+
     box-sizing: border-box;
 }
 .midtop{
@@ -223,10 +221,10 @@ body{
     height: 230px;
 }
 .zuopinright{
-    width:300px;
+    width:31%;
     height:434px;
     margin-top: 80px;
-    background: red;
+    /*background: red;*/
     overflow: hidden;
 }
 .light{
@@ -255,9 +253,18 @@ body{
     color:#383737 ;
     margin-top: 10px;
 }
+#span{
+    position: absolute;
+    left: 100px;
+    top:5px;
+    display: block;
+    font-size: 27px;
+    color:#383737 ;
+    margin-top: 10px;
+}
 .leftimg{
-    width:265px;
-    height:265px;
+    width:250px;
+    height:250px;
     padding:4px;
     position: absolute;
     left: 0;
@@ -270,34 +277,61 @@ body{
     display: block;
     width:100%;
     height:100%;
-    background: red;
+    /*background: red;*/
     border-radius: 50%;
 }
 .rightimg{
-    width:230px;
-    height:230px;
+    width:200px;
+    height:200px;
     padding:4px;
     position: absolute;
-    right: 0;
-    bottom:0;
+    right: 60px;
+    bottom:10px;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #ccc;
-
+}
+#threeleft{
+    width:200px;
+    height:200px;
+    padding:4px;
+    position: absolute;
+    left: 0;
+     top:210px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+#threeright{
+    width:250px;
+    height:250px;
+    padding:4px;
+    position: absolute;
+    left: 40%;
+    top:100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #ccc;
 }
 .rightimg>img{
     display: block;
     width:100%;
     height:100%;
-    background: red;
+    /*background: red;*/
     border-radius: 50%;
 }
 .wenzi{
-    width:190px;
+    /*width:190px;*/
     height:64px;
     position: absolute;
-    right: 0;top:138px;
-    background: yellow;
+    right: -75px;top:138px;
+    /*background: yellow;*/
+}
+#wenzi{
+    height:64px;
+    position: absolute;
+    left: 0;top:138px;
 }
 .two{
     margin-top: 388px;
@@ -307,25 +341,25 @@ body{
 }
 .gongyi{
     width:368px;
-    height:403px;
-    margin-right: 40px;
+    height:380px;
     float: left;
-    margin-top: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
 }
 .gongyiimg{
     width:100%;
-    height:306px;
+    height:245px;
     overflow: hidden;
-    background:red;
+    /*background:red;*/
 }
 .gongyiimg>img{
     width:100%;
-    height:100%;
 }
+
 .zhuti{
     width:100%;
     height:50px;
-    background: yellow;
     text-align: center;
     line-height: 50px;
     font-size: 17px;
@@ -341,27 +375,28 @@ body{
 }
 .IMG{
     width:760px;
-    height: 845px;
-    background: red;
- margin:30px auto;
+    height: 785px;
+     margin:30px auto;
+    overflow: hidden;
 }
-.kongbai{
-    height:40px;
-    width: 100%;
-}
+
 .imgs{
-    margin-top: 70px;
+    margin-top: 40px;
+}
+form{
+    width:100%;
+    height:100%;
 }
 .page{
     width: 100%;
     height: 70px;
     background: #773a3a;
-    margin: 70px auto 0;
+    margin: 40px auto 0;
     display: flex;
     justify-content: space-between;
 }
 .pa_left{
-    width: 268px;
+
     height: 70px;
     margin-left: 50px;
 }
@@ -374,10 +409,11 @@ body{
 .pa_left p{
     font-size: 16px;
     color: #fff;
+    float: left;
     line-height: 70px;
 }
 .pa_right{
-    width: 268px;
+
     height: 70px;
     margin-right: 50px;
     display: flex;
@@ -387,10 +423,11 @@ body{
     font-size: 20px;
     color: #fff;
     line-height: 70px;
-
+float: left;
 }
 .pa_right p{
     font-size: 16px;
+    float: left;
     color: #fff;
     line-height: 70px;
 }
@@ -402,16 +439,19 @@ body{
 
 .com_box{
     width: 100%;
-    height: 156px;
+
+    /*height: 156px;*/
     /*background: skyblue;*/
-    margin: 25px auto 0;
+    margin: 25px auto 10px;
 }
 .com_tu{
     width: 85px;
     height: 85px;
+    overflow: hidden;
 }
 .com_tu img{
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
 .com_word{
     width: 800px;
@@ -445,6 +485,7 @@ body{
     margin-left: 20px;
 }
 .com_word p{
+    width: 705px;
     font-size: 12px;
     color: #6d6a6a;
     margin-left: 95px;
@@ -473,8 +514,11 @@ body{
 #upload{
     height: auto;
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: -50px;
     float: left;
+    position: absolute;
+    z-index: 999;
 }
 #upload input{
     width: 100px;
@@ -507,11 +551,14 @@ body{
     margin-left: 10px;
 }
 .liuyan{
+    box-sizing: border-box;
+    padding: 10px 60px 10px;
     width: 100%;
     height: 100px;
     background: #f3f3f3;
     border: 2px solid #848383;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .anniu{
     width: 117px;
@@ -523,10 +570,17 @@ body{
     right: 0;
 }
 .liuyanbox{
-    width: 100%;
-    height: 400px;
-    position: relative;
 
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 70px;
+}
+#messbox{
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
 }
 
 

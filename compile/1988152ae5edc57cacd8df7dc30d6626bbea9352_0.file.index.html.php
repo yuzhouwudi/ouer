@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:26:31
+/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:19:41
   from 'D:\wamp\www\aa\company\template\index\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad89907681404_01483855',
+  'unifunc' => 'content_5ad9b0ad609cf7_81401768',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1988152ae5edc57cacd8df7dc30d6626bbea9352' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\index.html',
-      1 => 1524144390,
+      1 => 1524215936,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad89907681404_01483855 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad9b0ad609cf7_81401768 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,19 +40,19 @@ jquery-3.3.1.js"><?php echo '</script'; ?>
     <div class="top">
         <div class="neikuan">
             <div class="banner">
-                <a href="index.php" class="active">
+                <a href="index.php?a=picdatail&id=6" class="active">
                     <img src="<?php echo IMG_PATH;?>
 banner.png" alt="">
                 </a>
-                <a href="index.php?a=product">
+                <a href="index.php?a=picdatail&id=3">
                     <img src="<?php echo IMG_PATH;?>
-timg (1).jpg" alt="">
+baba1.jpg" alt="">
                 </a>
-                <a href="index.php?a=active">
+                <a href="index.php?a=picdatail&id=4">
                     <img src="<?php echo IMG_PATH;?>
-timg (2).jpg" alt="">
+baba2.jpg" alt="">
                 </a>
-                <a href="index.php?a=danye">
+                <a href="index.php?a=picdatail&id=2">
                     <img src="<?php echo IMG_PATH;?>
 timg (3).jpg" alt="">
                 </a>
@@ -103,9 +103,9 @@ lanmo.png" alt=""></span>
 </span>
                         <p><?php echo $_smarty_tpl->tpl_vars['row']->value['0']['content'];?>
 </p>
-                    <div class="more">
+                    <a href="index.php?a=picdatail&id=1" class="more">
                         MORE
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="jiayi-right">
@@ -151,9 +151,9 @@ lanmo.png" alt=""></span>
 </span>
                     <p><?php echo $_smarty_tpl->tpl_vars['row']->value['1']['content'];?>
 </p>
-                    <div class="more1">
+                    <a href="index.php?a=picdatail&id=2" class="more1">
                         MORE
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -167,9 +167,9 @@ lanmo.png" alt=""></span>
 </span>
                     <p><?php echo $_smarty_tpl->tpl_vars['row']->value['2']['content'];?>
 </p>
-                    <div class="more">
+                    <a href="index.php?a=picdatail&id=5" class="more">
                         MORE
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="jiayi-right">
@@ -215,9 +215,9 @@ lanmo.png" alt=""></span>
 </span>
                     <p><?php echo $_smarty_tpl->tpl_vars['row']->value['3']['content'];?>
 </p>
-                    <div class="more1">
+                    <a href="index.php?a=picdatail&id=6" class="more1">
                         MORE
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -262,7 +262,7 @@ Let every woman have her own wedding dress</span>
                 </ul>
             </div>
         </div>
-        <div class="pingpai-bottom pinpaide">MORE</div>
+        <a class="pingpai-bottom pinpaide" href="index.php?a=danye" style="display: block">MORE</a>
     </div>
     <!--品牌故事结束-->
     <!--官方活动开始-->
@@ -301,7 +301,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-            <div class="pingpai-bottom">MORE</div>
+            <a class="pingpai-bottom" style="display: block" href="index.php?a=active">MORE</a>
         </div>
     </div>
     <!--官方活动结束-->

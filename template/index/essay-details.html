@@ -1,31 +1,31 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>文章列表详情</title>
-    <link rel="stylesheet" href="../../assets/css/essay-details.css">
-</head>
-<body>
-<div class="main">
+{include file='header.html'}
+
+    <link rel="stylesheet" href="{CSS_PATH}essay-details.css">
 <!--面包屑开始-->
-<section class="bread">
-    <p>HOME</p>
-    <p>首页</p>
-    <p><i class="iconfont icon1">&#xe8f0;</i></p>
-    <p>ACTIVITY</p>
-    <p>活动</p>
-    <p><i class="iconfont icon1">&#xe8f0;</i></p>
-    <p>蔡美月绽放纽约国际时装周</p>
-</section>
+    <div class="crumbs">
+        <a class="home" style="display: block" href="index.php?">
+            <p>HOME</p >
+            <p>首页</p >
+            <div class="underline"></div>
+        </a>
+        <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
+        <a class="erji" style="display: block" href="index.php?a=product">
+            <p>ACTIVITY活动</p >
+            <p>产品</p >
+            <div class="underline"></div>
+        </a>
+        <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
+        <div class="erji">
+            <p>{$arr['title']}</p >
+        </div>
+    </div>
 <!--面包屑结束-->
 <!--热门活动开始-->
+    <div class="main">
 <section class="activity">
     <div class="act_top">
         <div class="logo">
-            <img src="../../assets/img/popular.png" alt="">
+            <img src="{IMG_PATH}popular.png" alt="">
         </div>
         <p>Love is not a tradition, wedding is love</p>
         <div class="story">
@@ -42,154 +42,207 @@
     <div class="line"></div>
     <div class="wenzi">
         <div class="wenzi_title">
-            <h1>蔡美月绽放纽约国际时装周</h1>
+            <h1>{$arr['title']}</h1>
             <h2>MIN MIN SAU PROCESS</h2>
         </div>
 
-        <h3>呈现精湛的千年闽秀工艺</h3>
-        <p>2018.03.03</p>
+        <h3>{$arr['des']}</h3>
+        <p>{$arr['time']}</p>
     </div>
     <div class="introduce">
         <div class="intro_title">
-            <span class="h1">中国原创设计师的创意力量  /</span>
-            <span class="h2">&nbsp;CHINA'S CREATIVE POWER</span>
+            <span class="h1">{$row[0]['title']}  /</span>
+            <span class="h2">{$row[0]['etitle']} </span>
         </div>
 
-        <p class="zi1">此次时装秀场地再次聚焦在纽约时装周主办方CFDA指定的著名四大主场之一的59号码头（Pier 59）。这场备受瞩目的婚纱盛宴还融合了闽绣</p>
-        <p>精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉祥的色彩。</p>
+        <p class="zi1">
+            {$row[0]['content']}
+        </p>
     </div>
     <div class="introduce">
         <div class="intro_title">
-            <span class="h1">中国原创设计师的创意力量  /</span>
-            <span class="h2">&nbsp;CHINA'S CREATIVE POWER</span>
+            <span class="h1">{$row[1]['title']}  /</span>
+            <span class="h2">&nbsp;{$row[1]['etitle']}</span>
         </div>
 
-        <p class="zi1">此次时装秀场地再次聚焦在纽约时装周主办方CFDA指定的著名四大主场之一的59号码头（Pier 59）。这场备受瞩目的婚纱盛宴还融合了闽绣</p>
-        <p>精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉祥的色彩。</p>
+        <p class="zi1">{$row[1]['content']}</p>
     </div>
     <div class="red">
-        <img src="../../assets/img/active.png" alt="">
+        <img src="{IMG_PATH}active.png" alt="">
     </div>
     <div class="introduce">
         <div class="intro_title">
-            <span class="h1">中国原创设计师的创意力量  /</span>
-            <span class="h2">&nbsp;CHINA'S CREATIVE POWER</span>
+            <span class="h1">{$row[2]['title']}  /</span>
+            <span class="h2">&nbsp;{$row[2]['etitle']}</span>
         </div>
 
-        <p class="zi1">此次时装秀场地再次聚焦在纽约时装周主办方CFDA指定的著名四大主场之一的59号码头（Pier 59）。这场备受瞩目的婚纱盛宴还融合了闽绣</p>
-        <p>精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉祥的色彩。</p>
+        <p class="zi1">{$row[2]['content']}</p>
     </div>
     <div class="introduce">
         <div class="intro_title">
-            <span class="h1">中国原创设计师的创意力量  /</span>
-            <span class="h2">&nbsp;CHINA'S CREATIVE POWER</span>
+            <span class="h1">{$row[3]['title']} </span>
+            <span class="h2">{$row[3]['etitle']}</span>
         </div>
 
-        <p class="zi1">此次时装秀场地再次聚焦在纽约时装周主办方CFDA指定的著名四大主场之一的59号码头（Pier 59）。这场备受瞩目的婚纱盛宴还融合了闽绣</p>
-        <p>精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉祥的色彩。</p>
+        <p class="zi1">{$row[3]['content']}</p>
     </div>
     <div class="yinwen">
-        <p>Twenty years ago, as the founder of the brand, Cai Mei-yue insisted on not copying and not imitating. He always devoted himself to the </p>
-        <p>inheritance and promotion of Chinese traditional wedding dress culture. </p>
-        <p>In the beautiful design, he incorporated the traditional national elements. The inspiration of design was quoted from generation to gener</p>
-        <p>ation.</p>
+        <p id="p1"> {$row[4]['content']}</p>
+        <p>{$row[5]['content']}</p>
     </div>
 
 
     <div class="page">
-        <div class="pa_left">
+        <a class="pa_left" href="index.php?a=actdetail&id={$crr['id']}">
             <h1>上一篇：</h1>
-            <p>蔡美月国际婚纱回顾</p>
-        </div>
-        <div class="pa_right">
+            <p>{$crr['title']}</p>
+        </a>
+        <a class="pa_right" href="index.php?a=actdetail&id={$drr['id']}">
             <h1>下一篇：</h1>
-            <p>国际时装周圆满成功</p>
-        </div>
+            <p>{$drr['title']}</p>
+        </a>
     </div>
 </section>
 <!--热门活动结束-->
 <!--评论开始-->
 
-<section class="comment">
-    <div class="story aa">
-        <div class="s_left">
-            <h1>Popular Activity</h1>
-            <p>蔡美月</p>
-        </div>
-        <div class="s_right">
-            <p>/</p>
-            <div class="h2">&nbsp;评论</div>
-            <!--<h2>&nbsp;评论</h2>-->
-        </div>
-    </div>
-    <div class="com_box">
-        <div class="com_tu">
-            <img src="../../assets/img/com-1.png" alt="">
-        </div>
-        <div class="com_word">
-            <i class="iconfont icon3">&#xe628;</i>
-            <h1>青春正年少</h1>
-            <span>2018-04-16 00:00:00</span>
-            <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-            <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-        </div>
-    </div>
-    <div class="com_box">
-        <div class="com_tu">
-            <img src="../../assets/img/com-2.png" alt="">
-        </div>
-        <div class="com_word">
-            <i class="iconfont icon3">&#xe628;</i>
-            <h1>青春正年少</h1>
-            <span>2018-04-16 00:00:00</span>
-            <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-            <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-        </div>
-    </div>
-    <div class="com_box">
-        <div class="com_tu">
-            <img src="../../assets/img/com-3.png" alt="">
-        </div>
-        <div class="com_word">
-            <i class="iconfont icon3">&#xe628;</i>
-            <h1>青春正年少</h1>
-            <span>2018-04-16 00:00:00</span>
-            <p>在帝国大厦的举行的新闻发布会上，蔡美月女士在采访中说，“我一直很坚持我的信念，这次来纽约就是证明中国的千年闽绣和</p>
-            <p>我的机绣雕刻法25年也能时尚化国际化。</p>
-        </div>
-    </div>
-    <!--分页-->
-    <div class="fenye">
-         <div class="fe_box">
+        <section class="comment">
+            <div class="design">
+                <div class="box"></div>
+                <div class="lange">产品评论</div>
+                <div class="elange">DESINGER</div>
+            </div>
 
-         </div>
-    </div>
-</section>
-<!--评论结束-->
-<!--留言开始-->
-<section class="message">
-    <div class="story aa">
-        <div class="s_left">
-            <h1>Popular Activity</h1>
-            <p>蔡美月</p>
-        </div>
-        <div class="s_right">
-            <p>/</p>
-            <div class="h2">&nbsp;留言</div>
-            <!--<h2>&nbsp;留言</h2>-->
-        </div>
-    </div>
+            <div id="messbox">
+            {foreach $mess as $item}
+                <div class="com_box">
+                <div class="com_tu">
+                    <img src="{$item['img']}" alt="">
+                </div>
+                <div class="com_word">
+                    <i class="iconfont icon3">&#xe628;</i>
+                    <h1>{$item['name']}</h1>
+                    <span>{$item['time']}</span>
+                    <p>{$item['content']}</p>
+                </div>
+            </div>
+            {/foreach}
 
-    <div id="upload">
-        <input type="file" name="img" multiple>
-        <ul class="imgul"></ul>
-    </div>
-    <div class="liuyanbox">
-        <textarea class="liuyan" name="" id="" cols="30" rows="10" placeholder="请输入你想说的话..."></textarea>
-        <button class="anniu">评论</button>
-    </div>
-</section>
+</div>
+
+        </section>
+        <!--评论结束-->
+        <!--留言开始-->
+        <section class="message">
+            <div class="design">
+                <div class="box"></div>
+                <div class="lange">产品留言</div>
+                <div class="elange">DESINGER</div>
+            </div>
+
+            <div id="upload">
+                <input type="file" name="img" multiple>
+                <ul class="imgul" style="margin-left: -50%;margin-top: 10px">
+                </ul>
+            </div>
+            <!--<input type="file">-->
+            <div class="liuyanbox" >
+                <textarea class="liuyan" name="" id="{$pi}" cols="30" rows="10" placeholder="请输入你想说的话..."></textarea>
+                <button class="anniu">评论</button>
+            </div>
+
+
+        </section>
 <!--留言结束-->
 </div>
 </body>
 </html>
+<script>
+    let input=document.querySelector('#upload > input[type=file]');
+    let size=1024*1024*2;
+    let type=['image/png','image/jpeg','image/gif'];
+    let imgul=document.querySelector('.imgul')
+    input.onchange=function () {
+        imgul.innerHTML=''
+        let arr=this.files;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i].size>size ){
+                alert('图片大小不正确');
+                return;
+            }else if(!type.includes(arr[i].type)){
+                alert('图片格式不正确');
+                return;
+            }
+        }
+
+        for(let i=0;i<arr.length;i++){
+            let fileread=new FileReader();
+            fileread.readAsDataURL(arr[i]);
+            fileread.onload=function (e) {
+                let li=document.createElement('li');
+                let div=document.createElement('div');
+                div.style.cssText="width:0%;height:2px;border-radius:2px;" +
+                    "background:#ccc;position:absolute;left:0;bottom:0;"
+                li.style.cssText="width:100px;height:100px;border:1px solid #ccc;" +
+                    "float:left;margin-right:5px;position:relative;" +
+                    "background-image:url("+this.result+");background-size:cover"
+                li.appendChild(div)
+                imgul.appendChild(li)
+
+                let formdata=new FormData();
+                formdata.append('file',arr[i]);
+
+                let ajax=new XMLHttpRequest();
+                ajax.upload.onprogress=function (e) {
+                    let width=e.loaded/e.total*100
+                    div.style.width=width+'%';
+                };
+                ajax.onload=function () {
+                    let inp=document.createElement('input');
+                    inp.type='hidden';
+                    inp.name='img';
+                    inp.id='input'
+                    inp.value=ajax.responseText;
+                    input.parentNode.appendChild(inp);
+                };
+                ajax.open('post',"index.php?m=admin&f=menu&a=upload");
+                ajax.send(formdata)
+            };
+        }
+    }
+
+
+
+    $('.anniu').click(function () {
+        $.ajax({
+            url:"index.php?a=addmesstwo",
+            data:{
+                mess:$('.liuyanbox textarea').val(),
+                id:$('.liuyanbox textarea').attr('id'),
+                img:$('#input').val()
+            },
+            success:function (arr) {
+
+                if(arr == 0){
+                    alert('发布失败')
+                }else{
+                    let json=JSON.parse(arr);
+                    $("<div class='com_box'>").html( `
+
+              <div class="com_tu">
+                <img src="${ json.img}" alt="">
+               </div>
+               <div class="com_word">
+                <i class="iconfont icon3">&#xe628;</i>
+                <h1>${ json.name}</h1>
+                <span>${ json.time}</span>
+                <p>${ json.content}</p>
+            </div>
+                    `
+                    ).prependTo('#messbox')
+                }
+                $('.liuyanbox textarea').val('')
+            }
+        })
+    })
+</script>

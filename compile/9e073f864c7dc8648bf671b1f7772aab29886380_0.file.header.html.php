@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-19 15:53:52
+/* Smarty version 3.1.32-dev-45, created on 2018-04-20 09:17:33
   from 'D:\wamp\www\aa\company\template\index\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad89f708844c0_21179378',
+  'unifunc' => 'content_5ad9940d116370_34539388',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e073f864c7dc8648bf671b1f7772aab29886380' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\header.html',
-      1 => 1524146031,
+      1 => 1524146053,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad89f708844c0_21179378 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ad9940d116370_34539388 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,7 +131,7 @@ assets/i/logo.ico">
 ////            index.toggleClass('active')
 //            $(this).removeClass("active").eq(index).addClass("active");
 //        })
-       
+
 
     })
 <?php echo '</script'; ?>
