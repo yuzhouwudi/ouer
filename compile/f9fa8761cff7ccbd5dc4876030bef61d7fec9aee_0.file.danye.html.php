@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:05:33
+/* Smarty version 3.1.32-dev-45, created on 2018-04-22 11:45:57
   from 'D:\wamp\www\aa\company\template\index\danye.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad9ad5d691921_21435461',
+  'unifunc' => 'content_5adc59d545ed35_85472895',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f9fa8761cff7ccbd5dc4876030bef61d7fec9aee' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\danye.html',
-      1 => 1524215033,
+      1 => 1524390356,
       2 => 'file',
     ),
   ),
@@ -22,23 +22,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad9ad5d691921_21435461 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5adc59d545ed35_85472895 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 danye.css">
 
-<!--<!doctype html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<meta name="viewport"-->
-          <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
-    <!--<title>单页</title>-->
-    <!--<link rel="stylesheet" href="../../assets/css/danye.css">-->
-<!--</head>-->
-<!--<body>-->
+<?php echo '<script'; ?>
+>
+    $(function () {
+
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(2).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(2).addClass("active");
+    })
+<?php echo '</script'; ?>
+>
+
+
 <div class="crumbs">
     <a class="home" style="display: block" href="index.php?">
         <p>HOME</p>

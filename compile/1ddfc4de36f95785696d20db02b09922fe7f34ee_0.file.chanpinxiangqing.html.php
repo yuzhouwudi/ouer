@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:30:01
+/* Smarty version 3.1.32-dev-45, created on 2018-04-22 11:57:24
   from 'D:\wamp\www\aa\company\template\index\chanpinxiangqing.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad9b319c47641_76098627',
+  'unifunc' => 'content_5adc5c84bccc68_19259638',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1ddfc4de36f95785696d20db02b09922fe7f34ee' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\chanpinxiangqing.html',
-      1 => 1524216600,
+      1 => 1524391041,
       2 => 'file',
     ),
   ),
@@ -22,9 +22,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad9b319c47641_76098627 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5adc5c84bccc68_19259638 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+echo '<script'; ?>
+>
+    $(function () {
+
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(1).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(1).addClass("active");
+    })
+<?php echo '</script'; ?>
+>
+
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 chanpinxiangqing.css">
 <div class="crumbs">
@@ -34,11 +46,13 @@ chanpinxiangqing.css">
         <div class="underline"></div>
     </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
+    <a class="home" style="display: flex"href="index.php?a=product">
     <div class="erji">
         <p>PRODUCT</p>
         <p>产品</p>
         <div class="underline"></div>
     </div>
+    </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
         <p><?php echo $_smarty_tpl->tpl_vars['frr']->value['name'];?>
@@ -293,6 +307,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div id="upload">
             <input type="file" name="img" multiple>
             <ul class="imgul" style="margin-left: -50%;margin-top: 10px">
+
             </ul>
         </div>
             <!--<input type="file">-->
@@ -395,9 +410,15 @@ echo '<script'; ?>
                     ).prependTo('#messbox')
                 }
                 $('.liuyanbox textarea').val('')
-      
+
             }
         })
+
+
+
+
+
+
     })
 
 <?php echo '</script'; ?>

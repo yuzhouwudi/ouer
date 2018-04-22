@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:10:43
+/* Smarty version 3.1.32-dev-45, created on 2018-04-22 11:58:08
   from 'D:\wamp\www\aa\company\template\index\essay-details.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad9ae9389cdf3_89979835',
+  'unifunc' => 'content_5adc5cb0ec3c88_57706087',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a7a9e6be22f7877ccfb76b70786d06972829e676' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\essay-details.html',
-      1 => 1524215131,
+      1 => 1524391083,
       2 => 'file',
     ),
   ),
@@ -21,10 +21,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header.html' => 1,
   ),
 ),false)) {
-function content_5ad9ae9389cdf3_89979835 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5adc5cb0ec3c88_57706087 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
+<?php echo '<script'; ?>
+>
+    $(function () {
+
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(3).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(3).addClass("active");
+    })
+<?php echo '</script'; ?>
+>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 essay-details.css">
 <!--面包屑开始-->
@@ -35,7 +47,7 @@ essay-details.css">
             <div class="underline"></div>
         </a>
         <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
-        <a class="erji" style="display: block" href="index.php?a=product">
+        <a class="erji" style="display: block" href="index.php?a=active">
             <p>ACTIVITY活动</p >
             <p>产品</p >
             <div class="underline"></div>

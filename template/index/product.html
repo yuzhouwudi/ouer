@@ -1,6 +1,15 @@
 {include file='header.html'}
 <link rel="stylesheet" href="{CSS_PATH}product.css">
+<script>
+    $(function () {
 
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(1).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(1).addClass("active");
+    })
+</script>
 
     <div class="crumbs">
         <a class="home"  style="display: block" href="index.php?">

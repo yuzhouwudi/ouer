@@ -1,5 +1,16 @@
 
 {include file='header.html'}
+<script>
+    $(function () {
+
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(1).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(1).addClass("active");
+    })
+</script>
+
 <link rel="stylesheet" href="{CSS_PATH}chanpinxiangqing.css">
 <div class="crumbs">
     <a class="home" style="display: flex"href="index.php?">
@@ -8,11 +19,13 @@
         <div class="underline"></div>
     </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
+    <a class="home" style="display: flex"href="index.php?a=product">
     <div class="erji">
         <p>PRODUCT</p>
         <p>产品</p>
         <div class="underline"></div>
     </div>
+    </a>
     <div class="ico_x"><i class="iconfont icon1">&#xe8f0;</i></div>
     <div class="erji">
         <p>{$frr['name']}</p>
@@ -212,6 +225,7 @@
             <div id="upload">
             <input type="file" name="img" multiple>
             <ul class="imgul" style="margin-left: -50%;margin-top: 10px">
+
             </ul>
         </div>
             <!--<input type="file">-->
@@ -315,6 +329,12 @@
 
             }
         })
+
+
+
+
+
+
     })
 
 </script>

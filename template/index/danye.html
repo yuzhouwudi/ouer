@@ -1,17 +1,18 @@
 {include file='header.html'}
 <link rel="stylesheet" href="{CSS_PATH}danye.css">
 
-<!--<!doctype html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-    <!--<meta charset="UTF-8">-->
-    <!--<meta name="viewport"-->
-          <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
-    <!--<title>单页</title>-->
-    <!--<link rel="stylesheet" href="../../assets/css/danye.css">-->
-<!--</head>-->
-<!--<body>-->
+<script>
+    $(function () {
+
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(2).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(2).addClass("active");
+    })
+</script>
+
+
 <div class="crumbs">
     <a class="home" style="display: block" href="index.php?">
         <p>HOME</p>

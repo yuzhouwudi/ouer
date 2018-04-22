@@ -36,6 +36,15 @@
         float: left;
         overflow: hidden;
     }
+
+    .banner>img{
+        display: none;
+    }
+    .banner>.active{
+        display: block;
+    }
+
+
     .lanmo{
         width: 200px;
         height:100%;
@@ -85,35 +94,26 @@
     /*头部结束*/
 
 </style>
-<script>
-    $(function () {
 
-//        $('.lanmo > li >a').click(function () {
-//            console.log($(this).index())
-//            let index=$(this).index()
-////            index.toggleClass('active')
-//            $(this).removeClass("active").eq(index).addClass("active");
-//        })
-
-
-    })
-</script>
 <!--头部开始-->
 <body>
 <div class="top">
     <div class="neikuan">
         <div class="banner">
             <img src="{IMG_PATH}/banner.png" alt="">
+            <img src="{IMG_PATH}/baba1.jpg" alt="">
+            <img src="{IMG_PATH}/baba2.jpg" alt="">
+            <img src="{IMG_PATH}/baba4.png" alt="">
         </div>
         <ul class="lanmo">
             <li>
                 <span><img src="{IMG_PATH}/lanmo.png" alt=""></span>
             </li>
             <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
-            <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
-            <li><a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
-            <li><a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
-            <li><a href=""><p>资讯</p><p>INFORMATION</p></a></li>
+            <li> <a  href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
+            <li> <a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
+            <li> <a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
+            <li> <a href=""><p>资讯</p><p>INFORMATION</p></a></li>
 
         </ul>
     </div>

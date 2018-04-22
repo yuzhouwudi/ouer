@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:05:35
+/* Smarty version 3.1.32-dev-45, created on 2018-04-22 11:42:14
   from 'D:\wamp\www\aa\company\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad9ad5fd5e0d2_21416816',
+  'unifunc' => 'content_5adc58f6bb4558_66280673',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a4d9b3b0555a3bb441795362d760fd5c45f4b05' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\product.html',
-      1 => 1524215131,
+      1 => 1524390133,
       2 => 'file',
     ),
   ),
@@ -22,12 +22,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.html' => 1,
   ),
 ),false)) {
-function content_5ad9ad5fd5e0d2_21416816 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5adc58f6bb4558_66280673 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:header.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <link rel="stylesheet" href="<?php echo CSS_PATH;?>
 product.css">
+<?php echo '<script'; ?>
+>
+    $(function () {
 
+        let nav=$('.lanmo > li >a')
+        nav.removeClass("active").eq(1).addClass("active");
+
+        let banpic=$('.banner > img')
+        banpic.removeClass("active").eq(1).addClass("active");
+    })
+<?php echo '</script'; ?>
+>
 
     <div class="crumbs">
         <a class="home"  style="display: block" href="index.php?">

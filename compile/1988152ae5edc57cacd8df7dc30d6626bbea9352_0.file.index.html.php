@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-20 11:19:41
+/* Smarty version 3.1.32-dev-45, created on 2018-04-22 11:55:53
   from 'D:\wamp\www\aa\company\template\index\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad9b0ad609cf7_81401768',
+  'unifunc' => 'content_5adc5c29d3d185_01109707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1988152ae5edc57cacd8df7dc30d6626bbea9352' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\index.html',
-      1 => 1524215936,
+      1 => 1524390952,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad9b0ad609cf7_81401768 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5adc5c29d3d185_01109707 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +58,7 @@ timg (3).jpg" alt="">
                 </a>
                 <a href="index.php?a=productdetail">
                     <img src="<?php echo IMG_PATH;?>
-pic-xiangqing4.png" alt="">
+baba4.png" alt="">
                 </a>
             </div>
             <ul class="circle" style="">

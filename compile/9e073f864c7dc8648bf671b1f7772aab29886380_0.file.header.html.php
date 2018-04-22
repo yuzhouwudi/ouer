@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32-dev-45, created on 2018-04-20 09:17:33
+/* Smarty version 3.1.32-dev-45, created on 2018-04-22 11:45:04
   from 'D:\wamp\www\aa\company\template\index\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32-dev-45',
-  'unifunc' => 'content_5ad9940d116370_34539388',
+  'unifunc' => 'content_5adc59a0655c57_81705317',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e073f864c7dc8648bf671b1f7772aab29886380' => 
     array (
       0 => 'D:\\wamp\\www\\aa\\company\\template\\index\\header.html',
-      1 => 1524146053,
+      1 => 1524390303,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ad9940d116370_34539388 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5adc59a0655c57_81705317 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,6 +72,15 @@ assets/i/logo.ico">
         float: left;
         overflow: hidden;
     }
+
+    .banner>img{
+        display: none;
+    }
+    .banner>.active{
+        display: block;
+    }
+
+
     .lanmo{
         width: 200px;
         height:100%;
@@ -121,21 +130,7 @@ assets/i/logo.ico">
     /*头部结束*/
 
 </style>
-<?php echo '<script'; ?>
->
-    $(function () {
 
-//        $('.lanmo > li >a').click(function () {
-//            console.log($(this).index())
-//            let index=$(this).index()
-////            index.toggleClass('active')
-//            $(this).removeClass("active").eq(index).addClass("active");
-//        })
-
-
-    })
-<?php echo '</script'; ?>
->
 <!--头部开始-->
 <body>
 <div class="top">
@@ -143,6 +138,12 @@ assets/i/logo.ico">
         <div class="banner">
             <img src="<?php echo IMG_PATH;?>
 /banner.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/baba1.jpg" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/baba2.jpg" alt="">
+            <img src="<?php echo IMG_PATH;?>
+/baba4.png" alt="">
         </div>
         <ul class="lanmo">
             <li>
@@ -150,10 +151,10 @@ assets/i/logo.ico">
 /lanmo.png" alt=""></span>
             </li>
             <li> <a href="index.php"><p>首页</p><p>HOME</p></a></li>
-            <li> <a href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
-            <li><a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
-            <li><a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
-            <li><a href=""><p>资讯</p><p>INFORMATION</p></a></li>
+            <li> <a  href="index.php?a=product"><p>产品</p><p>DRODUCT</p></a></li>
+            <li> <a href="index.php?a=danye"><p>品牌</p><p>BRAND</p></a></li>
+            <li> <a href="index.php?a=active"><p>活动</p><p>ACTIVITY</p></a></li>
+            <li> <a href=""><p>资讯</p><p>INFORMATION</p></a></li>
 
         </ul>
     </div>
