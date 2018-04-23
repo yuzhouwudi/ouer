@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2018-04-22 12:01:55
+-- Generation Time: 2018-04-23 03:59:43
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -42,12 +42,12 @@ CREATE TABLE IF NOT EXISTS `active` (
 --
 
 INSERT INTO `active` (`id`, `img`, `title`, `content`, `time`, `des`, `count`) VALUES
-(1, '/aa/company/assets/upload/2018-04-19/1524136347.0039aaaaaaa1.jpg', '2018厦门国际时装周', '在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门', '2018-03-08', '结合中国民族文化特色，极具有东方色彩', '34'),
-(2, '/aa/company/assets/upload/2018-04-19/1524134497.0316jiayi1.png', '中式嫁衣设计大赛', '本次中国民族服装设计大赛嫁衣总决赛金奖获得者13号选手获奖作品盛世红妆，符合本次大赛主题', '2018-04-12', '中国婚纱领军人物', '6'),
-(3, '/aa/company/assets/upload/2018-04-19/1524134507.054a123.jpg', '2018国际婚纱设计大赛', '这场备受瞩目的婚纱盛宴还融合了闽绣精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉', '2018-04-10', '获得吉尼斯世界纪录', '5'),
-(4, '/aa/company/assets/upload/2018-04-19/1524136365.1465Cccc2.jpg', '蔡美月绽放纽约时装周', '这场备受瞩目的婚纱盛宴还融合了闽绣精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉', '2018-03-23', '呈现精湛的千年闽秀工艺', '8'),
+(1, '/aa/company/assets/upload/2018-04-19/1524136347.0039aaaaaaa1.jpg', '2018厦门国际时装周', '在厦门市政府的大力支持下，由厦门国际时尚周组委会主办2017厦门国际时尚周，吸引了众多国内外优质时尚资源汇聚厦门', '2018-03-08', '结合中国民族文化特色，极具有东方色彩', '38'),
+(2, '/aa/company/assets/upload/2018-04-19/1524134497.0316jiayi1.png', '中式嫁衣设计大赛', '本次中国民族服装设计大赛嫁衣总决赛金奖获得者13号选手获奖作品盛世红妆，符合本次大赛主题', '2018-04-12', '中国婚纱领军人物', '10'),
+(3, '/aa/company/assets/upload/2018-04-19/1524134507.054a123.jpg', '2018国际婚纱设计大赛', '这场备受瞩目的婚纱盛宴还融合了闽绣精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉', '2018-04-10', '获得吉尼斯世界纪录', '6'),
+(4, '/aa/company/assets/upload/2018-04-19/1524136365.1465Cccc2.jpg', '蔡美月绽放纽约时装周', '这场备受瞩目的婚纱盛宴还融合了闽绣精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果，为婚服更添喜庆吉', '2018-03-23', '呈现精湛的千年闽秀工艺', '15'),
 (5, '/aa/company/assets/upload/2018-04-19/1524100507.8992pic-list8.png', '蔡美月国际婚纱回顾', '这一中华民族寓意幸福和繁衍不息的理念，将母亲对孩子的美好祝福，吉祥美满的寓意用一件件匠心独运的嫁衣的形式呈现出来', '2018-03-18', '蔡美月为全天下女人做嫁衣  ', '5'),
-(6, '/aa/company/assets/upload/2018-04-19/1524101013.3983hd111.jpg', '中国杰出女民营企业家', '独特的蔡氏镂空刺绣法荣获国家五项专利，在婚纱界乃至全世界都是别具一格的。蔡美月将东方传统文化结合闽秀千年传承技艺融入现代婚纱礼', '2018-02-14', '中国婚纱领军人物', '6'),
+(6, '/aa/company/assets/upload/2018-04-19/1524101013.3983hd111.jpg', '中国杰出女民营企业家', '独特的蔡氏镂空刺绣法荣获国家五项专利，在婚纱界乃至全世界都是别具一格的。蔡美月将东方传统文化结合闽秀千年传承技艺融入现代婚纱礼', '2018-02-14', '中国婚纱领军人物', '20'),
 (7, '/aa/company/assets/upload/2018-04-19/1524101114.2147hd222_02.png', '蔡美月&车主名流', '这场备受瞩目的婚纱盛宴还融合了闽绣精湛工艺，闽绣以其鲜艳的色彩，夸张的手法，烘托出婚纱礼服华美大气的视觉效果', '2018-04-18', '定格一瞬，传承一生', '5'),
 (8, '/aa/company/assets/upload/2018-04-19/1524104289.1713pic-list7.png', '一顾再顾 九九归一', '<span style="color:#888888;font-family:&quot;font-size:14px;background-color:#FFFFFF;">九九归一”的吉祥数字“9”，演绎压轴款9层衣。在日本，传统白色婚礼服因为有12层被称为12单，因而9层衣被称为9单。与此同时，李夫人的画像则经由技艺卓绝的苏绣形式在裙摆上生动呈现，秋波流转，神采绰约，让人不禁一顾，再顾，吟唱出那曲《北方有佳人》！</span>', '2018-03-28', '以中国传统文化中代表着无限', '6');
 
@@ -145,15 +145,15 @@ CREATE TABLE IF NOT EXISTS `content` (
 
 INSERT INTO `content` (`id`, `nub`, `img`, `title`, `content`, `des`, `pid`, `cid`) VALUES
 (1, '', '/aa/company/assets/upload/2018-04-19/1524103575.5872com-3.png', '设计师解读', '<p>\n	看到这件嫁衣就会不由自主的想起7彩云南的故事。云南云南，彩云之南，意为“云岭之南”又称“滇”，是战国时期滇族部落的生息之地。这便是彩云之南的由来。\n</p>\n<p>\n	整件礼服设计以凤穿牡丹为原型，加入宝蓝、酱紫、杏橙、金黄、银白、朱红、雀紫7种颜色，将一件对襟和服完整的呈现给大家。\n</p>\n<p>\n	穿上这件礼服的新娘都有一颗少女的心，看见这件礼服的宾客都会顷刻喜悦\n</p>\n<p>\n	这对襟服适合身材比较苗条的姑娘，显得气质非凡，优雅得体。\n</p>', '', 1, 1),
-(2, '', '/aa/company/assets/upload/2018-04-20/1524188064.2978pic-xiangqing7.png--/aa/company/assets/upload/2018-04-20/1524188064.3238pic-xiangqing8.png', 'PRODUCT', '品牌：蔡美月&nbsp; &nbsp; &nbsp;货号：S1151-6<br />\r\n颜色：红色&nbsp; &nbsp; &nbsp; &nbsp; 重量：1.56kg<br />\r\n尺码：XS/S/M/L/XL/XXL<br />\r\n款式：马来福秀禾服<br />\r\n面料：高级织锦缎、弹力印花布<br />\r\n版型：修身版型、A摆双飘片群<br />\r\n图案：凤穿牡丹、七彩祥云<br />\r\n厚薄指数：适中<br />\r\n弹力指数：微弹<br />\r\n软硬指数：微软<br />', '', 2, 1),
+(2, '', '/aa/company/assets/upload/2018-04-23/1524446494.7428azxc21_02.png--/aa/company/assets/upload/2018-04-23/1524446494.7898asdsfdf2_02.png', 'PRODUCT', '品牌：蔡美月&nbsp; &nbsp; &nbsp;货号：S1151-6<br />\r\n颜色：红色&nbsp; &nbsp; &nbsp; &nbsp; 重量：1.56kg<br />\r\n尺码：XS/S/M/L/XL/XXL<br />\r\n款式：马来福秀禾服<br />\r\n面料：高级织锦缎、弹力印花布<br />\r\n版型：修身版型、A摆双飘片群<br />\r\n图案：凤穿牡丹、七彩祥云<br />\r\n厚薄指数：适中<br />\r\n弹力指数：微弹<br />\r\n软硬指数：微软<br />', '', 2, 1),
 (3, 'one', '/aa/company/assets/upload/2018-04-20/1524185919.7301afh_02.png--/aa/company/assets/upload/2018-04-20/1524185919.8508adf_02.png', 'DESIGN', '&nbsp; &nbsp;一改传统秀禾服宽体直胳<br />\r\n的宽松体型<br />\r\n更加凸显江南女子的温婉气息<br />', '立体剪裁袖手显瘦版型', 3, 1),
-(4, 'two', '/aa/company/assets/upload/2018-04-20/1524184573.8233pic-xiangqing12.png--/aa/company/assets/upload/2018-04-20/1524184574.2386pic-xiangqing14.png', '', '&nbsp; &nbsp;裙子采用弹力印花面料<br />\r\n更显立体感<br />\r\n面料成本是普通绸缎面料的5倍<br />', '独家印花百褶裙设计', 3, 1),
+(4, 'two', '/aa/company/assets/upload/2018-04-23/1524446525.8857asq_02.png--/aa/company/assets/upload/2018-04-23/1524446526.0023afh_02.png', '', '&nbsp; &nbsp;裙子采用弹力印花面料<br />\r\n更显立体感<br />\r\n面料成本是普通绸缎面料的5倍<br />', '独家印花百褶裙设计', 3, 1),
 (6, 'three', '/aa/company/assets/upload/2018-04-20/1524185296.6816afh_02.png--/aa/company/assets/upload/2018-04-20/1524185296.7847adf_02.png', '', '内衬选用优质布料，<br />\r\n进行细腻柔和压边处理<br />\r\n是无可挑剔的闺中精品<br />', '细腻柔和内衬压边处理', 3, 1),
-(7, '', '/aa/company/assets/upload/2018-04-19/1524105147.6111pic-xiangqing9.png', '01 传统古典盘扣立领', '古韵十足的传统立领设计复古金色盘扣<br />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 精细设计，精致大气<br />', 'TYPE', 4, 1),
-(8, '', '/aa/company/assets/upload/2018-04-19/1524105195.7938pic-xiangqing10.png', '02对襟中式嫁衣', '古韵十足的传统立领设计复古金色盘扣<br />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 精细设计，精致大气<br />', '', 4, 1),
-(9, '', '/aa/company/assets/upload/2018-04-19/1524105229.4487pic-xiangqing11.png', '03 中式印花双层水秀', '古韵十足的传统立领设计复古金色盘扣<br />\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;精细设计，精致大气<br />', '', 4, 1),
-(10, '', '/aa/company/assets/upload/2018-04-19/1524105279.4416pic-xiangqing12.png', '04吉祥彩凤精致刺绣', '古韵十足的传统立领设计复古金色盘扣<br />\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 精细设计，精致大气<br />', '', 4, 1),
-(11, '', '/aa/company/assets/upload/2018-04-19/1524105358.4841pic-xiangqing14.png--/aa/company/assets/upload/2018-04-19/1524105358.5721pic-xiangqing13.png', 'GOODS', '', '', 5, 1),
+(7, '', '/aa/company/assets/upload/2018-04-23/1524446755.0496adf_02.png', '01 传统古典盘扣立领', '古韵十足的传统立领设计复古金色盘扣<br />\r\n精细设计，精致大气<br />', 'TYPE', 4, 1),
+(8, '', '/aa/company/assets/upload/2018-04-23/1524446764.2974afh_02.png', '02对襟中式嫁衣', '古韵十足的传统立领设计复古金色盘扣<br />\r\n精细设计，精致大气<br />', '', 4, 1),
+(9, '', '/aa/company/assets/upload/2018-04-23/1524446779.6617asq_02.png', '03 中式印花双层水秀', '古韵十足的传统立领设计复古金色盘扣<br />\r\n精细设计，精致大气<br />', '', 4, 1),
+(10, '', '/aa/company/assets/upload/2018-04-23/1524446869.8434afh_02.png', '04吉祥彩凤精致刺绣', '古韵十足的传统立领设计复古金色盘扣<br />\r\n精细设计，精致大气<br />', '', 4, 1),
+(11, '', '/aa/company/assets/upload/2018-04-23/1524447015.2115azxc21_02.png--/aa/company/assets/upload/2018-04-23/1524447015.2632asdsfdf2_02.png', 'GOODS', '', '', 5, 1),
 (12, '', '/aa/company/assets/upload/2018-04-19/1524106512.4611PRODUCT.jpg', '亚历山大·王', '看到这件嫁衣就会不由自主的想起7彩云南的故事。云南云南，彩云之南，意为“云岭之南”又称“滇”，是战国时期滇族部落的生息之地。这便是彩云之南的由来。<br />\r\n整件礼服设计以凤穿牡丹为原型，加入宝蓝、酱紫、杏橙、金黄、银白、朱红、雀紫7种颜色，将一件对襟和服完整的呈现给大家。<br />\r\n穿上这件礼服的新娘都有一颗少女的心，看见这件礼服的宾客都会顷刻喜悦<br />\r\n这对襟服适合身材比较苗条的姑娘，显得气质非凡，优雅得体。<br />\r\n<br />', '', 1, 2),
 (13, 'one', '/aa/company/assets/upload/2018-04-20/1524185328.9509cc23.jpg--/aa/company/assets/upload/2018-04-20/1524185329.6892ee4.png', 'DESIGN', '&nbsp; &nbsp;一改传统秀禾服宽体直胳<br />\r\n的宽松体型<br />\r\n更加凸显江南女子的温婉气息<br />', '立体剪裁袖手显瘦版型', 3, 2),
 (14, 'two', '/aa/company/assets/upload/2018-04-20/1524184675.6102pic-list8.png--/aa/company/assets/upload/2018-04-20/1524184675.7309nnn1.jpg', '', '&nbsp; &nbsp;裙子采用弹力印花面料<br />\r\n更显立体感<br />\r\n面料成本是普通绸缎面料的5倍<br />', '独家印花百褶裙设计', 3, 2),
@@ -173,7 +173,7 @@ INSERT INTO `content` (`id`, `nub`, `img`, `title`, `content`, `des`, `pid`, `ci
 (28, '', '/aa/company/assets/upload/2018-04-19/1524105195.7938pic-xiangqing10.png', '02对襟中式嫁衣', '古韵十足的传统立领设计复古金色盘扣<br />\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 精细设计，精致大气<br />', '', 4, 3),
 (29, '', '/aa/company/assets/upload/2018-04-19/1524105229.4487pic-xiangqing11.png', '03 中式印花双层水秀', '古韵十足的传统立领设计复古金色盘扣<br />\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;精细设计，精致大气<br />', '', 4, 3),
 (32, '', '/aa/company/assets/upload/2018-04-19/1524105279.4416pic-xiangqing12.png', '04吉祥彩凤精致刺绣', '古韵十足的传统立领设计复古金色盘扣<br />\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 精细设计，精致大气<br />', '', 4, 3),
-(33, '', '/aa/company/assets/upload/2018-04-19/1524105358.4841pic-xiangqing14.png--/aa/company/assets/upload/2018-04-19/1524105358.5721pic-xiangqing13.png', 'GOODS', '', '', 5, 3),
+(33, '', '/aa/company/assets/upload/2018-04-23/1524447096.3941azxsw1_02.png--/aa/company/assets/upload/2018-04-23/1524447096.4747azxcde1_02.png', 'GOODS', '', '', 5, 3),
 (34, '', '/aa/company/assets/upload/2018-04-19/1524106512.4611PRODUCT.jpg', '亚历山大·王', '看到这件嫁衣就会不由自主的想起7彩云南的故事。云南云南，彩云之南，意为“云岭之南”又称“滇”，是战国时期滇族部落的生息之地。这便是彩云之南的由来。<br />\r\n整件礼服设计以凤穿牡丹为原型，加入宝蓝、酱紫、杏橙、金黄、银白、朱红、雀紫7种颜色，将一件对襟和服完整的呈现给大家。<br />\r\n穿上这件礼服的新娘都有一颗少女的心，看见这件礼服的宾客都会顷刻喜悦<br />\r\n这对襟服适合身材比较苗条的姑娘，显得气质非凡，优雅得体。<br />\r\n<br />', '', 1, 4),
 (35, '', '/aa/company/assets/upload/2018-04-20/1524186223.8966TB1vyDtlmYH8KJjSspdXXcRgVXa_!!0-item_pic.jpg--/aa/company/assets/upload/2018-04-20/1524186223.9954TB1uvMnbf2H8KJjy1zkXXXr7pXa_!!0-item_pic.jpg', 'PRODUCT', '品牌：蔡美月&nbsp; &nbsp; &nbsp;货号：S1151-6<br />\r\n颜色：红色&nbsp; &nbsp; &nbsp; &nbsp; 重量：1.56kg<br />\r\n尺码：XS/S/M/L/XL/XXL<br />\r\n款式：马来福秀禾服<br />\r\n面料：高级织锦缎、弹力印花布<br />\r\n版型：修身版型、A摆双飘片群<br />\r\n图案：凤穿牡丹、七彩祥云<br />\r\n厚薄指数：适中<br />\r\n弹力指数：微弹<br />\r\n软硬指数：微软<br />', '', 2, 4),
 (36, 'one', '/aa/company/assets/upload/2018-04-20/1524185430.9061ac_01.png--/aa/company/assets/upload/2018-04-20/1524185430.9362ac_04.png', 'DESIGN', '&nbsp; &nbsp;一改传统秀禾服宽体直胳<br />\r\n的宽松体型<br />\r\n更加凸显江南女子的温婉气息<br />', '立体剪裁袖手显瘦版型', 3, 4),
@@ -247,7 +247,7 @@ CREATE TABLE IF NOT EXISTS `messp` (
   `content` varchar(3000) NOT NULL,
   `cid` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=57 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=66 ;
 
 --
 -- 转存表中的数据 `messp`
@@ -309,7 +309,16 @@ INSERT INTO `messp` (`id`, `pid`, `img`, `time`, `name`, `content`, `cid`) VALUE
 (53, 1, '/aa/company/assets/upload/2018-04-20/1524217085.7613adf_02.png', '2018-04-20 09:38:07', '游客087', '推翻一个', 8),
 (54, 1, '/aa/company/assets/upload/2018-04-20/1524217356.7896a123.jpg', '2018-04-20 09:42:44', '游客364', '7ui', 8),
 (55, 1, '/aa/company/assets/upload/2018-04-20/1524217732.4151aaaaaaa1.jpg', '2018-04-20 09:48:55', '游客735', '但如果', 2),
-(56, 0, '/aa/company/assets/upload/2018-04-22/1524390581.6016baba1.jpg', '2018-04-22 09:53:14', '游客794', '我大概会告诉他突然又投入教育局', 1);
+(56, 0, '/aa/company/assets/upload/2018-04-22/1524390581.6016baba1.jpg', '2018-04-22 09:53:14', '游客794', '我大概会告诉他突然又投入教育局', 1),
+(57, 0, '/aa/company/assets/upload/2018-04-23/1524447772.4232aaaaaaa1.jpg', '2018-04-23 01:42:54', '游客774', 'qwert', 1),
+(58, 0, '/aa/company/assets/upload/2018-04-23/1524447824.0294asdsfdf2_02.png', '2018-04-23 01:43:46', '游客826', 'wdsfdf', 1),
+(59, 0, '/aa/company/assets/upload/2018-04-23/1524447830.7389aaaqq1_01.png', '2018-04-23 01:44:02', '游客842', 'wesfds', 1),
+(60, 0, '/aa/company/assets/upload/2018-04-23/1524447924.8228aaaaa1.jpg', '2018-04-23 01:45:27', '游客927', '23df', 1),
+(61, 0, '/aa/company/assets/upload/2018-04-23/1524448501.719aaaaaaa1.jpg', '2018-04-23 01:55:08', '游客508', '123', 1),
+(62, 1, '/aa/company/assets/upload/2018-04-23/1524448591.3623aaaqq1_01.png', '2018-04-23 01:56:33', '游客593', '123', 1),
+(63, 1, '/aa/company/assets/upload/2018-04-23/1524448606.5563acc_03.png', '2018-04-23 01:56:49', '游客609', '123454', 1),
+(64, 0, '/aa/company/assets/upload/2018-04-23/1524448687.7318asdsfdf2_02.png', '2018-04-23 01:58:10', '游客690', '1235', 4),
+(65, 0, '/aa/company/assets/upload/2018-04-23/1524448695.1227aaaqq1_01.png', '2018-04-23 01:58:18', '游客698', '1233545', 4);
 
 -- --------------------------------------------------------
 
@@ -380,7 +389,7 @@ CREATE TABLE IF NOT EXISTS `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `ename`, `img`, `des`, `cont`) VALUES
-(1, '蓬蓬公主裙小礼服', 'the princess dress', '/aa/company/assets/upload/2018-04-19/1524108144.7878pic-list10.png--/aa/company/assets/upload/2018-04-19/1524108155.3531pic-list10.png--/aa/company/assets/upload/2018-04-19/1524108155.5223pic-xiangqing5.png', '公主裙小礼服，好看显年轻', '嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节...'),
+(1, '蓬蓬公主裙小礼服', 'the princess dress', '/aa/company/assets/upload/2018-04-23/1524446370.0885azxc21_02.png--/aa/company/assets/upload/2018-04-23/1524446370.158asdsfdf2_02.png', '公主裙小礼服，好看显年轻', '嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节...'),
 (2, '宫廷一字肩奢华性感欧美拖尾', 'imperial court', '/aa/company/assets/upload/2018-04-19/1524108168.2293hunsha2.png--/aa/company/assets/upload/2018-04-19/1524108168.2586huncha1.png', '宫廷一字肩，奢华又性感', '立体的首要设计，呈现出新娘曼妙的腰部曲线，使身材更有线条感，紧紧抓住众人的目光。'),
 (3, '修身蕾丝性感宫廷长拖尾', 'cultivate one', '/aa/company/assets/upload/2018-04-19/1524108199.7804pic-list6.png--/aa/company/assets/upload/2018-04-19/1524108199.8486pic-list8.png', '两侧朦胧网纱加贴花，气质爆棚，下端隐形拉链方便穿脱。', '10层面料，两侧朦胧网纱加贴花，气质爆棚，下端隐形拉链方便穿脱。'),
 (4, '蓬蓬公主裙小礼服', 'the princess dress', '/aa/company/assets/upload/2018-04-19/1524108223.3835lifu2.png--/aa/company/assets/upload/2018-04-19/1524108223.429lifu3.png', '公主裙小礼服', '嫩嫩的水彩蓝，从珍珠、花朵、蕾丝、的细节着手，主打手工的细节...'),
