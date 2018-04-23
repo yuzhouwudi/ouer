@@ -463,12 +463,13 @@ i
     color: #fff;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 .liuyanbox{
 
     margin-top: 50px;
     width: 100%;
-    height: 400px;
+    height: 300px;
     position: relative;
 
 }
