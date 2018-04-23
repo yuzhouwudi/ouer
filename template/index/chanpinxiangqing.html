@@ -249,6 +249,7 @@
     let imgul=document.querySelector('.imgul')
     input.onchange=function () {
         imgul.innerHTML=''
+
         let arr=this.files;
         for(let i=0;i<arr.length;i++){
             if(arr[i].size>size ){
@@ -303,7 +304,7 @@
             data:{
                 mess:$('.liuyanbox textarea').val(),
                 id:$('.liuyanbox textarea').attr('id'),
-                img:$('#input').val()
+                img:$('input[id=input]:last').val()
             },
             success:function (arr) {
 //                console.log(arr);
@@ -325,6 +326,8 @@
                     `
                     ).prependTo('#messbox')
                 }
+                $('.imgul').children().remove()
+                $('#input').remove()
                 $('.liuyanbox textarea').val('')
 
             }

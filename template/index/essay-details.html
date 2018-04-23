@@ -230,7 +230,7 @@
             data:{
                 mess:$('.liuyanbox textarea').val(),
                 id:$('.liuyanbox textarea').attr('id'),
-                img:$('#input').val()
+                img:$('input[id=input]:last').val()
             },
             success:function (arr) {
 
@@ -252,7 +252,10 @@
                     `
                     ).prependTo('#messbox')
                 }
+                $('.imgul').children().remove()
+                $('#input').remove()
                 $('.liuyanbox textarea').val('')
+
             }
         })
     })
